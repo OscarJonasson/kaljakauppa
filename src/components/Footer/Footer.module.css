@@ -1,0 +1,17 @@
+footer {
+  background-color: #493314;
+  color: white;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+ul li {
+  text-decoration: none;
+  list-style: none;
+}
