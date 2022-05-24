@@ -1,8 +1,7 @@
-import React from "react";
-import Layout from "./pages/Layout";
-
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
+import React from 'react';
+import Layout from './pages/Layout';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './components/Home/Home';
 
 const App = () => {
   return (
