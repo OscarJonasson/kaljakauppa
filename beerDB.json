@@ -1,0 +1,233 @@
+{
+  "beers": [
+    {
+      "bid": 1,
+      "beer_name": "Celebration Ale",
+      "beer_label": "https://pien.fi/wp-content/uploads/2022/04/Pien-Webshop_890x1272_product_-04042022-66.jpg",
+      "beer_abv": 6.8,
+      "beer_ibu": 65,
+      "beer_description": "The long, cold nights of winter are a little brighter with Celebration Ale. Wonderfully robust and rich, Celebration Ale is dry-hopped for a lively, intense aroma. Brewed especially for the holidays, it is perfect for a festive gathering or for a quiet evening at home.",
+      "beer_style": "American IPA",
+      "is_in_production": 1,
+      "beer_slug": "sierra-nevada-brewing-co-celebration-ale",
+      "is_homebrew": 0,
+      "created_at": "Fri, 24 Dec 2010 10:10:42 +0000",
+      "rating_count": 35148,
+      "rating_score": 3.78495,
+      "stats": {
+        "total_count": 57453,
+        "monthly_count": 24387,
+        "total_user_count": 39594,
+        "user_count": 0
+      },
+      "brewery": {
+        "brewery_id": 1142,
+        "brewery_name": "Sierra Nevada Brewing Co.",
+        "brewery_label": "https://d1c8v1qci5en44.cloudfront.net/site/brewery_logos/brewery-1142_f241d.jpeg",
+        "country_name": "United States",
+        "contact": {
+          "twitter": "SierraNevada",
+          "facebook": "http://www.facebook.com/sierranevadabeer",
+          "url": "http://www.sierranevada.com/"
+        },
+        "location": {
+          "brewery_city": "Chico",
+          "brewery_state": "CA",
+          "lat": 39.7246,
+          "lng": -121.816
+        }
+      }
+    },
+    {
+      "bid": 2,
+      "beer_name": "Warming Hut Memoirs",
+      "beer_label": "https://pien.fi/wp-content/uploads/2022/01/Pien-Webshop_890x1272_product_291121_-081.jpg",
+      "beer_abv": 12.0,
+      "beer_ibu": 65,
+      "beer_description": "Iso, paksu ja makea Stout, jossa upeaa runkoa on koristeltu pekaanipähkinöillä, kanelilla, ugandalaisella vaniljalla sekä vaahterasiirapilla. Älä missaa tätä!",
+      "beer_style": "Imperial Stout",
+      "is_in_production": 1,
+      "beer_slug": "humble-forager-brewery-warming-hut-memoirs",
+      "is_homebrew": 0,
+      "created_at": "Fri, 24 Dec 2010 10:10:42 +0000",
+      "rating_count": 23233,
+      "rating_score": 2.58495,
+      "stats": {
+        "total_count": 10000,
+        "monthly_count": 2500,
+        "total_user_count": 2000,
+        "user_count": 0
+      },
+      "brewery": {
+        "brewery_id": 1142,
+        "brewery_name": "Humble forager brewery",
+        "brewery_label": "https://d1c8v1qci5en44.cloudfront.net/site/brewery_logos/brewery-1142_f241d.jpeg",
+        "country_name": "United States",
+        "contact": {
+          "twitter": "SierraNevada",
+          "facebook": "http://www.facebook.com/sierranevadabeer",
+          "url": "http://www.sierranevada.com/"
+        },
+        "location": {
+          "brewery_city": "Madison",
+          "brewery_state": "WI",
+          "lat": 39.7246,
+          "lng": -121.816
+        }
+      }
+    },
+
+    {
+      "bid": 3,
+      "beer_name": "Serenity 1: Scotch",
+      "beer_label": "https://cdn.shopify.com/s/files/1/0368/1628/9924/products/seren_scotch_1024x1024.jpg?v=1652897901",
+      "beer_abv": 11.0,
+      "beer_ibu": 30,
+      "beer_description": "Scotch barrel aged imperial oatmeal stout",
+      "beer_style": "Imperial Oatmeal Stout",
+      "is_in_production": 1,
+      "beer_slug": "utopia-serenity-1-scotch",
+      "is_homebrew": 0,
+      "created_at": "Fri, 24 Dec 2010 10:10:42 +0000",
+      "rating_count": 13233,
+      "rating_score": 4.22495,
+      "stats": {
+        "total_count": 400,
+        "monthly_count": 200,
+        "total_user_count": 200,
+        "user_count": 0
+      },
+      "brewery": {
+        "brewery_id": 1142,
+        "brewery_name": "Utopia Brewing",
+        "brewery_label": "https://d1c8v1qci5en44.cloudfront.net/site/brewery_logos/brewery-1142_f241d.jpeg",
+        "country_name": "United States",
+        "contact": {
+          "twitter": "SierraNevada",
+          "facebook": "http://www.facebook.com/sierranevadabeer",
+          "url": "http://www.sierranevada.com/"
+        },
+        "location": {
+          "brewery_city": "Madison",
+          "brewery_state": "WI",
+          "lat": 39.7246,
+          "lng": -121.816
+        }
+      }
+    },
+    {
+      "bid": 4,
+      "beer_name": "Aupa Tovarisch aged in Ardbeg barrels",
+      "beer_label": "https://cdn.webshopapp.com/shops/262165/files/404096376/image.jpg",
+      "beer_abv": 13.5,
+      "beer_ibu": 70,
+      "beer_description": "Russian Imperial Stout aged in Ardbeg's Kindalton single malt whisky barrels.",
+      "beer_style": "Russian Imperial Stout",
+      "is_in_production": 1,
+      "beer_slug": "laugar-brewery-aupa-tovarich",
+      "is_homebrew": 0,
+      "created_at": "Fri, 24 Dec 2010 10:10:42 +0000",
+      "rating_count": 13233,
+      "rating_score": 4.22495,
+      "stats": {
+        "total_count": 400,
+        "monthly_count": 200,
+        "total_user_count": 200,
+        "user_count": 0
+      },
+      "brewery": {
+        "brewery_id": 1142,
+        "brewery_name": "Laugar Brewery",
+        "brewery_label": "https://d1c8v1qci5en44.cloudfront.net/site/brewery_logos/brewery-1142_f241d.jpeg",
+        "country_name": "Spain",
+        "contact": {
+          "twitter": "SierraNevada",
+          "facebook": "http://www.facebook.com/sierranevadabeer",
+          "url": "http://www.sierranevada.com/"
+        },
+        "location": {
+          "brewery_city": "Gordexola",
+          "brewery_state": "",
+          "lat": 39.7246,
+          "lng": -121.816
+        }
+      }
+    },
+    {
+      "bid": 5,
+      "beer_name": "Zodiak",
+      "beer_label": "https://cdn.webshopapp.com/shops/262165/files/400428178/image.jpg",
+      "beer_abv": 0.3,
+      "beer_ibu": 20,
+      "beer_description": "Alcohol free version of the iconic ZodiakIPA",
+      "beer_style": "Non-alcoholic IPA",
+      "is_in_production": 1,
+      "beer_slug": "omnipollo-zodiak-nonalcoholic",
+      "is_homebrew": 0,
+      "created_at": "Fri, 24 Dec 2010 10:10:42 +0000",
+      "rating_count": 1233,
+      "rating_score": 3.3,
+      "stats": {
+        "total_count": 4300,
+        "monthly_count": 2300,
+        "total_user_count": 2100,
+        "user_count": 0
+      },
+      "brewery": {
+        "brewery_id": 1142,
+        "brewery_name": "Omnipollo",
+        "brewery_label": "https://d1c8v1qci5en44.cloudfront.net/site/brewery_logos/brewery-1142_f241d.jpeg",
+        "country_name": "Sweden",
+        "contact": {
+          "twitter": "SierraNevada",
+          "facebook": "http://www.facebook.com/sierranevadabeer",
+          "url": "http://www.sierranevada.com/"
+        },
+        "location": {
+          "brewery_city": "Stockholm",
+          "brewery_state": "Sundbybergs kommun",
+          "lat": 39.7246,
+          "lng": -121.816
+        }
+      }
+    },
+    {
+      "bid": 6,
+      "beer_name": "Heart Stone IPA",
+      "beer_label": "https://images.alko.fi/images/cs_srgb,f_auto,t_medium/cdn/919191/coolhead-heart-stone-ipa-can.jpg",
+      "beer_abv": 0.3,
+      "beer_ibu": 20,
+      "beer_description": "Amber-yellow, light-bodied, very strongly hopped, pine notes, citrus notes, orangey ",
+      "beer_style": "IPA",
+      "is_in_production": 1,
+      "beer_slug": "coolhead-heart-stone-ipa",
+      "is_homebrew": 0,
+      "created_at": "Fri, 24 Dec 2010 10:10:42 +0000",
+      "rating_count": 233,
+      "rating_score": 2.6,
+      "stats": {
+        "total_count": 1300,
+        "monthly_count": 552,
+        "total_user_count": 203,
+        "user_count": 0
+      },
+      "brewery": {
+        "brewery_id": 1142,
+        "brewery_name": "CoolHead Brew",
+        "brewery_label": "https://d1c8v1qci5en44.cloudfront.net/site/brewery_logos/brewery-1142_f241d.jpeg",
+        "country_name": "Finland",
+        "contact": {
+          "twitter": "SierraNevada",
+          "facebook": "http://www.facebook.com/sierranevadabeer",
+          "url": "http://www.sierranevada.com/"
+        },
+        "location": {
+          "brewery_city": "Helsinki",
+          "brewery_state": "Uusimaa",
+          "lat": 39.7246,
+          "lng": -121.816
+        }
+      }
+    }
+  ]
+}
