@@ -1,7 +1,7 @@
 footer {
   background-color: #493314;
   color: white;
-  padding-top: 4rem;
+  padding-top: 3.5rem;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -12,7 +12,7 @@ footer {
 footer div {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 
 footer p {
@@ -24,4 +24,32 @@ footer p {
 ul li {
   text-decoration: none;
   list-style: none;
+}
+
+.followUs {
+  padding-bottom: 2rem;
+}
+
+.followUs li {
+  padding-bottom: 0.2rem;
+}
+
+.followUs li i {
+  padding-right: 0.2rem;
+}
+
+.aboutUs li {
+  margin-bottom: 1rem;
+}
+
+.cookiePolicy li {
+  margin-bottom: 1rem;
+}
+
+.weAccept li {
+  padding-bottom: 0.2rem;
+}
+
+.weAccept li i {
+  padding-right: 0.2rem;
 }

@@ -6,37 +6,37 @@ const Footer = () => {
     <footer>
       <div>
         <section>
-          <ul className="aboutUs">
+          <ul className={classes.aboutUs}>
             <li>About Us</li>
             <li>Contact Us</li>
             <li>Join Us</li>
+            <li>Newsletter</li>
           </ul>
         </section>
         <section>
-          <ul className="cookiePolicy">
+          <ul className={classes.cookiePolicy}>
             <li>Cookie Policy</li>
             <li>Shipping</li>
             <li>Terms & Conditions</li>
+            <li>Payment Policy</li>
           </ul>
         </section>
         <section>
-          <ul>
-            <li className="followUs">Follow Us</li>
+          <ul className={classes.followUs}>
+            <li>Follow Us</li>
             <li>
-              <i class="fa-brands fa-facebook"></i>{" "}
-              <i class="fa-brands fa-instagram"></i>
+              <i className="fa-brands fa-facebook fa-2x"></i>{" "}
+              <i className="fa-brands fa-instagram fa-2x"></i>{" "}
+              <i className="fa-brands fa-tiktok fa-2x"></i>{" "}
+              <i className="fa-brands fa-twitter fa-2x"></i>
             </li>
+          </ul>
+          <ul className={classes.weAccept}>
+            <li>We Accept</li>
             <li>
-              <i class="fa-brands fa-tiktok"></i>{" "}
-              <i class="fa-brands fa-twitter"></i>
-            </li>
-            <li className="weAccept">We Accept</li>
-            <li>
-              <i class="fa-brands fa-cc-mastercard"></i>{" "}
-              <i class="fa-brands fa-cc-visa"></i>
-            </li>
-            <li>
-              <i class="fa-brands fa-cc-amex"></i>
+              <i className="fa-brands fa-cc-mastercard fa-2x"></i>{" "}
+              <i className="fa-brands fa-cc-visa fa-2x"></i>{" "}
+              <i className="fa-brands fa-cc-amex fa-2x"></i>
             </li>
           </ul>
         </section>
