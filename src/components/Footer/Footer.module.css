@@ -2,7 +2,7 @@ footer {
   background-color: #493314;
   color: white;
   padding-top: 3.5rem;
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   width: 100%;
   display: flex;
