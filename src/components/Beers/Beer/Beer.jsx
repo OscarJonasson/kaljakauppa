@@ -20,7 +20,7 @@ const Beer = () => {
   };
 
   const addOne = () => {
-    if (amount < 11) {
+    if (amount < 10) {
       setAmount(amount + 1);
     }
   };
