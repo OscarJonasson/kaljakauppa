@@ -3,7 +3,6 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
-  justify-content: space-between;
   background-color: #439dfe53;
   width: 15rem;
   height: 28rem;
