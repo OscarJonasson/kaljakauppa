@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import classes from './Home.module.css';
 import axios from 'axios';
 import CardHome from '../CardHome/CardHome';
@@ -21,7 +22,11 @@ const Home = () => {
         return selection.includes(beer.id);
       })
       .map(beer => {
-        return <CardHome key={beer.id} beer={beer} />;
+        return (
+          <Link to={`beers/${beer.id}`}>
+            <CardHome key={beer.id} beer={beer} />
+          </Link>
+        );
       });
   };
   return (
