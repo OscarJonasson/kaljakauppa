@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./Footer.module.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -7,28 +8,52 @@ const Footer = () => {
       <div>
         <section>
           <ul className={classes.aboutUs}>
-            <li>About Us</li>
-            <li>Contact Us</li>
-            <li>Join Us</li>
-            <li>Newsletter</li>
+            <li>
+              <Link to="/about">About Us</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact Us</Link>
+            </li>
+            <li>
+              <Link to="/joinus">Join Us</Link>
+            </li>
+            <li>
+              <Link to="/newsletter">Newsletter</Link>
+            </li>
           </ul>
         </section>
         <section>
           <ul className={classes.cookiePolicy}>
-            <li>Cookie Policy</li>
-            <li>Shipping</li>
-            <li>Terms & Conditions</li>
-            <li>Payment Policy</li>
+            <li>
+              <Link to="/cookies">Cookie Policy</Link>
+            </li>
+            <li>
+              <Link to="/shipping">Shipping</Link>
+            </li>
+            <li>
+              <Link to="/terms">Terms & Conditions</Link>
+            </li>
+            <li>
+              <Link to="/paypolicy">Payment Policy</Link>
+            </li>
           </ul>
         </section>
         <section>
           <ul className={classes.followUs}>
             <li>Follow Us</li>
             <li>
-              <i className="fa-brands fa-facebook fa-2x"></i>{" "}
-              <i className="fa-brands fa-instagram fa-2x"></i>{" "}
-              <i className="fa-brands fa-tiktok fa-2x"></i>{" "}
-              <i className="fa-brands fa-twitter fa-2x"></i>
+              <a href="https://www.facebook.com" target="_blank">
+                <i className="fa-brands fa-facebook fa-2x"></i>
+              </a>{" "}
+              <a href="https://www.instagram.com" target="_blank">
+                <i className="fa-brands fa-instagram fa-2x"></i>
+              </a>{" "}
+              <a href="https://www.tiktok.com" target="_blank">
+                <i className="fa-brands fa-tiktok fa-2x"></i>
+              </a>{" "}
+              <a href="https://www.twitter.com" target="_blank">
+                <i className="fa-brands fa-twitter fa-2x"></i>
+              </a>
             </li>
           </ul>
           <ul className={classes.weAccept}>
