@@ -5,6 +5,7 @@
 }
 
 body {
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
+  width: 100%;
   font-family: "Comfortaa", cursive;
 }
