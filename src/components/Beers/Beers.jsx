@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import axios from "axios";
+import CardHome from "../CardHome/CardHome";
+import classes from "./Beers.module.css";
 
 const Beers = () => {
   const [beers, setBeers] = useState([]);
-  const [amount, setAmount] = useState(1);
+  //   const [amount, setAmount] = useState(1);
 
   useEffect(() => {
     axios
@@ -16,20 +17,7 @@ const Beers = () => {
   return (
     <section>
       {beers.map((beer) => (
-        <div key={beer.bid} className="galleryCard">
-          <Link to={`/beers/${beer.beer_name}`}>
-            <img
-              className="galleryImage"
-              src={beer.beer_label}
-              alt={beer.beer_name}
-            />
-          </Link>
-          <div className="galleryInfo">
-            <h2>{beer.beer_name}</h2>
-            <p>{beer.price}</p>
-            <Link to={`/beers/${beer.beer_name}`}>See more</Link>
-          </div>
-        </div>
+        <CardHome key={beer.bid} beer={beer} />
       ))}
     </section>
   );
