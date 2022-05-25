@@ -1,8 +1,29 @@
-import React from "react";
-import classes from "./Home.module.css";
-import image from "../../assets/images/missy-fant-OMIgwm1i_NY-unsplash.jpg";
+import React, { useEffect, useState } from 'react';
+import classes from './Home.module.css';
+import axios from 'axios';
+import CardHome from '../CardHome/CardHome';
+import image from '../../assets/images/missy-fant-OMIgwm1i_NY-unsplash.jpg';
 
 const Home = () => {
+  const [beers, setBeers] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get('http://localhost:3011/beers')
+      .then(res => setBeers(res.data))
+      .catch(err => console.log(err));
+  }, []);
+
+  const selection = [6, 2, 3];
+  const special = (beers, selection) => {
+    return beers
+      .filter(beer => {
+        return selection.includes(beer.id);
+      })
+      .map(beer => {
+        return <CardHome key={beer.id} beer={beer} />;
+      });
+  };
   return (
     <div>
       <div className={classes.hero_container}>
@@ -17,6 +38,9 @@ const Home = () => {
           eveniet voluptatem voluptatum. Deleniti.
         </p>
       </div>
+      <section className={classes.specials}>
+        {special(beers, selection)}
+      </section>
     </div>
   );
 };
