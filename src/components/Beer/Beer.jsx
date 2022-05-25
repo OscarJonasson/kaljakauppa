@@ -1,15 +1,17 @@
 import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import classes from './Beer.module.css';
 import axios from 'axios';
 
 const Beer = () => {
   const [b, setB] = useState([]);
   const [amount, setAmount] = useState(1);
+  const { id } = useParams();
 
   useEffect(() => {
     axios
-      .get('http://localhost:3011/beers/')
-      .then(res => setB(res.data[0]))
+      .get(`http://localhost:3011/beers/${id}`)
+      .then(res => setB(res.data))
       .catch(err => console.log(err));
   }, []);
 
@@ -24,8 +26,6 @@ const Beer = () => {
       setAmount(amount + 1);
     }
   };
-
-  console.log(b);
   return (
     <>
       <ul className={classes.breadcrums}>
