@@ -1,0 +1,53 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: aliceblue;
+  width: 20vw;
+  min-width: 200px;
+  margin: 1rem;
+}
+
+.card:hover > .card_img {
+  filter: opacity(0.2);
+}
+
+.card_img {
+  width: 100%;
+  transition: 300ms;
+}
+
+.card_desc {
+  align-self: center;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 0.3rem;
+}
+
+.card_desc p {
+  margin: 0.4rem 0;
+}
+
+.card:hover > .info {
+  visibility: visible;
+}
+
+.info {
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  position: absolute;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.info_list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: column nowrap;
+  height: 40%;
+}
