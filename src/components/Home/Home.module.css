@@ -21,3 +21,9 @@
   max-width: 1440px;
   margin: 2rem;
 }
+
+.specials {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
