@@ -1,0 +1,51 @@
+header {
+  background-color: #493314;
+  color: white;
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerLeft {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+}
+
+.searchContainer {
+  position: relative;
+}
+
+.searchBar {
+  margin-left: 2rem;
+  padding: 0.5rem;
+  padding-right: 2rem;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.magGlass {
+  color: black;
+  position: absolute;
+  top: 25%;
+  right: 6px;
+}
+
+.headerRight {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+}
+
+.logo {
+  font-size: 3rem;
+  width: 20%;
+  text-align: center;
+}
+
+header nav ul li a {
+  color: white;
+  margin: 1rem;
+}
