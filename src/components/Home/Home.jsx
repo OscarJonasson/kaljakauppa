@@ -1,6 +1,6 @@
-import React from 'react';
-import classes from './Home.module.css';
-import image from '../../assets/images/engin-akyurt-3ORoQEJY9LA-unsplash.jpg';
+import React from "react";
+import classes from "./Home.module.css";
+import image from "../../assets/images/missy-fant-OMIgwm1i_NY-unsplash.jpg";
 
 const Home = () => {
   return (
@@ -10,6 +10,12 @@ const Home = () => {
         <h1 className={classes.hero_heading}>
           Welcome to Error Squirrel Beer Shop!
         </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero
+          ducimus rerum dolore officiis voluptatum perspiciatis enim animi
+          facere, ipsa distinctio expedita. Quae sint ratione cumque corporis
+          eveniet voluptatem voluptatum. Deleniti.
+        </p>
       </div>
     </div>
   );
