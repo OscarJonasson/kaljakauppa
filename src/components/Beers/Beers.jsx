@@ -15,7 +15,7 @@ const Beers = () => {
   }, []);
 
   return (
-    <section>
+    <section className={classes.beerGallery}>
       {beers.map((beer) => (
         <CardHome key={beer.bid} beer={beer} />
       ))}
