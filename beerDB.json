@@ -1,7 +1,7 @@
 {
   "beers": [
     {
-      "bid": 1,
+      "id": 1,
       "beer_name": "Celebration Ale",
       "beer_label": "https://pien.fi/wp-content/uploads/2022/04/Pien-Webshop_890x1272_product_-04042022-66.jpg",
       "beer_abv": 6.8,
@@ -41,7 +41,7 @@
       "price": 16.92
     },
     {
-      "bid": 2,
+      "id": 2,
       "beer_name": "Warming Hut Memoirs",
       "beer_label": "https://pien.fi/wp-content/uploads/2022/01/Pien-Webshop_890x1272_product_291121_-081.jpg",
       "beer_abv": 12.0,
@@ -82,7 +82,7 @@
     },
 
     {
-      "bid": 3,
+      "id": 3,
       "beer_name": "Serenity 1: Scotch",
       "beer_label": "https://cdn.shopify.com/s/files/1/0368/1628/9924/products/seren_scotch_1024x1024.jpg?v=1652897901",
       "beer_abv": 11.0,
@@ -122,9 +122,9 @@
       "price": 6.42
     },
     {
-      "bid": 4,
+      "id": 4,
       "beer_name": "Aupa Tovarisch aged in Ardbeg barrels",
-      "beer_label": "https://cdn.webshopapp.com/shops/262165/files/404096376/image.jpg",
+      "beer_label": "https://cdn.webshopapp.com/shops/297538/files/403945873/laugar-laugar-aupa-tovarisch-aged-in-ardbeg-barrel.jpg",
       "beer_abv": 13.5,
       "beer_ibu": 70,
       "beer_description": "Russian Imperial Stout aged in Ardbeg's Kindalton single malt whisky barrels.",
@@ -162,9 +162,9 @@
       "price": 2.94
     },
     {
-      "bid": 5,
+      "id": 5,
       "beer_name": "Zodiak",
-      "beer_label": "https://cdn.webshopapp.com/shops/262165/files/400428178/image.jpg",
+      "beer_label": "https://cdn.webshopapp.com/shops/297538/files/400273906/omnipollo-omnipollo-zodiak-non-alcoholic.jpg",
       "beer_abv": 0.3,
       "beer_ibu": 20,
       "beer_description": "Alcohol free version of the iconic ZodiakIPA",
@@ -184,7 +184,7 @@
       "brewery": {
         "brewery_id": 1142,
         "brewery_name": "Omnipollo",
-        "brewery_label": "https://d1c8v1qci5en44.cloudfront.net/site/brewery_logos/brewery-1142_f241d.jpeg",
+        "brewery_label": "https://cdn.webshopapp.com/shops/297538/files/400273906/omnipollo-omnipollo-zodiak-non-alcoholic.jpg",
         "country_name": "Sweden",
         "contact": {
           "twitter": "SierraNevada",
@@ -202,9 +202,9 @@
       "price": 5.42
     },
     {
-      "bid": 6,
+      "id": 6,
       "beer_name": "Heart Stone IPA",
-      "beer_label": "https://images.alko.fi/images/cs_srgb,f_auto,t_medium/cdn/919191/coolhead-heart-stone-ipa-can.jpg",
+      "beer_label": "https://img.selzstatic.com/items/228185/0bp1wskhtit/original.jpg?w=2048&h=2048&fit=min&auto=compress%2cformat&q=70",
       "beer_abv": 0.3,
       "beer_ibu": 20,
       "beer_description": "Amber-yellow, light-bodied, very strongly hopped, pine notes, citrus notes, orangey ",
