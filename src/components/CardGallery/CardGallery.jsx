@@ -10,6 +10,7 @@ function CardGallery({ beer }) {
       <div className={classes.card_desc}>
         <p>{beer.beer_name}</p>
         <p>{beer.price} EUR</p>
+        <button className={classes.addtoCart}>Add to Cart</button>
       </div>
       <div className={classes.info}>
         <ul className={classes.info_list}>

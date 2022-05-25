@@ -6,7 +6,7 @@
   justify-content: space-between;
   background-color: #439dfe53;
   width: 15rem;
-  height: 25rem;
+  height: 28rem;
   margin: 2rem;
   border-radius: 5px;
   box-shadow: 1px 1px 5px rgb(118, 118, 118, 0.3);
@@ -33,7 +33,7 @@
 }
 
 .card_desc p {
-  margin: 0.4rem 0;
+  margin: 0.5rem 0;
 }
 
 .card:hover > .info {
@@ -57,4 +57,18 @@
   flex-flow: column nowrap;
   height: 40%;
   color: black;
+}
+
+.addtoCart {
+  background-color: #f9e5a2;
+  border-radius: 5px;
+  border-style: none;
+  padding: 0.5rem;
+  box-shadow: 1px 1px 5px rgb(118, 118, 118, 0.3);
+  transition: 1s;
+}
+
+.addtoCart:hover {
+  background-color: #fedd74;
+  transition: 1s;
 }
