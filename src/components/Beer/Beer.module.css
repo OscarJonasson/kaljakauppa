@@ -2,7 +2,7 @@
   display: flex;
   flex-flow: row nowrap;
   list-style: none;
-  padding: 2rem;
+  padding: 1.5rem 0 0.5rem 1rem;
 }
 
 .beer {
@@ -10,7 +10,7 @@
   justify-content: space-around;
   flex-flow: row wrap;
   margin: 1rem;
-  background-color: aliceblue;
+  background-color: #439dfe53;
   padding: 2rem;
 }
 
