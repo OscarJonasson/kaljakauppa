@@ -11,10 +11,10 @@
 .hero_heading {
   text-align: center;
   margin: 1rem;
-  /* position: absolute;
+  position: relative;
   top: 0;
-  left: 0; */
-  /* z-index: 1; */
+  left: 0;
+  z-index: 1;
 }
 
 .hero_container p {
