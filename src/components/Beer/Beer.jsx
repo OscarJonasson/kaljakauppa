@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import classes from './Beer.module.css';
-import axios from 'axios';
+import { useEffect, useState } from "react";
+import { useParams, Link } from "react-router-dom";
+import classes from "./Beer.module.css";
+import axios from "axios";
 
 const Beer = () => {
   const [b, setB] = useState([]);
@@ -29,9 +29,15 @@ const Beer = () => {
   return (
     <>
       <ul className={classes.breadcrums}>
-        <li>breadcrums</li>
-        <li>-breadcrums</li>
-        <li>-breadcrums</li>
+        <li>
+          <Link to={"/"}>Home</Link>
+        </li>
+        <li>{`>`}</li>
+        <li>
+          <Link to={"/beers"}>Beers</Link>
+        </li>
+        <li>{`>`}</li>
+        <li>{b.beer_name}</li>
       </ul>
       <div className={classes.beer}>
         <div className={classes.beer_left}>
