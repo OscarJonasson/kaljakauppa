@@ -4,7 +4,13 @@
   list-style: none;
   padding: 1.5rem 0 0.5rem 1rem;
 }
+.breadcrums a {
+  color: var(--blue);
+}
 
+.breadcrums a:hover {
+  filter: brightness(0.6);
+}
 .beer {
   display: flex;
   justify-content: space-around;
