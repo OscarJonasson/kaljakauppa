@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 import Layout from "./pages/Layout";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -7,16 +6,7 @@ import Beer from "./components/Beer/Beer";
 import Beers from "./components/Beers/Beers";
 import Search from "./components/Search/Search";
 import AboutUs from "./components/AboutUs/AboutUs";
-=======
-import React from 'react';
-import Layout from './pages/Layout';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './components/Home/Home';
-import Beer from './components/Beer/Beer';
-import Beers from './components/Beers/Beers';
-import Search from './components/Search/Search';
-import ContactUs from './components/ContactUs/ContactUs';
->>>>>>> 0fd9230bfae7cdcf912549b7a527cacd42173796
+import ContactUs from "./components/ContactUs/ContactUs";
 
 const App = () => {
   return (
@@ -27,11 +17,8 @@ const App = () => {
           <Route path="beers" element={<Beers />} />
           <Route path="beers/:id" element={<Beer />} />
           <Route path="search/:search" element={<Search />} />
-<<<<<<< HEAD
           <Route path="aboutUs" element={<AboutUs />} />
-=======
           <Route path="contact" element={<ContactUs />} />
->>>>>>> 0fd9230bfae7cdcf912549b7a527cacd42173796
         </Route>
       </Routes>
     </BrowserRouter>
