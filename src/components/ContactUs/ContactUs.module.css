@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.form {
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.form input,
+textarea {
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-family: var(--main-font);
+  border: solid var(--blue) 2px;
+}
+
+.form input {
+  width: 13rem;
+  height: 2rem;
+}
+
+textarea {
+  height: 10rem;
+}
+
+label {
+  text-decoration: underline;
+}
+
+.form_btn {
+  width: 15rem;
+  height: 2rem;
+  background-color: var(--yellow);
+  border-radius: 5px;
+  border-style: none;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.form_btn:hover {
+  filter: brightness(0.9);
+}
