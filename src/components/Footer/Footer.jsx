@@ -15,26 +15,26 @@ const Footer = () => {
               <Link to="/contact">Contact Us</Link>
             </li>
             <li>
-              <Link to="/joinus">Join Us</Link>
+              <Link to="/404">Join Us</Link>
             </li>
             <li>
-              <Link to="/newsletter">Newsletter</Link>
+              <Link to="/404">Newsletter</Link>
             </li>
           </ul>
         </section>
         <section>
           <ul className={classes.cookiePolicy}>
             <li>
-              <Link to="/cookies">Cookie Policy</Link>
+              <Link to="/404">Cookie Policy</Link>
             </li>
             <li>
-              <Link to="/shipping">Shipping</Link>
+              <Link to="/404">Shipping</Link>
             </li>
             <li>
-              <Link to="/terms">Terms & Conditions</Link>
+              <Link to="/404">Terms & Conditions</Link>
             </li>
             <li>
-              <Link to="/paypolicy">Payment Policy</Link>
+              <Link to="/404">Payment Policy</Link>
             </li>
           </ul>
         </section>

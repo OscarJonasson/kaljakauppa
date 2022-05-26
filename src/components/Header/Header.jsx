@@ -3,6 +3,7 @@ import classes from "./Header.module.css";
 import Nav from "../Nav/Nav";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../../assets/images/logobeer4.png";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
@@ -38,7 +39,11 @@ const Header = () => {
             </form>
           </div>
         </div>
-        <div className={classes.logo}>LOGO</div>
+        <div>
+          <Link to="/">
+            <img className={classes.logo} src={logo} alt="logo" />
+          </Link>
+        </div>
         <div className={classes.headerRight}>
           <span className="material-symbols-outlined">person</span>
           <span className="material-symbols-outlined">shopping_cart</span>
