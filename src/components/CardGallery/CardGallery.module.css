@@ -3,12 +3,35 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
-  background-color: #439dfe53;
+  /* background-color: #439dfe53; */
   width: 15rem;
   height: 28rem;
   margin: 2rem;
   border-radius: 5px;
   box-shadow: 1px 1px 5px rgb(118, 118, 118, 0.3);
+}
+.card::before {
+  content: '';
+  position: absolute;
+  background-color: white;
+  height: 20rem;
+  width: inherit;
+  top: 0;
+  right: 0;
+  border-radius: 5px 5px 0 0;
+  z-index: -1;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  background-color: #439dfe53;
+  height: 8rem;
+  width: inherit;
+  bottom: 0;
+  right: 0;
+  border-radius: 0;
+  z-index: -1;
 }
 
 .card:hover > .card_img {

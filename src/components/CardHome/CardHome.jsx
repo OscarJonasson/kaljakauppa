@@ -1,4 +1,4 @@
-import classes from "./CardHome.module.css";
+import classes from './CardHome.module.css';
 function CardHome({ beer }) {
   return (
     <div className={classes.card}>
