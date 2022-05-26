@@ -7,6 +7,8 @@ const Header = () => {
     <header>
       <div className={classes.headerLeft}>
         <Nav />
+
+        <i class="fa-solid fa-bars"></i>
         <div className={classes.searchContainer}>
           <input className={classes.searchBar} placeholder="Search..."></input>
           <i className={`fa-solid fa-magnifying-glass ${classes.magGlass}`}></i>
