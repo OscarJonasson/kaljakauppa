@@ -3,7 +3,9 @@ const ContactUs = () => {
   return (
     <div className={classes.container}>
       <form className={classes.form}>
-        <label htmlFor="email">Your email</label>
+        <label htmlFor="name">Name</label>
+        <input type="text" id="name"></input>
+        <label htmlFor="email">Email</label>
         <input type="email" id="email"></input>
         <label htmlFor="message">Message</label>
         <textarea id="message" cols={50}></textarea>
