@@ -63,9 +63,11 @@ header {
 }
 
 .logo {
-  font-size: 3rem;
-  width: 20%;
-  text-align: center;
+  padding-top: 1rem;
+  margin-left: 4rem;
+  width: 30rem;
+  height: auto;
+  justify-content: center;
 }
 
 header nav ul li a {

@@ -7,6 +7,7 @@ import Beers from "./components/Beers/Beers";
 import Search from "./components/Search/Search";
 import AboutUs from "./components/AboutUs/AboutUs";
 import ContactUs from "./components/ContactUs/ContactUs";
+import Fourzerofour from "./components/404/Fourzerofour";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="search/:search" element={<Search />} />
           <Route path="aboutUs" element={<AboutUs />} />
           <Route path="contact" element={<ContactUs />} />
+          <Route path="404" element={<Fourzerofour />} />
         </Route>
       </Routes>
     </BrowserRouter>

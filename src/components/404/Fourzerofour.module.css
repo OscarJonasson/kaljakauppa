@@ -1,0 +1,14 @@
+.woops {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.ohno {
+  height: 40rem;
+  width: auto;
+}
