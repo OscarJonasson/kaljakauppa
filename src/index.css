@@ -4,8 +4,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-font: 'Comfortaa', cursive;
+}
+
 body {
   /* background-color: aquamarine; */
   width: 100%;
-  font-family: "Comfortaa", cursive;
+  font-family: 'Comfortaa', cursive;
 }

@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
-import axios from "axios";
-import CardGallery from "../CardGallery/CardGallery";
-import classes from "./Search.module.css";
+import React, { useState, useEffect } from 'react';
+import { Link, useParams } from 'react-router-dom';
+import axios from 'axios';
+import CardGallery from '../CardGallery/CardGallery';
+import classes from './Search.module.css';
 
 const Search = () => {
   const [beers, setBeers] = useState([]);
@@ -12,20 +12,21 @@ const Search = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3011/beers/")
-      .then((res) => setBeers(res.data))
-      .catch((error) => console.log(error));
+      .get('http://localhost:3011/beers/')
+      .then(res => setBeers(res.data))
+      .catch(error => console.log(error));
   }, []);
 
   const special = (beers, selection) => {
     return beers
-      .filter((beer) => {
+      .filter(beer => {
         // console.log(search);
+
         return selection
           .toLowerCase()
           .includes(...beer.beer_name.toLowerCase());
       })
-      .map((beer) => {
+      .map(beer => {
         return (
           <Link to={`beers/${beer.id}`}>
             <CardGallery key={beer.id} beer={beer} />
