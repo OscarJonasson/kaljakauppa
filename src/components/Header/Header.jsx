@@ -26,7 +26,7 @@ const Header = () => {
             Menu <i className="fa-solid fa-bars"></i>
           </p>
           <div className={classes.searchContainer}>
-            <form action={`search/${search}`}>
+            <form action={`/search/${search}`}>
               <input
                 onChange={searchHandler}
                 className={classes.searchBar}

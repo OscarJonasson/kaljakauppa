@@ -20,8 +20,9 @@ const Search = () => {
   const special = (beers, selection) => {
     return beers
       .filter(beer => {
-        // console.log(beer);
-        return selection.includes(beer.beer_style);
+        return selection
+          .toLowerCase()
+          .includes(...beer.beer_name.toLowerCase());
       })
       .map(beer => {
         return (
