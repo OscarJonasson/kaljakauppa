@@ -6,6 +6,10 @@
 
 :root {
   --main-font: 'Comfortaa', cursive;
+  --red: #f84931;
+  --blue: #439cfe;
+  --yellow: #fedd74;
+  --brown: #493314;
 }
 
 body {
