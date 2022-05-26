@@ -15,6 +15,16 @@ header {
   width: 40%;
 }
 
+.nav {
+  position: fixed;
+  top: 15%;
+  left: 0;
+  z-index: 50;
+  height: 20rem;
+  width: 20rem;
+  background-color: chartreuse;
+}
+
 .searchContainer {
   position: relative;
 }

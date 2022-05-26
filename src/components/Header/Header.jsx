@@ -1,14 +1,25 @@
 import React from "react";
 import classes from "./Header.module.css";
 import Nav from "../Nav/Nav";
+import { useState } from "react";
 
 const Header = () => {
+  const [menu, setMenu] = useState(true);
+
+  const hamburger = () => {
+    setMenu(!menu);
+    console.log(menu);
+  };
+
   return (
     <header>
       <div className={classes.headerLeft}>
-        <Nav />
-
-        <i class="fa-solid fa-bars"></i>
+        {menu && (
+          <div className={classes.nav}>
+            <Nav />
+          </div>
+        )}
+        <i className="fa-solid fa-bars" onClick={hamburger}></i>
         <div className={classes.searchContainer}>
           <input className={classes.searchBar} placeholder="Search..."></input>
           <i className={`fa-solid fa-magnifying-glass ${classes.magGlass}`}></i>
