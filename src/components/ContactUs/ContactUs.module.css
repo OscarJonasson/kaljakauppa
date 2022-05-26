@@ -16,6 +16,7 @@ textarea {
   padding: 0.5rem;
   border-radius: 5px;
   font-family: var(--main-font);
+  border: solid var(--blue) 2px;
 }
 
 .form input {
@@ -32,6 +33,15 @@ label {
 }
 
 .form_btn {
-  width: 8rem;
-  height: 3rem;
+  width: 15rem;
+  height: 2rem;
+  background-color: var(--yellow);
+  border-radius: 5px;
+  border-style: none;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.form_btn:hover {
+  filter: brightness(0.9);
 }
