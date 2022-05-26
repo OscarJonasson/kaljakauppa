@@ -1,13 +1,21 @@
-import React from "react";
-import classes from "./Header.module.css";
-import Nav from "../Nav/Nav";
-import { useState } from "react";
+import React from 'react';
+import classes from './Header.module.css';
+import Nav from '../Nav/Nav';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
-  const [menu, setMenu] = useState(true);
+  const [menu, setMenu] = useState(false);
+  const [search, setSearch] = useState('');
+
   const hamburger = () => {
     setMenu(!menu);
     console.log(menu);
+  };
+
+  const searchHandler = e => {
+    setSearch(e.target.value);
+    console.log(search);
   };
 
   return (
@@ -18,13 +26,16 @@ const Header = () => {
             Menu <i className="fa-solid fa-bars"></i>
           </p>
           <div className={classes.searchContainer}>
-            <input
-              className={classes.searchBar}
-              placeholder="Search..."
-            ></input>
-            <i
-              className={`fa-solid fa-magnifying-glass ${classes.magGlass}`}
-            ></i>
+            <form action={`search/${search}`}>
+              <input
+                onChange={searchHandler}
+                className={classes.searchBar}
+                placeholder="Search..."
+              ></input>
+              <i
+                className={`fa-solid fa-magnifying-glass ${classes.magGlass}`}
+              ></i>
+            </form>
           </div>
         </div>
         <div className={classes.logo}>LOGO</div>

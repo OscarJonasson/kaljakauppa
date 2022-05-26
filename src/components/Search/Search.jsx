@@ -1,27 +1,39 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import axios from "axios";
-import CardGallery from "../CardGallery/CardGallery";
-import classes from "./Search.module.css";
+import React, { useState, useEffect } from 'react';
+import { Link, useParams } from 'react-router-dom';
+import axios from 'axios';
+import CardGallery from '../CardGallery/CardGallery';
+import classes from './Search.module.css';
 
 const Search = () => {
-  const [search, setSearch] = useState([]);
+  const [beers, setBeers] = useState([]);
+  const { search } = useParams();
+
+  // console.log(search);
 
   useEffect(() => {
     axios
-      .get("http://localhost:3011/beers/")
-      .then((res) => setSearch(res.data))
-      .catch((error) => console.log(error));
+      .get('http://localhost:3011/beers/')
+      .then(res => setBeers(res.data))
+      .catch(error => console.log(error));
   }, []);
 
+  const special = (beers, selection) => {
+    return beers
+      .filter(beer => {
+        // console.log(beer);
+        return selection.includes(beer.beer_style);
+      })
+      .map(beer => {
+        return (
+          <Link to={`beers/${beer.id}`}>
+            <CardGallery key={beer.id} beer={beer} />
+          </Link>
+        );
+      });
+  };
+
   return (
-    <section className={classes.beerGallery}>
-      {beers.map((beer) => (
-        <Link to={`${beer.id}`}>
-          <CardGallery key={beer.id} beer={beer} />
-        </Link>
-      ))}
-    </section>
+    <section className={classes.beerGallery}>{special(beers, search)}</section>
   );
 };
 
