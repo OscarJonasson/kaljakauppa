@@ -7,6 +7,9 @@ const ContactUs = () => {
         <input type="email" id="email"></input>
         <label htmlFor="message">Message</label>
         <textarea id="message" cols={50}></textarea>
+        <button className={classes.form_btn} onSubmit={''}>
+          Submit
+        </button>
       </form>
     </div>
   );
