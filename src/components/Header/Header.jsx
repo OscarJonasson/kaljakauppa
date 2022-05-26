@@ -1,19 +1,19 @@
-import React from 'react';
-import classes from './Header.module.css';
-import Nav from '../Nav/Nav';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import classes from "./Header.module.css";
+import Nav from "../Nav/Nav";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState("");
 
   const hamburger = () => {
     setMenu(!menu);
     console.log(menu);
   };
 
-  const searchHandler = e => {
+  const searchHandler = (e) => {
     setSearch(e.target.value);
     console.log(search);
   };
