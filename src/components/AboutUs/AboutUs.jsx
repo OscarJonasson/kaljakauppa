@@ -16,16 +16,14 @@ const AboutUs = () => {
         voluptatibus vitae voluptatum blanditiis omnis consequatur, ullam
         voluptatem magnam maxime consequuntur perspiciatis mollitia consectetur
         odit, itaque illo eligendi necessitatibus officia asperiores ad. Tempora
-        veniam maiores voluptatibus esse sapiente vitae animi obcaecati. Nemo
-        ipsum tempora culpa vitae veritatis alias consectetur voluptatibus!{" "}
+        veniam maiores voluptatibus esse sapiente vitae animi obcaecati.{" "}
       </p>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quia
         voluptatibus vitae voluptatum blanditiis omnis consequatur, ullam
         voluptatem magnam maxime consequuntur perspiciatis mollitia consectetur
         odit, itaque illo eligendi necessitatibus officia asperiores ad. Tempora
-        veniam maiores voluptatibus esse sapiente vitae animi obcaecati. Nemo
-        ipsum tempora culpa vitae veritatis alias consectetur voluptatibus!{" "}
+        veniam maiores voluptatibus esse sapiente vitae animi obcaecati.{" "}
       </p>
     </section>
   );
