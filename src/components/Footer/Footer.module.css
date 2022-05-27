@@ -2,8 +2,8 @@ footer {
   background-color: #493314;
   color: white;
   padding-top: 2.5rem;
-  /* position: fixed; */
-  bottom: 0;
+  position: sticky;
+  bottom: -15rem;
   width: 100%;
   display: flex;
   flex-direction: column;

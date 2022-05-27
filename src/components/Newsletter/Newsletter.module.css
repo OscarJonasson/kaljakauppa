@@ -1,0 +1,40 @@
+.newsletterSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletterHeader {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.newsletterText {
+  width: 70%;
+}
+
+.newsletterForm {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emailLabel {
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.emailInput {
+  margin-right: 1rem;
+}
+
+.sendButton {
+  margin: 1rem;
+  border-radius: 5px;
+  border-style: none;
+  padding: 0.5rem;
+  background-color: #fedd74;
+  box-shadow: 1px 1px 5px rgb(118, 118, 118, 0.3);
+}

@@ -1,0 +1,14 @@
+.joinSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.joinHeader {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.joinText {
+  margin: 1rem 0 4rem 0;
+}

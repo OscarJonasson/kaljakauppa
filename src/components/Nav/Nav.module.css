@@ -1,1 +1,20 @@
+#react-burger-menu-btn {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 99;
+  margin: 0px;
+  padding: 0px;
+  border: inset;
+  font-size: 0px;
+  background: black;
+  cursor: pointer;
+}
 
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
