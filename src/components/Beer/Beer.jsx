@@ -59,7 +59,7 @@ const Beer = () => {
             ) : (
               <li>Stock: {b.stock}</li>
             )}
-            <li>Price: {b.price} EUR</li>
+            <li>Price: {b.price} €</li>
           </ul>
           <div className={classes.controls}>
             <button className={classes.controls_math} onClick={subOne}>
