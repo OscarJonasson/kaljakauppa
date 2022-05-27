@@ -8,6 +8,8 @@ import Search from "./components/Search/Search";
 import AboutUs from "./components/AboutUs/AboutUs";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Fourzerofour from "./components/404/Fourzerofour";
+import Join from "./components/Join/Join";
+import Newsletter from "./components/Newsletter/Newsletter";
 
 const App = () => {
   return (
@@ -21,6 +23,8 @@ const App = () => {
           <Route path="aboutUs" element={<AboutUs />} />
           <Route path="contact" element={<ContactUs />} />
           <Route path="404" element={<Fourzerofour />} />
+          <Route path="joinus" element={<Join />} />
+          <Route path="newsletter" element={<Newsletter />} />
         </Route>
       </Routes>
     </BrowserRouter>

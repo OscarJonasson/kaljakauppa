@@ -15,10 +15,10 @@ const Footer = () => {
               <Link to="/contact">Contact Us</Link>
             </li>
             <li>
-              <Link to="/404">Join Us</Link>
+              <Link to="/joinus">Join Us</Link>
             </li>
             <li>
-              <Link to="/404">Newsletter</Link>
+              <Link to="/newsletter">Newsletter</Link>
             </li>
           </ul>
         </section>
