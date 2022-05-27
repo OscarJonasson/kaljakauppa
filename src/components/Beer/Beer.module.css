@@ -42,6 +42,13 @@
   list-style: none;
 }
 
+.outOfStock {
+  color: red;
+  border: dotted 2px black;
+  width: 8rem;
+  border-radius: 5px;
+}
+
 .beer_description {
   width: 100%;
   line-height: 1.5;
