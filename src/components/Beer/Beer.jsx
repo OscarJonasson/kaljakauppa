@@ -22,7 +22,7 @@ const Beer = () => {
   };
 
   const addOne = () => {
-    if (amount < 10) {
+    if (amount < b.stock) {
       setAmount(amount + 1);
     }
   };
@@ -54,8 +54,12 @@ const Beer = () => {
             <li>ABV: {b.beer_abv} %</li>
             <li>Style: {b.beer_style}</li>
             <li>Brewed by: {b.brewery?.brewery_name}</li>
-            <li>Stock: {b.stock}</li>
-            <li>Price: {b.price}</li>
+            {b.stock === 0 ? (
+              <li className={classes.outOfStock}>Out Of Stock</li>
+            ) : (
+              <li>Stock: {b.stock}</li>
+            )}
+            <li>Price: {b.price} EUR</li>
           </ul>
           <div className={classes.controls}>
             <button className={classes.controls_math} onClick={subOne}>
@@ -65,7 +69,7 @@ const Beer = () => {
               className={classes.controls_amount}
               type="number"
               name="amount"
-              value={amount}
+              value={b.stock === 0 ? 0 : amount}
             />
             <button className={classes.controls_math} onClick={addOne}>
               ➕
