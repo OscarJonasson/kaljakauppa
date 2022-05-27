@@ -1,4 +1,5 @@
 import classes from "./CardGallery.module.css";
+
 function CardGallery({ beer }) {
   return (
     <div className={classes.card}>

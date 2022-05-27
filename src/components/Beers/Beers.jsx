@@ -6,7 +6,6 @@ import classes from "./Beers.module.css";
 
 const Beers = () => {
   const [beers, setBeers] = useState([]);
-  //   const [amount, setAmount] = useState(1);
 
   useEffect(() => {
     axios

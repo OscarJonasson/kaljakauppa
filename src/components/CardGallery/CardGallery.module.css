@@ -11,7 +11,7 @@
   box-shadow: 1px 1px 5px rgb(118, 118, 118, 0.3);
 }
 .card::before {
-  content: '';
+  content: "";
   position: absolute;
   background-color: white;
   height: 20rem;
@@ -23,7 +23,7 @@
 }
 
 .card::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #439dfe53;
   height: 8rem;
