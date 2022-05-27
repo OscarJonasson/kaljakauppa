@@ -6,9 +6,11 @@ import classes from "./Search.module.css";
 
 const Search = () => {
   const [beers, setBeers] = useState([]);
-  const { search } = useParams();
+  // const [badSearch, setBadSearch] = useState(false);
+  // const [accepted, setAccepted] = useState([]);
+  let { search } = useParams();
 
-  // console.log(search);
+  search = search.toLowerCase().split(" ");
 
   useEffect(() => {
     axios
@@ -20,13 +22,24 @@ const Search = () => {
   const special = (beers, selection) => {
     return beers
       .filter(beer => {
-        // console.log(search);
-
-        return selection
+        return beer.beer_name
           .toLowerCase()
-          .includes(...beer.beer_name.toLowerCase());
+          .split(" ")
+          .some(beer => {
+            // console.log(
+            //   "Beer",
+            //   beer,
+            //   "Selection",
+            //   selection,
+            //   "Boolean",
+            //   selection.includes(beer)
+            // );
+            // console.log("selection", selection[i]);
+            return selection.includes(beer);
+          });
       })
       .map(beer => {
+        // console.log("Card mapping", beer);
         return (
           <Link to={`/beers/${beer.id}`}>
             <CardGallery key={beer.id} beer={beer} />
@@ -36,7 +49,10 @@ const Search = () => {
   };
 
   return (
-    <section className={classes.beerGallery}>{special(beers, search)}</section>
+    <section className={classes.beerGallery}>
+      {special(beers, search)}
+      {/* {badSearch && <div>hello</div>} */}
+    </section>
   );
 };
 
