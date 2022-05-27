@@ -24,7 +24,7 @@ const Header = () => {
       <header>
         <div className={classes.headerLeft}>
           <p className={classes.menu} onClick={hamburger}>
-            <Nav customBurgerIcon={<i className="fa-solid fa-bars"></i>} />
+            <Nav />
             Menu <i className="fa-solid fa-bars"></i>
           </p>
           <div className={classes.searchContainer}>
