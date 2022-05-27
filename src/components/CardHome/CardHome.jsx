@@ -1,4 +1,4 @@
-import classes from './CardHome.module.css';
+import classes from "./CardHome.module.css";
 function CardHome({ beer }) {
   return (
     <div className={classes.card}>
@@ -9,7 +9,7 @@ function CardHome({ beer }) {
       />
       <div className={classes.card_desc}>
         <p>{beer.beer_name}</p>
-        <p>{beer.price} EUR</p>
+        <p>{beer.price} €</p>
         <button className={classes.addtoCart}>Add to Cart</button>
       </div>
       <div className={classes.info}>
