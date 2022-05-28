@@ -26,28 +26,18 @@ const Search = () => {
           .toLowerCase()
           .split(" ")
           .some(beer => {
-            // console.log(
-            //   "Beer",
-            //   beer,
-            //   "Selection",
-            //   selection,
-            //   "Boolean",
-            //   selection.includes(beer)
-            // );
-            // console.log("selection", selection[i]);
             return selection.includes(beer);
           });
       })
       .map(beer => {
-        // console.log("Card mapping", beer);
+        console.log(beer.id);
         return (
-          <Link to={`/beers/${beer.id}`}>
+          <Link key={beer.id} to={`/beers/${beer.id}`}>
             <CardGallery key={beer.id} beer={beer} />
           </Link>
         );
       });
   };
-
   return (
     <section className={classes.beerGallery}>
       {special(beers, search)}
