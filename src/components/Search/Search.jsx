@@ -22,9 +22,9 @@ const Search = () => {
   const special = (beers, selection) => {
     return beers
       .filter(beer => {
-        return beer.beer_name
+        return beer.beer_slug
           .toLowerCase()
-          .split(" ")
+          .split("-")
           .some(beer => {
             if (!goodSearch && selection.includes(beer)) {
               setGoodSearch(true);
