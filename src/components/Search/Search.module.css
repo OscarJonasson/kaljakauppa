@@ -7,3 +7,8 @@
 a {
   text-decoration: none;
 }
+
+/*  Change this when you change the picture for a single squirrel or delete  */
+.luckySquirrel {
+  height: 3rem;
+}
