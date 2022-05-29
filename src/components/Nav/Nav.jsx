@@ -1,23 +1,43 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { slide as Menu } from "react-burger-menu";
+import classes from "./Nav.module.css";
 
 const Nav = () => {
   return (
-    // <nav>
-    //   <ul>
-    //     <li>
-    <Menu>
-      <Link to="/">Home</Link>
-      <Link to="/beers">Beers</Link>
-      <Link to="/aboutUs">About Us</Link>
-      <Link to="/contact">Contact Us</Link>
-      <Link to="/joinus">Join Us</Link>
-      <Link to="/newsletter">Newsletter</Link>
-    </Menu>
-    //     </li>
-    //   </ul>
-    // </nav>
+    <nav className={classes.navNav}>
+      <ul className={classes.ulLink}>
+        <li className={classes.liLink}>
+          <Link to="/" className={classes.navLink}>
+            Home
+          </Link>
+        </li>
+        <li className={classes.liLink}>
+          <Link to="/beers" className={classes.navLink}>
+            Beers
+          </Link>
+        </li>
+        <li className={classes.liLink}>
+          <Link to="/aboutUs" className={classes.navLink}>
+            About Us
+          </Link>
+        </li>
+        <li className={classes.liLink}>
+          <Link to="/contact" className={classes.navLink}>
+            Contact Us
+          </Link>
+        </li>
+        <li className={classes.liLink}>
+          <Link to="/joinus" className={classes.navLink}>
+            Join Us
+          </Link>
+        </li>
+        <li className={classes.liLink}>
+          <Link to="/newsletter" className={classes.navLink}>
+            Newsletter
+          </Link>
+        </li>
+      </ul>
+    </nav>
   );
 };
 

@@ -1,20 +1,27 @@
-#react-burger-menu-btn {
+.navNav {
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: 99;
-  margin: 0px;
-  padding: 0px;
-  border: inset;
-  font-size: 0px;
-  background: black;
-  cursor: pointer;
+  top: 8rem;
+  left: 0;
+  z-index: 2;
+  height: 18.5rem;
+  width: 20rem;
+  background-color: #37dc94;
 }
 
-.bm-burger-button {
-  position: fixed;
-  width: 36px;
-  height: 30px;
-  left: 36px;
-  top: 36px;
+.liLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.liLink:hover {
+  background-color: #41a97c;
+}
+
+.navLink {
+  padding: 1rem 0 1rem 0;
+  margin-left: 2rem;
+  color: black;
 }

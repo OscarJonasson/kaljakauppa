@@ -24,7 +24,6 @@ const Header = () => {
       <header>
         <div className={classes.headerLeft}>
           <p className={classes.menu} onClick={hamburger}>
-            <Nav />
             Menu <i className="fa-solid fa-bars"></i>
           </p>
           <div className={classes.searchContainer}>
@@ -50,11 +49,11 @@ const Header = () => {
           <span className="material-symbols-outlined">shopping_cart</span>
         </div>
       </header>
-      {/* {menu && (
+      {menu && (
         <div className={classes.nav}>
           <Nav />
         </div>
-      )} */}
+      )}
     </>
   );
 };
