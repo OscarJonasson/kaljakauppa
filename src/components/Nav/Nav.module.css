@@ -8,6 +8,37 @@
   height: 18.5rem;
   width: 20rem;
   background-color: #37dc94;
+  animation-name: menuDown;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}
+
+/* .animateDown {
+
+} */
+
+.animateUp {
+  animation-name: menuUp;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}
+
+@keyframes menuDown {
+  from {
+    top: -12rem;
+  }
+  to {
+    top: 8rem;
+  }
+}
+
+@keyframes menuUp {
+  from {
+    top: 8rem;
+  }
+  to {
+    top: -12rem;
+  }
 }
 
 .liLink {

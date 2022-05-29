@@ -11,7 +11,6 @@ const Header = () => {
 
   const hamburger = () => {
     setMenu(!menu);
-    console.log(menu);
   };
 
   const searchHandler = (e) => {
