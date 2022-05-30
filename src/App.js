@@ -10,6 +10,7 @@ import ContactUs from "./components/ContactUs/ContactUs";
 import Fourzerofour from "./components/404/Fourzerofour";
 import Join from "./components/Join/Join";
 import Newsletter from "./components/Newsletter/Newsletter";
+import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="beers" element={<Beers />} />
           <Route path="beers/:id" element={<Beer />} />
           <Route path="search/:search" element={<Search />} />
+          <Route path="shoppingCart" element={<ShoppingCart />} />
           <Route path="aboutUs" element={<AboutUs />} />
           <Route path="contact" element={<ContactUs />} />
           <Route path="404" element={<Fourzerofour />} />

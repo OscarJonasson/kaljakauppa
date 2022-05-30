@@ -45,7 +45,9 @@ const Header = () => {
         </div>
         <div className={classes.headerRight}>
           <span className="material-symbols-outlined">person</span>
-          <span className="material-symbols-outlined">shopping_cart</span>
+          <Link to="shoppingCart">
+            <span className="material-symbols-outlined">shopping_cart</span>
+          </Link>
         </div>
       </header>
       {menu && (
