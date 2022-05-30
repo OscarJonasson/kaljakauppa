@@ -9,30 +9,33 @@ const Search = () => {
   const [beers, setBeers] = useState([]);
   const [goodSearch, setGoodSearch] = useState(false);
   let { search } = useParams();
-
+  // use this with v5
   search = search.toLowerCase().split(" ");
 
   useEffect(() => {
     axios
       .get("http://localhost:3011/beers/")
-      .then((res) => setBeers(res.data))
-      .catch((error) => console.log(error));
+      .then(res => setBeers(res.data))
+      .catch(error => console.log(error));
   }, []);
 
   const special = (beers, selection) => {
     return beers
-      .filter((beer) => {
+      .filter(beer => {
         return beer.beer_slug
           .toLowerCase()
           .split("-")
-          .some((beer) => {
-            if (!goodSearch && selection.includes(beer)) {
+          .some(beer => {
+            const searchTerms = selection.map(sele => {
+              return sele.substr(0, 3);
+            });
+            if (!goodSearch && beer.startsWith(searchTerms)) {
               setGoodSearch(true);
             }
-            return selection.includes(beer);
+            return beer.startsWith(searchTerms);
           });
       })
-      .map((beer) => {
+      .map(beer => {
         return (
           <Link key={beer.id} to={`/beers/${beer.id}`}>
             <CardGallery key={beer.id} beer={beer} />
