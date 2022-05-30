@@ -20,7 +20,7 @@
   visibility: hidden;
   flex-direction: column;
   position: absolute;
-  top: 8rem;
+  top: -12rem;
   left: 0;
   z-index: 2;
   height: 18.5rem;
