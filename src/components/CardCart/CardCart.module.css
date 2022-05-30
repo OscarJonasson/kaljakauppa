@@ -2,19 +2,23 @@
   position: relative;
   display: flex;
   flex-flow: row nowrap;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
   width: 50rem;
-  height: 30rem;
-  margin: 2rem;
+  height: 14rem;
+  margin: 1rem 3rem;
   border-radius: 5px;
   box-shadow: 1px 1px 5px rgb(118, 118, 118, 0.3);
 }
 
 .card_img {
   border-radius: 5px 5px 0 0;
-  width: 30%;
-  height: 28rem;
+  width: 13%;
+  height: 92%;
   object-fit: cover;
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
 }
 
 .card_desc {
@@ -22,5 +26,29 @@
   text-align: center;
   font-size: 0.9rem;
   padding: 1rem;
+  margin-left: 2rem;
   color: black;
+}
+
+.card_desc p {
+  margin: 1rem;
+}
+
+/* .quantity {
+  margin-left: 3rem;
+} */
+
+.quantity p,
+.total p {
+  margin-bottom: 1rem;
+}
+
+.quantity_input {
+  width: 4rem;
+  height: 2rem;
+  padding: 0.5rem;
+}
+
+.total {
+  margin-right: 3rem;
 }
