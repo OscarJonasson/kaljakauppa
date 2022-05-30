@@ -325,6 +325,29 @@
       },
       "stock": 6,
       "price": 2.81
+    },
+    {
+      "id": 13,
+      "beer_name": "INDEPENDENT NORTH",
+      "beer_label": "https://cdn.webshopapp.com/shops/297538/files/394959969/northern-monk-northern-monk-patrons-project-2205-i.jpg",
+      "beer_abv": 5,
+      "beer_description": "A long-awaited beer collab with Leeds skate legends Welcome, brewed in two versions to cater to the drinkers and the non-drinkers in their crew. This 5% Pale Ale starts with deep and sticky Munich malt plus Rye for a touch of spice; then El Dorado, Amarillo, and Zappa give bright, sweet, tangerine sherbet, and a burst of pithy, herbal citrus. ",
+      "beer_style": "Pale Ale",
+      "beer_slug": "northern-monk-independent-north-skate-pale-ale",
+      "rating_score": 3.45,
+      "brewery": {
+        "brewery_id": 8,
+        "brewery_name": "Northern Monk",
+        "brewery_label": "https://northernmonk.com/wp-content/themes/northern_monk_BBM_2018/images/logo_2.svg",
+        "country_name": "England",
+        "contact": {
+          "twitter": "https://twitter.com/NMBCo",
+          "facebook": "https://www.facebook.com/NORTHERNMONKBREWCO",
+          "url": "https://northernmonk.com/"
+        }
+      },
+      "stock": 8,
+      "price": 5.81
     }
   ]
 }
