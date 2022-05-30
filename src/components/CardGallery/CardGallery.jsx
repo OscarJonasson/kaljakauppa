@@ -1,6 +1,6 @@
 import classes from "./CardGallery.module.css";
 
-function CardGallery({ beer }) {
+const CardGallery = ({ beer }) => {
   return (
     <div className={classes.card}>
       <img
@@ -23,6 +23,6 @@ function CardGallery({ beer }) {
       </div>
     </div>
   );
-}
+};
 
 export default CardGallery;
