@@ -1,0 +1,42 @@
+.shopping_cart {
+  position: relative;
+}
+
+.shopping_cart h2 {
+  text-align: center;
+  margin: 2rem;
+}
+
+.checkout {
+  position: fixed;
+  top: 14rem;
+  right: 5rem;
+  border: solid 1px rgb(118, 118, 118, 0.3);
+  box-shadow: 1px 1px 5px rgb(118, 118, 118, 0.3);
+  border-radius: 5px;
+  padding: 2rem;
+  width: 32%;
+  height: 20rem;
+}
+
+.checkout p {
+  margin: 2rem;
+}
+
+.subtotal {
+  font-size: 1.2rem;
+}
+
+.tax_text {
+  font-size: 0.8rem;
+}
+
+.checkout_button {
+  padding: 1rem;
+  width: 20rem;
+  margin: 2rem;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  border-style: none;
+  background-color: #fd9a28;
+}
