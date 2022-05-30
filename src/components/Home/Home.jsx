@@ -10,7 +10,8 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3011/beers")
+      // .get("http://localhost:3011/beers")
+      .get("https://kaljakauppa-json.herokuapp.com/beers")
       .then((res) => setBeers(res.data))
       .catch((err) => console.log(err));
   }, []);
