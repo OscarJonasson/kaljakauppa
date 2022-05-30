@@ -3,7 +3,7 @@ import classes from "./Header.module.css";
 import Nav from "../Nav/Nav";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/images/logobeer4.png";
+import logo from "../../assets/images/logostroke2.webp";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
@@ -15,7 +15,6 @@ const Header = () => {
 
   const searchHandler = (e) => {
     setSearch(e.target.value);
-    console.log(search);
   };
 
   return (

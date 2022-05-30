@@ -1,0 +1,11 @@
+.cartSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.cartArea {
+  height: auto;
+  width: 30rem;
+  border-style: groove;
+  box-shadow: 0 0 5px black;
+}

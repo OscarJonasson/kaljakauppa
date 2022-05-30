@@ -1,5 +1,5 @@
 import React from "react";
-import oops from "../../../src/assets/images/oops1.png";
+import oops from "../../../src/assets/images/oops1.webp";
 import classes from "./Fourzerofour.module.css";
 
 const Fourzerofour = () => {
