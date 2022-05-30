@@ -6,11 +6,22 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/images/logostroke2.webp";
 
 const Header = () => {
-  const [menu, setMenu] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const [search, setSearch] = useState("");
 
   const hamburger = () => {
-    setMenu(!menu);
+    const nav = document.querySelector("nav");
+    if (menuOpen) {
+      nav.style.opacity = 0;
+      nav.style.visibility = "hidden";
+      setTimeout(() => {
+        setMenuOpen(false);
+      }, 200);
+    } else {
+      setMenuOpen(true);
+      nav.style.visibility = "visible";
+      nav.style.opacity = 1;
+    }
   };
 
   const searchHandler = e => {
@@ -49,11 +60,9 @@ const Header = () => {
           </Link>
         </div>
       </header>
-      {menu && (
-        <div className={classes.nav}>
-          <Nav />
-        </div>
-      )}
+      <div className={classes.nav}>
+        <Nav isMenuOpen={menuOpen} />
+      </div>
     </>
   );
 };

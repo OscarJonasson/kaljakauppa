@@ -1,4 +1,6 @@
-.navNav {
+/* USE THIS FOR ANIMATION  */
+
+/* .navNav {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -11,6 +13,23 @@
   animation-name: menuDown;
   animation-duration: 500ms;
   animation-timing-function: ease;
+} */
+
+.navNav {
+  display: flex;
+  visibility: hidden;
+  flex-direction: column;
+  position: absolute;
+  top: 8rem;
+  left: 0;
+  z-index: 2;
+  height: 18.5rem;
+  width: 20rem;
+  background-color: #37dc94;
+  transition: 500ms;
+  /* animation-name: menuDown;
+  animation-duration: 500ms;
+  animation-timing-function: ease; */
 }
 
 /* .animateDown {
