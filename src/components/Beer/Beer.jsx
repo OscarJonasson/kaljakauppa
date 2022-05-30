@@ -10,7 +10,8 @@ const Beer = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3011/beers/${id}`)
+      // .get(`http://localhost:3011/beers/${id}`)
+      .get(`https://kaljakauppa-json.herokuapp.com/beers/${id}`)
       .then(res => setB(res.data))
       .catch(err => console.log(err));
   }, []);

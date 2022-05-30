@@ -9,14 +9,15 @@ const Beers = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3011/beers/")
-      .then((res) => setBeers(res.data))
-      .catch((error) => console.log(error));
+      // .get("http://localhost:3011/beers/")
+      .get("https://kaljakauppa-json.herokuapp.com/beers")
+      .then(res => setBeers(res.data))
+      .catch(error => console.log(error));
   }, []);
 
   return (
     <section className={classes.beerGallery}>
-      {beers.map((beer) => (
+      {beers.map(beer => (
         <Link to={`${beer.id}`}>
           <CardGallery key={beer.id} beer={beer} />
         </Link>
