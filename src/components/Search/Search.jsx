@@ -26,10 +26,13 @@ const Search = () => {
           .toLowerCase()
           .split("-")
           .some(beer => {
-            if (!goodSearch && selection.includes(beer)) {
+            const searchTerms = selection.map(sele => {
+              return sele.substr(0, 3);
+            });
+            if (!goodSearch && beer.startsWith(searchTerms)) {
               setGoodSearch(true);
             }
-            return selection.includes(beer);
+            return beer.startsWith(searchTerms);
           });
       })
       .map(beer => {
