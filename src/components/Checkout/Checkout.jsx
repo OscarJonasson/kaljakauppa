@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Checkout = () => {
   const [countries, setCountry] = useState([]);
-  const [total, setTotal] = useState(32.4);
+  const [total, setTotal] = useState(34);
   const tax = 1.24;
 
   const calc = () => {
