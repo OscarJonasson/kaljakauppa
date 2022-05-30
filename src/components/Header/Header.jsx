@@ -14,6 +14,7 @@ const Header = () => {
     if (menuOpen) {
       nav.style.opacity = 0;
       nav.style.visibility = "hidden";
+      nav.style.top = "-12rem";
       setTimeout(() => {
         setMenuOpen(false);
       }, 200);
@@ -21,6 +22,7 @@ const Header = () => {
       setMenuOpen(true);
       nav.style.visibility = "visible";
       nav.style.opacity = 1;
+      nav.style.opacity = nav.style.top = "8rem";
     }
   };
 
