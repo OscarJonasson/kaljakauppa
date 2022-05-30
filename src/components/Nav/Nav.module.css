@@ -9,7 +9,7 @@
   width: 20rem;
   background-color: #37dc94;
   animation-name: menuDown;
-  animation-duration: 2s;
+  animation-duration: 500ms;
   animation-timing-function: ease;
 }
 

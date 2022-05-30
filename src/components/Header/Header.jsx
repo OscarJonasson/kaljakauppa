@@ -13,7 +13,7 @@ const Header = () => {
     setMenu(!menu);
   };
 
-  const searchHandler = (e) => {
+  const searchHandler = e => {
     setSearch(e.target.value);
   };
 
