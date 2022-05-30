@@ -11,6 +11,7 @@ import Fourzerofour from "./components/404/Fourzerofour";
 import Join from "./components/Join/Join";
 import Newsletter from "./components/Newsletter/Newsletter";
 import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
+import Checkout from "./components/Checkout/Checkout";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
           <Route path="404" element={<Fourzerofour />} />
           <Route path="joinus" element={<Join />} />
           <Route path="newsletter" element={<Newsletter />} />
+          <Route path="checkout" element={<Checkout />} />
         </Route>
       </Routes>
     </BrowserRouter>

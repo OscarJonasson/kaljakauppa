@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 import CardGallery from "../CardGallery/CardGallery";
 import classes from "./Search.module.css";
-import squirrel from "../../assets/images/logobeer2.png";
+import squirrel from "../../assets/images/logostroke2.webp";
 
 const Search = () => {
   const [beers, setBeers] = useState([]);
@@ -15,24 +15,24 @@ const Search = () => {
   useEffect(() => {
     axios
       .get("http://localhost:3011/beers/")
-      .then(res => setBeers(res.data))
-      .catch(error => console.log(error));
+      .then((res) => setBeers(res.data))
+      .catch((error) => console.log(error));
   }, []);
 
   const special = (beers, selection) => {
     return beers
-      .filter(beer => {
+      .filter((beer) => {
         return beer.beer_slug
           .toLowerCase()
           .split("-")
-          .some(beer => {
+          .some((beer) => {
             if (!goodSearch && selection.includes(beer)) {
               setGoodSearch(true);
             }
             return selection.includes(beer);
           });
       })
-      .map(beer => {
+      .map((beer) => {
         return (
           <Link key={beer.id} to={`/beers/${beer.id}`}>
             <CardGallery key={beer.id} beer={beer} />
