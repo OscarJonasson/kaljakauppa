@@ -50,6 +50,10 @@ header {
   justify-content: flex-end;
   width: 40%;
 }
+.headerRight span {
+  margin: 0 1rem;
+  padding: 0.6rem;
+}
 
 .headerRight a:visited {
   color: black;
