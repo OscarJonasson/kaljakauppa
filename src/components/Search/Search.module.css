@@ -19,7 +19,7 @@ a {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 100%;
 }
 
 .badSearch a {
