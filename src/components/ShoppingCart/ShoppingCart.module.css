@@ -40,3 +40,7 @@
   border-style: none;
   background-color: #fd9a28;
 }
+
+.checkout a {
+  color: white;
+}
