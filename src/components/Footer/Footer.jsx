@@ -62,6 +62,7 @@ const Footer = () => {
               <i className="fa-brands fa-cc-mastercard fa-2x"></i>{" "}
               <i className="fa-brands fa-cc-visa fa-2x"></i>{" "}
               <i className="fa-brands fa-cc-amex fa-2x"></i>
+              <i class="fa-brands fa-cc-paypal fa-2x"></i>
             </li>
           </ul>
         </section>

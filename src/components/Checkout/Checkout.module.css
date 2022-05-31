@@ -149,3 +149,26 @@
 .cartArea ul li:hover {
   background-color: rgb(71, 149, 123);
 }
+
+.surpriseDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.surprises {
+  display: flex;
+  flex-direction: column;
+}
+
+.surpriseButton {
+  border: none;
+  background-color: transparent;
+  margin: 2rem;
+  transition: 0.5s;
+}
+
+.surpriseButton:hover {
+  transform: scale(130%);
+  transition: 0.5s;
+}

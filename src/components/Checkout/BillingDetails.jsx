@@ -21,14 +21,12 @@ const BillingDetails = ({ next, prev, changer, countries }) => {
           name="firstname"
           className={classes.doubleInput1}
           placeholder="First Name"
-          required
         ></input>
         <input
           type="text"
           name="lastname"
           className={classes.doubleInput2}
           placeholder="Last Name"
-          required
         ></input>
       </div>
       <input
@@ -36,7 +34,6 @@ const BillingDetails = ({ next, prev, changer, countries }) => {
         name="address"
         className={classes.singleInput}
         placeholder="Address"
-        required
       ></input>
       <input
         type="text"
@@ -49,15 +46,9 @@ const BillingDetails = ({ next, prev, changer, countries }) => {
         name="city"
         className={classes.singleInput}
         placeholder="City"
-        required
       ></input>
       <div className={classes.countryZIPdiv}>
-        <select
-          type="text"
-          name="country"
-          className={classes.selectInput}
-          required
-        >
+        <select type="text" name="country" className={classes.selectInput}>
           <option selected disabled hidden>
             Country
           </option>
@@ -70,7 +61,6 @@ const BillingDetails = ({ next, prev, changer, countries }) => {
           name="postcode"
           className={classes.doubleInput2}
           placeholder="Postal Code"
-          required
         ></input>
       </div>
       <input

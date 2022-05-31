@@ -11,74 +11,30 @@ const Payment = ({ prev, next, changer }) => {
           Already have an account? <Link to="/">Sign in!</Link>
         </p>
       </div>
-      <p className={classes.checkboxArea}>
-        <input type="checkbox" />
-        <label>Use shipping address</label>
-      </p>
-      <div className={classes.nameArea}>
-        <input
-          type="text"
-          name="firstname"
-          className={classes.doubleInput1}
-          placeholder="First Name"
-          required
-        ></input>
-        <input
-          type="text"
-          name="lastname"
-          className={classes.doubleInput2}
-          placeholder="Last Name"
-          required
-        ></input>
+      <div>
+        Choose your method of payment:
+        <div className={classes.surpriseDiv}>
+          <p className={classes.surprises}>
+            <button className={classes.surpriseButton} onClick={next}>
+              <i class="fa-brands fa-cc-paypal fa-5x"></i>
+            </button>
+
+            <button className={classes.surpriseButton} onClick={next}>
+              <i class="fa-brands fa-cc-amex fa-5x"></i>
+            </button>
+          </p>
+          <p className={classes.surprises}>
+            <button className={classes.surpriseButton} onClick={next}>
+              <i class="fa-brands fa-cc-visa fa-5x"></i>
+            </button>
+
+            <button className={classes.surpriseButton} onClick={next}>
+              <i class="fa-brands fa-cc-mastercard fa-5x"></i>
+            </button>
+          </p>
+        </div>
       </div>
-      <input
-        type="text"
-        name="address"
-        className={classes.singleInput}
-        placeholder="Address"
-        required
-      ></input>
-      <input
-        type="text"
-        name="extraaddress"
-        className={classes.singleInput}
-        placeholder="Apartment, suite, etc."
-      ></input>
-      <input
-        type="text"
-        name="city"
-        className={classes.singleInput}
-        placeholder="City"
-        required
-      ></input>
-      <div className={classes.countryZIPdiv}>
-        <select
-          type="text"
-          name="country"
-          className={classes.selectInput}
-          required
-        >
-          <option selected disabled hidden>
-            Country
-          </option>
-          {countries.map((country) => (
-            <option key={country.name}>{country.name}</option>
-          ))}
-        </select>
-        <input
-          type="text"
-          name="postcode"
-          className={classes.doubleInput2}
-          placeholder="Postal Code"
-          required
-        ></input>
-      </div>
-      <input
-        type="tel"
-        name="phone"
-        className={classes.singleInput}
-        placeholder="Phone"
-      ></input>
+
       <button className={classes.prevButton} onClick={prev}>
         <i class="fa-solid fa-angles-left"></i> Go Back
       </button>
