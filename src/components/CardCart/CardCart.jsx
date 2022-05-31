@@ -27,6 +27,9 @@ function CardCart({ beer }) {
           <p>{beer.price} €</p>
         </div>
       </div>
+      <button className={classes.delete_button}>
+        Delete <i class="fa-regular fa-trash-can"></i>
+      </button>
     </div>
   );
 }
