@@ -2,13 +2,15 @@ import classes from "./Checkout.module.css";
 import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import ShippingDetails from "./ShippingDetails";
+import BillingDetails from "./BillingDetails";
+import Payment from "./Payment";
 
 const Checkout = () => {
   const [countries, setCountry] = useState([]);
   const [total, setTotal] = useState(34);
+  const [step, setStep] = useState(1);
   const [inputData, setInputData] = useState({
-    step: 1,
     firstname: "",
     lastname: "",
     address: "",
@@ -26,6 +28,22 @@ const Checkout = () => {
     return sum.toFixed(2);
   };
 
+  const prevStep = () => {
+    setStep(step - 1);
+  };
+
+  const nextStep = () => {
+    console.log("hallooo");
+    setStep(step + 1);
+  };
+
+  const changeHandler = (e) => {
+    setInputData({
+      ...inputData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
   useEffect(() => {
     axios.get("https://restcountries.com/v2/all").then((res) => {
       console.log(res);
@@ -34,89 +52,44 @@ const Checkout = () => {
     console.log(countries);
   }, []);
 
+  const useSwitch = () => {
+    console.log(step);
+    switch (step) {
+      case 1:
+        return (
+          <ShippingDetails
+            next={nextStep}
+            countries={countries}
+            changer={changeHandler}
+            inputData={inputData}
+          />
+        );
+      case 2:
+        return (
+          <BillingDetails
+            next={nextStep}
+            prev={prevStep}
+            countries={countries}
+            changer={changeHandler}
+            inputData={inputData}
+          />
+        );
+      case 3:
+        return (
+          <Payment prev={prevStep} next={nextStep} changer={changeHandler} />
+        );
+      case 4:
+        return <TheEnd />;
+      default:
+        return null;
+    }
+  };
+  console.log(step);
   return (
     <section className={classes.checkoutSection}>
       <h2>Checkout</h2>
       <div className={classes.checkoutArea}>
-        <div className={classes.billingArea}>
-          <form className={classes.infoForm}>
-            <div className={classes.titleDiv}>
-              <h3>Billing Address</h3>
-              <p className={classes.alreadyAccount}>
-                Already have an account? <Link to="/">Sign in!</Link>
-              </p>
-            </div>
-            <div className={classes.nameArea}>
-              <input
-                type="text"
-                name="firstname"
-                className={classes.doubleInput1}
-                placeholder="First Name"
-                required
-              ></input>
-              <input
-                type="text"
-                name="lastname"
-                className={classes.doubleInput2}
-                placeholder="Last Name"
-                required
-              ></input>
-            </div>
-            <input
-              type="text"
-              name="address"
-              className={classes.singleInput}
-              placeholder="Address"
-              required
-            ></input>
-            <input
-              type="text"
-              name="extraaddress"
-              className={classes.singleInput}
-              placeholder="Apartment, suite, etc."
-            ></input>
-            <input
-              type="text"
-              name="city"
-              className={classes.singleInput}
-              placeholder="City"
-              required
-            ></input>
-            <div className={classes.countryZIPdiv}>
-              <select
-                type="text"
-                name="country"
-                className={classes.selectInput}
-                required
-              >
-                <option selected disabled hidden>
-                  Country
-                </option>
-                {countries.map((country) => (
-                  <option key={country.name}>{country.name}</option>
-                ))}
-              </select>
-              <input
-                type="text"
-                name="postcode"
-                className={classes.doubleInput2}
-                placeholder="Postal Code"
-                required
-              ></input>
-            </div>
-            <input
-              type="tel"
-              name="phone"
-              className={classes.singleInput}
-              placeholder="Phone"
-            ></input>
-
-            <button className={classes.checkoutButton} onSubmit={""}>
-              Continue to Shipping and Payment{" "}
-              <i class="fa-solid fa-angles-right"></i>
-            </button>
-          </form>
-        </div>
+        <div className={classes.formArea}>{useSwitch()}</div>
         <div className={classes.cartDiv}>
           <h3>Your cart</h3>
           <div className={classes.cartArea}>

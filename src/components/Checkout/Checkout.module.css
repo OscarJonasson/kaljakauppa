@@ -16,13 +16,18 @@
   width: 37vw;
 }
 
-.billingArea {
+.formArea {
   display: flex;
   margin-right: 1rem;
   background-color: aquamarine;
   padding: 1.5rem;
   width: 40vw;
   /* overflow: scroll; */
+}
+
+.checkboxArea {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
 }
 
 .titleDiv {
@@ -82,10 +87,15 @@
   width: 37vw;
 }
 
-.checkoutButton {
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nextButton {
   margin-top: 0.5rem;
   height: 3rem;
-  width: 19rem;
+  width: 15rem;
   background-color: #f9e5a2;
   border-radius: 5px;
   border-style: none;
@@ -94,7 +104,24 @@
   transition: 0.5s;
 }
 
-.checkoutButton:hover {
+.nextButton:hover {
+  background-color: #fedd74;
+  transition: 0.5s;
+}
+
+.prevButton {
+  margin-top: 0.5rem;
+  height: 3rem;
+  width: 8rem;
+  background-color: #f9e5a2;
+  border-radius: 5px;
+  border-style: none;
+  padding: 0.5rem;
+  box-shadow: 1px 1px 5px rgb(118, 118, 118, 0.3);
+  transition: 0.5s;
+}
+
+.prevButton:hover {
   background-color: #fedd74;
   transition: 0.5s;
 }
