@@ -7,6 +7,18 @@ import { Link } from "react-router-dom";
 const Checkout = () => {
   const [countries, setCountry] = useState([]);
   const [total, setTotal] = useState(34);
+  const [inputData, setInputData] = useState({
+    step: 1,
+    firstname: "",
+    lastname: "",
+    address: "",
+    extraaddress: "",
+    city: "",
+    country: "",
+    postcode: "",
+    phone: "",
+  });
+
   const tax = 1.24;
 
   const calc = () => {
@@ -37,12 +49,14 @@ const Checkout = () => {
             <div className={classes.nameArea}>
               <input
                 type="text"
+                name="firstname"
                 className={classes.doubleInput1}
                 placeholder="First Name"
                 required
               ></input>
               <input
                 type="text"
+                name="lastname"
                 className={classes.doubleInput2}
                 placeholder="Last Name"
                 required
@@ -50,23 +64,31 @@ const Checkout = () => {
             </div>
             <input
               type="text"
+              name="address"
               className={classes.singleInput}
               placeholder="Address"
               required
             ></input>
             <input
               type="text"
+              name="extraaddress"
               className={classes.singleInput}
               placeholder="Apartment, suite, etc."
             ></input>
             <input
               type="text"
+              name="city"
               className={classes.singleInput}
               placeholder="City"
               required
             ></input>
             <div className={classes.countryZIPdiv}>
-              <select type="text" className={classes.selectInput} required>
+              <select
+                type="text"
+                name="country"
+                className={classes.selectInput}
+                required
+              >
                 <option selected disabled hidden>
                   Country
                 </option>
@@ -76,6 +98,7 @@ const Checkout = () => {
               </select>
               <input
                 type="text"
+                name="postcode"
                 className={classes.doubleInput2}
                 placeholder="Postal Code"
                 required
@@ -83,6 +106,7 @@ const Checkout = () => {
             </div>
             <input
               type="tel"
+              name="phone"
               className={classes.singleInput}
               placeholder="Phone"
             ></input>
