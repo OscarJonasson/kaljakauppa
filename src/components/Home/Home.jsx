@@ -19,17 +19,17 @@ const Home = () => {
     axios
       // .get("http://localhost:3011/beers")
       .get("https://kaljakauppa-json.herokuapp.com/beers")
-      .then(res => setBeers(res.data))
-      .catch(err => console.log(err));
+      .then((res) => setBeers(res.data))
+      .catch((err) => console.log(err));
   }, []);
 
   const selection = [6, 2, 8];
   const special = (beers, selection) => {
     return beers
-      .filter(beer => {
+      .filter((beer) => {
         return selection.includes(beer.id);
       })
-      .map(beer => {
+      .map((beer) => {
         return (
           <Link to={`beers/${beer.id}`}>
             <CardHome key={beer.id} beer={beer} />

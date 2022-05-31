@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Layout from "./pages/Layout";
-import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Beer from "./components/Beer/Beer";
 import Beers from "./components/Beers/Beers";
@@ -12,28 +12,62 @@ import Join from "./components/Join/Join";
 import Newsletter from "./components/Newsletter/Newsletter";
 import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 import Checkout from "./components/Checkout/Checkout";
-import axios from "axios";
 
 const App = () => {
-  const [cartChanges, setCartChanges] = useState();
-  const { id } = useParams();
+  const [cartChanges, setCartChanges] = useState([
+    {
+      id: "",
+      amount: "",
+    },
+  ]);
 
-  useEffect(() => {
-    axios
-      .get(`http://localhost:3011/beers/${id}`)
-      .then((res) => setCartChanges(res.data))
-      .catch((error) => console.log(error));
-  }, []);
+  // const ingChangeHandler = (e, index) => {
+  //   const { name, value } = e.target;
+  //   const list = [...ingredients];
+  //   list[index][name] = value;
+  //   setIngredients(list);
+  //   setRecipe({ ...recipe, ingredients: ingredients });
+  // };
+
+  const changeHandler = (e, index) => {
+    const { name, value } = e.target;
+    const list = [...cartChanges];
+    list[index][name] = value;
+    setCartChanges(list);
+    // setCartChanges({
+    //   ...cartChanges,
+    //   [e.target.name]: e.target.value,
+    // });
+    console.log(cartChanges);
+  };
 
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="beers" element={<Beers />} />
-          <Route path="beers/:id" element={<Beer />} />
+          <Route
+            path="beers"
+            element={
+              <Beers cartChanges={cartChanges} changeHandler={changeHandler} />
+            }
+          />
+          <Route
+            path="beers/:id"
+            element={
+              <Beer cartChanges={cartChanges} changeHandler={changeHandler} />
+            }
+          />
           <Route path="search/:search" element={<Search />} />
-          <Route path="shoppingCart" element={<ShoppingCart />} />
+          <Route
+            path="shoppingCart"
+            element={
+              <ShoppingCart
+                cartChanges={cartChanges}
+                changeHandler={changeHandler}
+              />
+            }
+          />
           <Route path="aboutUs" element={<AboutUs />} />
           <Route path="contact" element={<ContactUs />} />
           <Route path="404" element={<Fourzerofour />} />
