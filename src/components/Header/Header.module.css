@@ -51,6 +51,10 @@ header {
   width: 40%;
 }
 
+.headerRight a:visited {
+  color: black;
+}
+
 .logo {
   padding-top: 1rem;
   margin-left: 4rem;
