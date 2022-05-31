@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "./pages/Layout";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Beer from "./components/Beer/Beer";
 import Beers from "./components/Beers/Beers";
@@ -12,8 +12,19 @@ import Join from "./components/Join/Join";
 import Newsletter from "./components/Newsletter/Newsletter";
 import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 import Checkout from "./components/Checkout/Checkout";
+import axios from "axios";
 
 const App = () => {
+  const [cartChanges, setCartChanges] = useState();
+  const { id } = useParams();
+
+  useEffect(() => {
+    axios
+      .get(`http://localhost:3011/beers/${id}`)
+      .then((res) => setCartChanges(res.data))
+      .catch((error) => console.log(error));
+  }, []);
+
   return (
     <BrowserRouter>
       <Routes>

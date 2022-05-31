@@ -3,8 +3,7 @@
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  justify-content: space-between;
-  width: 50rem;
+  width: 45rem;
   height: 14rem;
   margin: 1rem 3rem;
   border-radius: 5px;
@@ -34,13 +33,17 @@
   margin: 1rem;
 }
 
-/* .quantity {
-  margin-left: 3rem;
-} */
+.quantity_and_total {
+  display: flex;
+  flex-flow: row nowrap;
+  position: absolute;
+  right: 10px;
+}
 
 .quantity p,
 .total p {
   margin-bottom: 1rem;
+  margin-right: 2rem;
 }
 
 .quantity_input {
