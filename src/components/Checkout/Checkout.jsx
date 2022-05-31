@@ -5,6 +5,7 @@ import axios from "axios";
 import ShippingDetails from "./ShippingDetails";
 import BillingDetails from "./BillingDetails";
 import Payment from "./Payment";
+import TheEnd from "./TheEnd";
 
 const Checkout = () => {
   const [countries, setCountry] = useState([]);
@@ -32,9 +33,18 @@ const Checkout = () => {
     setStep(step - 1);
   };
 
+  const back = (e) => {
+    e.preventDefault();
+    prevStep();
+  };
+
   const nextStep = () => {
-    console.log("hallooo");
     setStep(step + 1);
+  };
+
+  const next = (e) => {
+    e.preventDefault();
+    nextStep();
   };
 
   const changeHandler = (e) => {
@@ -58,7 +68,7 @@ const Checkout = () => {
       case 1:
         return (
           <ShippingDetails
-            next={nextStep}
+            next={next}
             countries={countries}
             changer={changeHandler}
             inputData={inputData}
@@ -67,17 +77,15 @@ const Checkout = () => {
       case 2:
         return (
           <BillingDetails
-            next={nextStep}
-            prev={prevStep}
+            next={next}
+            prev={back}
             countries={countries}
             changer={changeHandler}
             inputData={inputData}
           />
         );
       case 3:
-        return (
-          <Payment prev={prevStep} next={nextStep} changer={changeHandler} />
-        );
+        return <Payment prev={back} next={next} changer={changeHandler} />;
       case 4:
         return <TheEnd />;
       default:
