@@ -15,20 +15,20 @@ const Payment = ({ prev, next, changer }) => {
         Choose your method of payment:
         <div className={classes.surpriseDiv}>
           <p className={classes.surprises}>
-            <button className={classes.surpriseButton}>
+            <button className={classes.surpriseButton} onClick={next}>
               <i class="fa-brands fa-cc-paypal fa-5x"></i>
             </button>
 
-            <button className={classes.surpriseButton}>
+            <button className={classes.surpriseButton} onClick={next}>
               <i class="fa-brands fa-cc-amex fa-5x"></i>
             </button>
           </p>
           <p className={classes.surprises}>
-            <button className={classes.surpriseButton}>
+            <button className={classes.surpriseButton} onClick={next}>
               <i class="fa-brands fa-cc-visa fa-5x"></i>
             </button>
 
-            <button className={classes.surpriseButton}>
+            <button className={classes.surpriseButton} onClick={next}>
               <i class="fa-brands fa-cc-mastercard fa-5x"></i>
             </button>
           </p>
