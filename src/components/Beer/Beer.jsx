@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import classes from "./Beer.module.css";
 import axios from "axios";
 
-const Beer = () => {
+const Beer = ({ cartChanges, changeHandler }) => {
   const [b, setB] = useState([]);
   const [amount, setAmount] = useState(1);
   const { id } = useParams();
@@ -12,8 +12,8 @@ const Beer = () => {
     axios
       // .get(`http://localhost:3011/beers/${id}`)
       .get(`https://kaljakauppa-json.herokuapp.com/beers/${id}`)
-      .then(res => setB(res.data))
-      .catch(err => console.log(err));
+      .then((res) => setB(res.data))
+      .catch((err) => console.log(err));
   }, []);
 
   const subOne = () => {
@@ -75,7 +75,14 @@ const Beer = () => {
             <button className={classes.controls_math} onClick={addOne}>
               ➕
             </button>
-            <button className={classes.controls_btn}>Add to cart</button>
+            <button
+              name={b.id}
+              value={amount}
+              onClick={changeHandler}
+              className={classes.controls_btn}
+            >
+              Add to cart
+            </button>
           </div>
         </div>
       </div>

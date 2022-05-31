@@ -5,8 +5,9 @@ import { Link } from "react-router-dom";
 import CardCart from "../CardCart/CardCart";
 import classes from "./ShoppingCart.module.css";
 
-const ShoppingCart = () => {
+const ShoppingCart = ({ cartChanges }) => {
   const [beers, setBeers] = useState([]);
+  console.log("this is from shopping cart", cartChanges);
 
   useEffect(() => {
     axios
