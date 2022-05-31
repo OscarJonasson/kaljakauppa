@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 import CardGallery from "../CardGallery/CardGallery";
 import classes from "./Search.module.css";
-import squirrel from "../../assets/images/logostroke2.webp";
+import squirrel from "../../assets/images/randomsquirrel1.webp";
 
 const Search = () => {
   const [beers, setBeers] = useState([]);
@@ -52,11 +52,10 @@ const Search = () => {
     <section className={classes.beerGallery}>
       {special(beers, search)}
       {!goodSearch && (
-        <section>
+        <section className={classes.badSearch}>
           <h4>
-            Unfortunately there were no matches for {search.join(" ")}... Feel
-            free to give us a suggestion! ... Or if you are feeling brave, ask
-            the squirrel for a suggestion 🍺
+            Unfortunately there were no matches for "{search.join(" ")}"... Feel
+            free to give us a <Link to={"/contact"}>suggestion!</Link>
           </h4>
           <Link to={`/beers/${getRandom()}`}>
             <img
@@ -65,7 +64,6 @@ const Search = () => {
               alt="squirrel with beer"
             />
           </Link>
-          <Link to={"/contact"}>Contact Us</Link>
         </section>
       )}
     </section>
