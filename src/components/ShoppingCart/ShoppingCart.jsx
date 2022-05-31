@@ -28,7 +28,9 @@ const ShoppingCart = () => {
         <p className={classes.tax_text}>
           Tax included and shipping calculated at checkout
         </p>
-        <button className={classes.checkout_button}>Checkout</button>
+        <Link to="/checkout" className={classes.checkout_button}>
+          Checkout
+        </Link>
       </div>
     </section>
   );
