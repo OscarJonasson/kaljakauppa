@@ -64,6 +64,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1rem;
 }
 
 .liLink:hover {
@@ -71,7 +72,5 @@
 }
 
 .navLink {
-  padding: 1rem 0 1rem 0;
-  margin-left: 2rem;
   color: black;
 }
