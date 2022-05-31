@@ -1,5 +1,6 @@
 import classes from "./VerifyAge.module.css";
-const VerifyAge = () => {
+import { Link } from "react-router-dom";
+const VerifyAge = props => {
   return (
     <div className={classes.container}>
       <div className={classes.verify_box}>
@@ -8,12 +9,18 @@ const VerifyAge = () => {
           Before you can enter, please verify that you are over 18 years old.
         </p>
         <div className={classes.verify_buttons}>
-          <button className={`${classes.verify_btn} ${classes.green}`}>
+          <button
+            className={`${classes.verify_btn} ${classes.green}`}
+            onClick={props.check}
+          >
             Yes, let's boogie!
           </button>
-          <button className={`${classes.verify_btn} ${classes.red}`}>
+          <Link
+            to="/search/nonalcoholic"
+            className={`${classes.verify_btn} ${classes.red}`}
+          >
             Nope, not yet!
-          </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -37,6 +37,9 @@
 }
 
 .verify_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 3.5rem;
   width: 12rem;
   margin: 0 1rem;
@@ -45,6 +48,11 @@
   border-radius: 5px;
   font-size: 1rem;
   font-weight: 600;
+}
+
+.verify_box a,
+.verify_box a:visited {
+  color: black;
 }
 .verify_btn:hover {
   filter: brightness(0.8);
