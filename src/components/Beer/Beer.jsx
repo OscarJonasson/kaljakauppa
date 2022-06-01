@@ -12,8 +12,8 @@ const Beer = ({ cartChanges, changeHandler }) => {
     axios
       // .get(`http://localhost:3011/beers/${id}`)
       .get(`https://kaljakauppa-json.herokuapp.com/beers/${id}`)
-      .then((res) => setB(res.data))
-      .catch((err) => console.log(err));
+      .then(res => setB(res.data))
+      .catch(err => console.log(err));
   }, []);
 
   const subOne = () => {
@@ -76,9 +76,7 @@ const Beer = ({ cartChanges, changeHandler }) => {
               ➕
             </button>
             <button
-              name={b.id}
-              value={amount}
-              onClick={changeHandler}
+              onClick={() => changeHandler(b, amount)}
               className={classes.controls_btn}
             >
               Add to cart

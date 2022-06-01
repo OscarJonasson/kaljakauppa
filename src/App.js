@@ -14,13 +14,26 @@ import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 import Checkout from "./components/Checkout/Checkout";
 
 const App = () => {
-  const [cartChanges, setCartChanges] = useState([
-    {
-      id: "",
-      amount: "",
-    },
-  ]);
+  const [cart, setCart] = useState([{}]);
+  const [cartChanges, setCartChanges] = useState([]);
 
+  // const changeHandler = beer => {
+  //   const exists = cartChanges.find(x => x.id === beer.id);
+  //   if (exists) {
+  //     setCartChanges(
+  //       cartChanges.map(x =>
+  //         x.id === beer.id ? { ...exists, amount: exists.amount } : x
+  //       )
+  //     );
+  //   }else{
+  //     setCartChanges([])
+  //   }
+  // };
+
+  const changeHandler = (beer, amount) => {
+    setCartChanges([...cartChanges, { ...beer, amount: amount }]);
+    console.log(cartChanges);
+  };
   // const ingChangeHandler = (e, index) => {
   //   const { name, value } = e.target;
   //   const list = [...ingredients];
@@ -29,17 +42,17 @@ const App = () => {
   //   setRecipe({ ...recipe, ingredients: ingredients });
   // };
 
-  const changeHandler = (e, index) => {
-    const { name, value } = e.target;
-    const list = [...cartChanges];
-    list[index][name] = value;
-    setCartChanges(list);
-    // setCartChanges({
-    //   ...cartChanges,
-    //   [e.target.name]: e.target.value,
-    // });
-    console.log(cartChanges);
-  };
+  // const changeHandler = (e, index) => {
+  //   const { name, value } = e.target;
+  //   const list = [...cartChanges];
+  //   list[index][name] = value;
+  //   setCartChanges(list);
+  //   // setCartChanges({
+  //   //   ...cartChanges,
+  //   //   [e.target.name]: e.target.value,
+  //   // });
+  //   console.log(cartChanges);
+  // };
 
   return (
     <BrowserRouter>
