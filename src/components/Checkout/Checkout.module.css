@@ -148,7 +148,11 @@
 }
 
 .cartArea ul li:hover {
-  background-color: rgb(71, 149, 123);
+  background-color: #268aff;
+}
+
+.cartInfo {
+  color: black;
 }
 
 .surpriseDiv {

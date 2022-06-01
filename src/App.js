@@ -79,7 +79,10 @@ const App = () => {
           <Route path="404" element={<Fourzerofour />} />
           <Route path="joinus" element={<Join />} />
           <Route path="newsletter" element={<Newsletter />} />
-          <Route path="checkout" element={<Checkout />} />
+          <Route
+            path="checkout"
+            element={<Checkout shoppingcart={cartChanges} />}
+          />
           <Route path="header" element={<Header cartChanges={cartChanges} />} />
         </Route>
       </Routes>

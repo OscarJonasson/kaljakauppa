@@ -2,14 +2,15 @@ import classes from "./Checkout.module.css";
 import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 import ShippingDetails from "./ShippingDetails";
 import BillingDetails from "./BillingDetails";
 import Payment from "./Payment";
 import TheEnd from "./TheEnd";
 
-const Checkout = () => {
+const Checkout = ({ shoppingcart }) => {
   const [countries, setCountry] = useState([]);
-  const [total, setTotal] = useState(34);
+  const [total, setTotal] = useState(20);
   const [step, setStep] = useState(1);
   const [inputData, setInputData] = useState({
     firstname: "",
@@ -22,12 +23,20 @@ const Checkout = () => {
     phone: "",
   });
 
+  // const totalAmount = () => {
+  //   shoppingcart
+  //     .map((cart) => cart.amount)
+  //     .reduce((carttotal, cart) => cart + carttotal);
+  // };
+
   const tax = 1.24;
 
   const calc = () => {
     const sum = total - total / tax;
     return sum.toFixed(2);
   };
+
+  console.log(calc);
 
   const prevStep = () => {
     setStep(step - 1);
@@ -52,7 +61,6 @@ const Checkout = () => {
       ...inputData,
       [e.target.name]: e.target.value,
     });
-    console.log(inputData);
   };
 
   useEffect(() => {
@@ -60,11 +68,9 @@ const Checkout = () => {
       console.log(res);
       setCountry(res.data);
     });
-    console.log(countries);
   }, []);
 
   const useSwitch = () => {
-    console.log(step);
     switch (step) {
       case 1:
         return (
@@ -93,7 +99,6 @@ const Checkout = () => {
         return null;
     }
   };
-  console.log(step);
   return (
     <section className={classes.checkoutSection}>
       <h2>Checkout</h2>
@@ -103,10 +108,16 @@ const Checkout = () => {
           <h3>Your cart</h3>
           <div className={classes.cartArea}>
             <ul>
-              <li>item imported from cart</li>
-              <li>item imported from cart</li>
-              <li>item imported from cart</li>
-              <li>item imported from cart</li>
+              {shoppingcart.map((cart) => (
+                <Link className={classes.cartInfo} to={`/beers/${cart.id}`}>
+                  <li>
+                    {cart.beer_name}{" "}
+                    <i className="fa-solid fa-angles-right"></i> Amount:{" "}
+                    {cart.amount} <i className="fa-solid fa-angles-right"></i>{" "}
+                    {cart.price}
+                  </li>
+                </Link>
+              ))}
             </ul>
           </div>
           <p>Total: {total.toFixed(2)} €</p>
