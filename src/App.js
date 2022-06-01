@@ -49,7 +49,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/" element={<Layout cartChanges={cartChanges} />}>
           <Route index element={<Home />} />
           <Route
             path="beers"
@@ -83,7 +83,6 @@ const App = () => {
             path="checkout"
             element={<Checkout shoppingcart={cartChanges} />}
           />
-          <Route path="header" element={<Header cartChanges={cartChanges} />} />
         </Route>
       </Routes>
     </BrowserRouter>

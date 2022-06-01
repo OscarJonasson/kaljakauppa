@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import classes from "./Header.module.css";
 import Nav from "../Nav/Nav";
 import { useState } from "react";
@@ -31,7 +31,6 @@ const Header = ({ cartChanges }) => {
   };
 
   const cartCountHandler = () => {
-    console.log(cartChanges.length);
     return cartChanges.length;
   };
 
@@ -63,10 +62,16 @@ const Header = ({ cartChanges }) => {
         <div className={classes.headerRight}>
           <span className="material-symbols-outlined">person</span>
           <Link to="shoppingCart">
-            <span className={`material-symbols-outlined ${classes.cart}`}>
+            <span className={`material-symbols-outlined ${classes.cartLogo}`}>
               shopping_cart
+              {cartCountHandler() > 0 && (
+                <div className={classes.circle}>
+                  <span className={classes.cartNumber}>
+                    {cartCountHandler()}
+                  </span>
+                </div>
+              )}
             </span>
-            <div></div>
           </Link>
         </div>
       </header>
