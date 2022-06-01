@@ -43,7 +43,7 @@
 }
 
 .outOfStock {
-  color: red;
+  color: #fa5c65;
   border: dotted 2px black;
   width: 8rem;
   border-radius: 5px;
@@ -72,13 +72,23 @@
   -moz-appearance: textfield;
 }
 
-.controls_btn {
+.controls_btn,
+.controls_btnOutOfStock {
   margin: 1rem;
   width: 15rem;
   height: 2rem;
   border-radius: 5px;
   border-style: none;
   background-color: #fedd74;
+  transition: 312ms;
+}
+
+.controls_btnOutOfStock {
+  background-color: #fa5c65;
+}
+
+.controls_btn:hover {
+  filter: brightness(0.8);
 }
 .controls_math {
   height: 1.5rem;
@@ -87,6 +97,12 @@
   background-color: #fedd74;
   border-radius: 5px;
   margin: 0 0.4rem;
+  cursor: pointer;
+  transition: 321ms;
+}
+
+.controls_math:hover {
+  filter: brightness(0.8);
 }
 
 button {

@@ -12,8 +12,8 @@ const Beer = ({ cartChanges, changeHandler }) => {
     axios
       // .get(`http://localhost:3011/beers/${id}`)
       .get(`https://kaljakauppa-json.herokuapp.com/beers/${id}`)
-      .then(res => setB(res.data))
-      .catch(err => console.log(err));
+      .then((res) => setB(res.data))
+      .catch((err) => console.log(err));
   }, []);
 
   const subOne = () => {
@@ -77,9 +77,13 @@ const Beer = ({ cartChanges, changeHandler }) => {
             </button>
             <button
               onClick={() => changeHandler(b, amount)}
-              className={classes.controls_btn}
+              className={
+                b.stock > 0
+                  ? classes.controls_btn
+                  : classes.controls_btnOutOfStock
+              }
             >
-              Add to cart
+              {b.stock > 0 ? "Add To Cart" : "Out Of Stock"}
             </button>
           </div>
         </div>
