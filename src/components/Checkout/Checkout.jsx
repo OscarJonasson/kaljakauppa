@@ -69,6 +69,7 @@ const Checkout = ({ shoppingcart, beersPrice }) => {
             next={next}
             countries={countries}
             changer={changeHandler}
+            inputData={inputData}
           />
         );
       case 2:
