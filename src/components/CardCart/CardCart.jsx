@@ -1,6 +1,11 @@
 import classes from "./CardCart.module.css";
 
 function CardCart({ beer, amount, changeHandler, removeHandler }) {
+  const total = () => {
+    const multi = amount * beer.price;
+    return multi.toFixed(2);
+  };
+
   return (
     <div className={classes.card}>
       <img
@@ -10,6 +15,7 @@ function CardCart({ beer, amount, changeHandler, removeHandler }) {
       />
       <div className={classes.card_desc}>
         <h3>{beer.beer_name}</h3>
+        <p>{beer.price} €</p>
         <p>{beer.beer_style}</p>
         <p>Stock: {beer.stock}</p>
       </div>
@@ -26,7 +32,7 @@ function CardCart({ beer, amount, changeHandler, removeHandler }) {
         </div>
         <div className={classes.total}>
           <p>Total:</p>
-          <p>{beer.price} €</p>
+          <p>{total()} €</p>
         </div>
       </div>
       <button onClick={removeHandler} className={classes.delete_button}>
