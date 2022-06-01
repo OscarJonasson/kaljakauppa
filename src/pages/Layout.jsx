@@ -3,10 +3,10 @@ import Header from "../components/Header/Header";
 import Main from "../components/Main/Main";
 import Footer from "../components/Footer/Footer";
 
-const Layout = () => {
+const Layout = ({ cartChanges }) => {
   return (
     <>
-      <Header />
+      <Header cartChanges={cartChanges} />
       <Main />
       <Footer />
     </>
