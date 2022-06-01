@@ -1,6 +1,24 @@
 .container {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column nowrap;
   height: 100vh;
 }
 
+.links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+}
+
+.links a {
+  width: 33%;
+}
 .stock {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
 }
