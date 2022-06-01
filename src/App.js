@@ -12,7 +12,7 @@ import Join from "./components/Join/Join";
 import Newsletter from "./components/Newsletter/Newsletter";
 import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 import Checkout from "./components/Checkout/Checkout";
-import Header from "./components/Header/Header";
+import Stock from "./components/Stock/Stock";
 
 const App = () => {
   const [cartChanges, setCartChanges] = useState([]);
@@ -88,6 +88,7 @@ const App = () => {
             path="checkout"
             element={<Checkout beersPrice={total} shoppingcart={cartChanges} />}
           />
+          <Route path="stock" element={<Stock />} />
         </Route>
       </Routes>
     </BrowserRouter>
