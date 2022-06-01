@@ -21,7 +21,7 @@ function CardCart({ beer, amount, changeHandler, removeHandler }) {
             className={classes.quantity_input}
             name="quantity"
             value={amount}
-            onChange={changeHandler}
+            onChange={(e) => changeHandler(beer, e.target.value)}
           />
         </div>
         <div className={classes.total}>
@@ -30,7 +30,7 @@ function CardCart({ beer, amount, changeHandler, removeHandler }) {
         </div>
       </div>
       <button onClick={removeHandler} className={classes.delete_button}>
-        Delete <i class="fa-regular fa-trash-can"></i>
+        Delete <i className="fa-regular fa-trash-can"></i>
       </button>
     </div>
   );
