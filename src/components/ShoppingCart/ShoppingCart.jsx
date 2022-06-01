@@ -7,11 +7,10 @@ const ShoppingCart = ({ cartChanges, changeHandler, setCartChanges }) => {
 
   const removeHandler = (id) => {
     const updatedList = cartChanges.filter((beer) => {
-      console.log(beer.id === id);
       return beer.id !== id;
     });
     setCartChanges(updatedList);
-    console.log("this is delete", cartChanges);
+    // console.log("this is delete", cartChanges);
   };
 
   return (
