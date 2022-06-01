@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logostroke2.webp";
 
-const Header = () => {
+const Header = ({ cartChanges }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [search, setSearch] = useState("");
 
@@ -28,6 +28,11 @@ const Header = () => {
 
   const searchHandler = e => {
     setSearch(e.target.value);
+  };
+
+  const cartCountHandler = () => {
+    console.log(cartChanges.length);
+    return cartChanges.length;
   };
 
   return (
@@ -58,7 +63,10 @@ const Header = () => {
         <div className={classes.headerRight}>
           <span className="material-symbols-outlined">person</span>
           <Link to="shoppingCart">
-            <span className="material-symbols-outlined">shopping_cart</span>
+            <span className={`material-symbols-outlined ${classes.cart}`}>
+              shopping_cart
+            </span>
+            <div></div>
           </Link>
         </div>
       </header>

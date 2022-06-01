@@ -93,9 +93,10 @@
   padding: 0.5rem;
   box-shadow: 1px 1px 5px rgb(118, 118, 118, 0.3);
   transition: 1s;
+  cursor: pointer;
 }
 
 .addtoCart:hover {
   background-color: #fedd74;
-  transition: 1s;
+  transition: 500ms;
 }

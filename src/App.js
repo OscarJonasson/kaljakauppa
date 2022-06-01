@@ -12,6 +12,7 @@ import Join from "./components/Join/Join";
 import Newsletter from "./components/Newsletter/Newsletter";
 import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 import Checkout from "./components/Checkout/Checkout";
+import Header from "./components/Header/Header";
 
 const App = () => {
   const [cart, setCart] = useState([{}]);
@@ -34,25 +35,6 @@ const App = () => {
     setCartChanges([...cartChanges, { ...beer, amount: amount }]);
     console.log(cartChanges);
   };
-  // const ingChangeHandler = (e, index) => {
-  //   const { name, value } = e.target;
-  //   const list = [...ingredients];
-  //   list[index][name] = value;
-  //   setIngredients(list);
-  //   setRecipe({ ...recipe, ingredients: ingredients });
-  // };
-
-  // const changeHandler = (e, index) => {
-  //   const { name, value } = e.target;
-  //   const list = [...cartChanges];
-  //   list[index][name] = value;
-  //   setCartChanges(list);
-  //   // setCartChanges({
-  //   //   ...cartChanges,
-  //   //   [e.target.name]: e.target.value,
-  //   // });
-  //   console.log(cartChanges);
-  // };
 
   return (
     <BrowserRouter>
@@ -87,6 +69,7 @@ const App = () => {
           <Route path="joinus" element={<Join />} />
           <Route path="newsletter" element={<Newsletter />} />
           <Route path="checkout" element={<Checkout />} />
+          <Route path="header" element={<Header cartChanges={cartChanges} />} />
         </Route>
       </Routes>
     </BrowserRouter>

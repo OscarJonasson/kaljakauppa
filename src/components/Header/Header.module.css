@@ -71,3 +71,18 @@ header nav ul li a {
   color: white;
   margin: 1rem;
 }
+
+.cart {
+  position: relative;
+}
+
+.cart::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  background-color: #fa5c65;
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 50%;
+}
