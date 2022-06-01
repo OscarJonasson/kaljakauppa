@@ -29,14 +29,21 @@ const Checkout = ({ shoppingcart }) => {
   //     .reduce((carttotal, cart) => cart + carttotal);
   // };
 
+  // const carttotal = 0;
+
+  // const totalAmount = (shoppingcart) => {
+  //   carttotal = shoppingcart.price.reduce((prev, current) => prev + current, 0);
+  //   return carttotal;
+  // };
+
+  console.log(shoppingcart);
+
   const tax = 1.24;
 
   const calc = () => {
     const sum = total - total / tax;
     return sum.toFixed(2);
   };
-
-  console.log(calc);
 
   const prevStep = () => {
     setStep(step - 1);
@@ -99,6 +106,24 @@ const Checkout = ({ shoppingcart }) => {
         return null;
     }
   };
+
+  const shippingPrice = () => {
+    if (inputData.country === "") {
+      return " - ";
+    } else if (inputData.country === "Finland") {
+      return 6.99;
+    } else if (inputData.country === "Estonia") {
+      return 9.99;
+    } else if (
+      inputData.country === "Sweden" ||
+      inputData.country === "Norway"
+    ) {
+      return 12.99;
+    } else {
+      return 19.99;
+    }
+  };
+
   return (
     <section className={classes.checkoutSection}>
       <h2>Checkout</h2>
@@ -120,9 +145,9 @@ const Checkout = ({ shoppingcart }) => {
               ))}
             </ul>
           </div>
-          <p>Total: {total.toFixed(2)} €</p>
+          <p>Total: {total} €</p>
           <p>VAT: {calc()} €</p>
-          <p>Shipping: - </p>
+          <p>Shipping: {shippingPrice()} €</p>
         </div>
       </div>
     </section>

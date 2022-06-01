@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import classes from "./Checkout.module.css";
 
-const BillingDetails = ({ next, prev, changer, countries }) => {
+const BillingDetails = ({ next, prev, changer, countries, inputData }) => {
   return (
     <form className={classes.infoForm} onChange={changer}>
       <div className={classes.titleDiv}>
@@ -12,9 +12,10 @@ const BillingDetails = ({ next, prev, changer, countries }) => {
         </p>
       </div>
       <p className={classes.checkboxArea}>
-        <input type="checkbox" />
+        <input type="checkbox" name="checkit" />
         <label>Use shipping address</label>
       </p>
+
       <div className={classes.nameArea}>
         <input
           type="text"
