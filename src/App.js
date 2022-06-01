@@ -35,7 +35,7 @@ const App = () => {
           //   amount
           // );
           return singleBeer.id === beer.id
-            ? { ...duplicate, amount: amount }
+            ? { ...duplicate, amount: parseInt(amount, 10) }
             : singleBeer;
         })
       );
@@ -69,6 +69,7 @@ const App = () => {
             element={
               <ShoppingCart
                 cartChanges={cartChanges}
+                setCartChanges={setCartChanges}
                 changeHandler={changeHandler}
               />
             }
