@@ -6,7 +6,7 @@ import CardCart from "../CardCart/CardCart";
 import classes from "./ShoppingCart.module.css";
 
 const ShoppingCart = ({ cartChanges, changeHandler }) => {
-  const [beers, setBeers] = useState([]);
+  //   const [beers, setBeers] = useState([]);
   console.log("this is from shopping cart", cartChanges);
 
   //   useEffect(() => {
@@ -16,7 +16,13 @@ const ShoppingCart = ({ cartChanges, changeHandler }) => {
   //       .catch((error) => console.log(error));
   //   }, []);
 
-  const removeHandler = () => {};
+  const removeHandler = (id) => {
+    const updatedList = cartChanges.filter((beer) => beer.id !== id);
+    changeHandler({
+      cartChanges: updatedList,
+    });
+    console.log("this is delete", cartChanges);
+  };
 
   return (
     <section className={classes.shopping_cart}>
@@ -27,6 +33,7 @@ const ShoppingCart = ({ cartChanges, changeHandler }) => {
           beer={beer}
           amount={beer.amount}
           changeHandler={changeHandler}
+          removeHandler={() => removeHandler(beer.id)}
         />
       ))}
       <div className={classes.checkout}>

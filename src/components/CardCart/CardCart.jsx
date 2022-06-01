@@ -1,6 +1,6 @@
 import classes from "./CardCart.module.css";
 
-function CardCart({ beer, amount, changeHandler }) {
+function CardCart({ beer, amount, changeHandler, removeHandler }) {
   return (
     <div className={classes.card}>
       <img
@@ -29,7 +29,7 @@ function CardCart({ beer, amount, changeHandler }) {
           <p>{beer.price} €</p>
         </div>
       </div>
-      <button className={classes.delete_button}>
+      <button onClick={removeHandler} className={classes.delete_button}>
         Delete <i class="fa-regular fa-trash-can"></i>
       </button>
     </div>
