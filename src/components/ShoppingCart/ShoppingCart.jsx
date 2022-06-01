@@ -1,26 +1,16 @@
-import axios from "axios";
-import { useEffect } from "react";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import CardCart from "../CardCart/CardCart";
 import classes from "./ShoppingCart.module.css";
 
-const ShoppingCart = ({ cartChanges, changeHandler }) => {
-  //   const [beers, setBeers] = useState([]);
+const ShoppingCart = ({ cartChanges, changeHandler, setCartChanges }) => {
   console.log("this is from shopping cart", cartChanges);
 
-  //   useEffect(() => {
-  //     axios
-  //       .get("http://localhost:3011/beers/")
-  //       .then((res) => setBeers(res.data))
-  //       .catch((error) => console.log(error));
-  //   }, []);
-
   const removeHandler = (id) => {
-    const updatedList = cartChanges.filter((beer) => beer.id !== id);
-    changeHandler({
-      cartChanges: updatedList,
+    const updatedList = cartChanges.filter((beer) => {
+      console.log(beer.id === id);
+      return beer.id !== id;
     });
+    setCartChanges(updatedList);
     console.log("this is delete", cartChanges);
   };
 

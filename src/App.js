@@ -69,6 +69,7 @@ const App = () => {
             element={
               <ShoppingCart
                 cartChanges={cartChanges}
+                setCartChanges={setCartChanges}
                 changeHandler={changeHandler}
               />
             }

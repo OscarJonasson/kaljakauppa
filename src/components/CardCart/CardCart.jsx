@@ -21,7 +21,6 @@ function CardCart({ beer, amount, changeHandler, removeHandler }) {
             className={classes.quantity_input}
             name="quantity"
             value={amount}
-            // onChange={(e) => changeHandler(beer, parseInt(e.target.value, 10))}
             onChange={(e) => changeHandler(beer, e.target.value)}
           />
         </div>
