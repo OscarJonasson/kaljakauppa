@@ -88,7 +88,11 @@ const App = () => {
             path="checkout"
             element={<Checkout beersPrice={total} shoppingcart={cartChanges} />}
           />
-          <Route path="stock" element={<Stock />} />
+          <Route path="stock" element={<Stock />}>
+            <Route path="stats" />
+            <Route index path="stock" />
+            <Route path="orders" />
+          </Route>
         </Route>
       </Routes>
     </BrowserRouter>
