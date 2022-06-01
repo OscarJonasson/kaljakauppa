@@ -16,6 +16,7 @@ import Header from "./components/Header/Header";
 
 const App = () => {
   const [cartChanges, setCartChanges] = useState([]);
+  const [total, setTotal] = useState(0);
 
   const changeHandler = (beer, amount) => {
     const duplicate = cartChanges.find((cartId) => {
@@ -39,11 +40,15 @@ const App = () => {
             : singleBeer;
         })
       );
+
       // console.log("newCart:", cartChanges);
     } else if (beer.stock > 0) {
       setCartChanges([...cartChanges, { ...beer, amount: amount }]);
+
       // console.log(cartChanges);
     }
+
+    setTotal(total + beer.price);
   };
 
   return (
@@ -81,7 +86,7 @@ const App = () => {
           <Route path="newsletter" element={<Newsletter />} />
           <Route
             path="checkout"
-            element={<Checkout shoppingcart={cartChanges} />}
+            element={<Checkout beersPrice={total} shoppingcart={cartChanges} />}
           />
         </Route>
       </Routes>

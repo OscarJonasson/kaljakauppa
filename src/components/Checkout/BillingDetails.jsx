@@ -1,8 +1,15 @@
 import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import classes from "./Checkout.module.css";
 
 const BillingDetails = ({ next, prev, changer, countries, inputData }) => {
+  const [checked, setCheck] = useState(false);
+
+  const checkHandler = () => {
+    setCheck(!checked);
+  };
+
   return (
     <form className={classes.infoForm} onChange={changer}>
       <div className={classes.titleDiv}>
@@ -12,7 +19,7 @@ const BillingDetails = ({ next, prev, changer, countries, inputData }) => {
         </p>
       </div>
       <p className={classes.checkboxArea}>
-        <input type="checkbox" name="checkit" />
+        <input type="checkbox" name="checkit" onChange={checkHandler} />
         <label>Use shipping address</label>
       </p>
 
@@ -23,6 +30,7 @@ const BillingDetails = ({ next, prev, changer, countries, inputData }) => {
           className={classes.doubleInput1}
           placeholder="First Name"
           required
+          value={checked ? inputData.firstname : ""}
         ></input>
         <input
           type="text"
@@ -30,6 +38,7 @@ const BillingDetails = ({ next, prev, changer, countries, inputData }) => {
           className={classes.doubleInput2}
           placeholder="Last Name"
           required
+          value={checked ? inputData.lastname : ""}
         ></input>
       </div>
       <input
@@ -38,12 +47,14 @@ const BillingDetails = ({ next, prev, changer, countries, inputData }) => {
         className={classes.singleInput}
         placeholder="Address"
         required
+        value={checked ? inputData.address : ""}
       ></input>
       <input
         type="text"
         name="extraaddress"
         className={classes.singleInput}
         placeholder="Apartment, suite, etc."
+        value={checked ? inputData.extraaddress : ""}
       ></input>
       <input
         type="text"
@@ -51,6 +62,7 @@ const BillingDetails = ({ next, prev, changer, countries, inputData }) => {
         className={classes.singleInput}
         placeholder="City"
         required
+        value={checked ? inputData.city : ""}
       ></input>
       <div className={classes.countryZIPdiv}>
         <select
@@ -58,6 +70,7 @@ const BillingDetails = ({ next, prev, changer, countries, inputData }) => {
           name="country"
           className={classes.selectInput}
           required
+          value={checked ? inputData.country : ""}
         >
           <option selected disabled hidden>
             Country
@@ -72,6 +85,7 @@ const BillingDetails = ({ next, prev, changer, countries, inputData }) => {
           className={classes.doubleInput2}
           placeholder="Postal Code"
           required
+          value={checked ? inputData.postcode : ""}
         ></input>
       </div>
       <input
@@ -79,6 +93,7 @@ const BillingDetails = ({ next, prev, changer, countries, inputData }) => {
         name="phone"
         className={classes.singleInput}
         placeholder="Phone"
+        value={checked ? inputData.phone : ""}
       ></input>
       <p className={classes.buttons}>
         <button className={classes.prevButton} onClick={prev}>
