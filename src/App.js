@@ -15,7 +15,6 @@ import Checkout from "./components/Checkout/Checkout";
 import Header from "./components/Header/Header";
 
 const App = () => {
-  const [cart, setCart] = useState([{}]);
   const [cartChanges, setCartChanges] = useState([]);
 
   // const changeHandler = beer => {
