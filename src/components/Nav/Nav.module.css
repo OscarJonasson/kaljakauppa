@@ -34,10 +34,6 @@
   animation-timing-function: ease; */
 }
 
-/* .animateDown {
-
-} */
-
 .animateUp {
   animation-name: menuUp;
   animation-duration: 2s;
