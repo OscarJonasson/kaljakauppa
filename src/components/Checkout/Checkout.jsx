@@ -10,7 +10,6 @@ import TheEnd from "./TheEnd";
 
 const Checkout = ({ shoppingcart, beersPrice }) => {
   const [countries, setCountry] = useState([]);
-  const [total, setTotal] = useState(20);
   const [step, setStep] = useState(1);
   const [inputData, setInputData] = useState({
     firstname: "",
@@ -23,25 +22,10 @@ const Checkout = ({ shoppingcart, beersPrice }) => {
     phone: "",
   });
 
-  // const totalAmount = () => {
-  //   shoppingcart
-  //     .map((cart) => cart.amount)
-  //     .reduce((carttotal, cart) => cart + carttotal);
-  // };
-
-  // const carttotal = 0;
-
-  // const totalAmount = (shoppingcart) => {
-  //   carttotal = shoppingcart.price.reduce((prev, current) => prev + current, 0);
-  //   return carttotal;
-  // };
-
-  console.log(shoppingcart);
-
   const tax = 1.24;
 
   const calc = () => {
-    const sum = total - total / tax;
+    const sum = beersPrice - beersPrice / tax;
     return sum.toFixed(2);
   };
 
@@ -108,7 +92,7 @@ const Checkout = ({ shoppingcart, beersPrice }) => {
 
   const shippingPrice = () => {
     if (inputData.country === "") {
-      return " - ";
+      return " ";
     } else if (inputData.country === "Finland") {
       return 6.99;
     } else if (inputData.country === "Estonia") {
