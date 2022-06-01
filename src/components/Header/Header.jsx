@@ -26,7 +26,7 @@ const Header = ({ cartChanges }) => {
     }
   };
 
-  const searchHandler = e => {
+  const searchHandler = (e) => {
     setSearch(e.target.value);
   };
 
@@ -71,7 +71,7 @@ const Header = ({ cartChanges }) => {
         </div>
       </header>
       <div className={classes.nav}>
-        <Nav isMenuOpen={menuOpen} />
+        <Nav hamburger={hamburger} />
       </div>
     </>
   );
