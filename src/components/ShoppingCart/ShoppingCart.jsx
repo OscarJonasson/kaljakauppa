@@ -5,22 +5,29 @@ import { Link } from "react-router-dom";
 import CardCart from "../CardCart/CardCart";
 import classes from "./ShoppingCart.module.css";
 
-const ShoppingCart = ({ cartChanges }) => {
+const ShoppingCart = ({ cartChanges, changeHandler }) => {
   const [beers, setBeers] = useState([]);
   console.log("this is from shopping cart", cartChanges);
 
-  useEffect(() => {
-    axios
-      .get("http://localhost:3011/beers/")
-      .then((res) => setBeers(res.data))
-      .catch((error) => console.log(error));
-  }, []);
+  //   useEffect(() => {
+  //     axios
+  //       .get("http://localhost:3011/beers/")
+  //       .then((res) => setBeers(res.data))
+  //       .catch((error) => console.log(error));
+  //   }, []);
+
+  const removeHandler = () => {};
 
   return (
     <section className={classes.shopping_cart}>
       <h2>Your cart</h2>
-      {beers.map((beer) => (
-        <CardCart key={beer.id} beer={beer} />
+      {cartChanges.map((beer) => (
+        <CardCart
+          key={beer.id}
+          beer={beer}
+          amount={beer.amount}
+          changeHandler={changeHandler}
+        />
       ))}
       <div className={classes.checkout}>
         <p className={classes.subtotal}>
