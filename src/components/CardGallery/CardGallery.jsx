@@ -13,10 +13,12 @@ const CardGallery = ({ beer, cartChanges, changeHandler }) => {
         <p>{beer.beer_name}</p>
         <p>{beer.price} €</p>
         <button
-          className={classes.addtoCart}
+          className={
+            beer.stock > 0 ? classes.addtoCart : classes.addtoCartNoStock
+          }
           onClick={() => changeHandler(beer, 1)}
         >
-          Add to Cart
+          {beer.stock > 0 ? "Add to cart" : "Out Of Stock"}
         </button>
       </div>
       <Link className={classes.info} to={`${beer.id}`}>
