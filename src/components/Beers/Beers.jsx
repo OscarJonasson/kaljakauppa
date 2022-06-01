@@ -4,7 +4,7 @@ import axios from "axios";
 import CardGallery from "../CardGallery/CardGallery";
 import classes from "./Beers.module.css";
 
-const Beers = () => {
+const Beers = ({ beer, cartChanges, changeHandler }) => {
   const [beers, setBeers] = useState([]);
 
   useEffect(() => {
@@ -18,9 +18,12 @@ const Beers = () => {
   return (
     <section className={classes.beerGallery}>
       {beers.map(beer => (
-        <Link to={`${beer.id}`}>
-          <CardGallery key={beer.id} beer={beer} />
-        </Link>
+        <CardGallery
+          key={beer.id}
+          beer={beer}
+          cartChanges={cartChanges}
+          changeHandler={changeHandler}
+        />
       ))}
     </section>
   );

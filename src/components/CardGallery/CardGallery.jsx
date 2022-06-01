@@ -1,6 +1,7 @@
 import classes from "./CardGallery.module.css";
+import { Link } from "react-router-dom";
 
-const CardGallery = ({ beer }) => {
+const CardGallery = ({ beer, cartChanges, changeHandler }) => {
   return (
     <div className={classes.card}>
       <img
@@ -11,16 +12,21 @@ const CardGallery = ({ beer }) => {
       <div className={classes.card_desc}>
         <p>{beer.beer_name}</p>
         <p>{beer.price} €</p>
-        <button className={classes.addtoCart}>Add to Cart</button>
+        <button
+          className={classes.addtoCart}
+          onClick={() => changeHandler(beer, 1)}
+        >
+          Add to Cart
+        </button>
       </div>
-      <div className={classes.info}>
+      <Link className={classes.info} to={`${beer.id}`}>
         <ul className={classes.info_list}>
           <li>Style: {beer.beer_style}</li>
           <li>{beer.brewery.brewery_name}</li>
           <li>{beer.brewery.country_name}</li>
           <li>ABV: {beer.beer_abv} %</li>
         </ul>
-      </div>
+      </Link>
     </div>
   );
 };
