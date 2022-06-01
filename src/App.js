@@ -17,22 +17,33 @@ import Header from "./components/Header/Header";
 const App = () => {
   const [cartChanges, setCartChanges] = useState([]);
 
-  // const changeHandler = beer => {
-  //   const exists = cartChanges.find(x => x.id === beer.id);
-  //   if (exists) {
-  //     setCartChanges(
-  //       cartChanges.map(x =>
-  //         x.id === beer.id ? { ...exists, amount: exists.amount } : x
-  //       )
-  //     );
-  //   }else{
-  //     setCartChanges([])
-  //   }
-  // };
-
   const changeHandler = (beer, amount) => {
-    setCartChanges([...cartChanges, { ...beer, amount: amount }]);
-    console.log(cartChanges);
+    const duplicate = cartChanges.find((cartId) => {
+      // console.log("cartId:", cartId.id, "beerId:", beer.id);
+      return cartId.id === beer.id;
+    });
+    // console.log(duplicate);
+    if (duplicate) {
+      setCartChanges(
+        cartChanges.map((singleBeer) => {
+          // console.log(
+          //   "single:",
+          //   singleBeer,
+          //   "duplicate:",
+          //   duplicate,
+          //   "amount:",
+          //   amount
+          // );
+          return singleBeer.id === beer.id
+            ? { ...duplicate, amount: amount }
+            : singleBeer;
+        })
+      );
+      // console.log("newCart:", cartChanges);
+    } else if (beer.stock > 0) {
+      setCartChanges([...cartChanges, { ...beer, amount: amount }]);
+      // console.log(cartChanges);
+    }
   };
 
   return (
