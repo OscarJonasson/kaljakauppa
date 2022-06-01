@@ -8,7 +8,7 @@ import BillingDetails from "./BillingDetails";
 import Payment from "./Payment";
 import TheEnd from "./TheEnd";
 
-const Checkout = ({ shoppingcart }) => {
+const Checkout = ({ shoppingcart, beersPrice }) => {
   const [countries, setCountry] = useState([]);
   const [total, setTotal] = useState(20);
   const [step, setStep] = useState(1);
@@ -85,7 +85,6 @@ const Checkout = ({ shoppingcart }) => {
             next={next}
             countries={countries}
             changer={changeHandler}
-            inputData={inputData}
           />
         );
       case 2:
@@ -145,7 +144,7 @@ const Checkout = ({ shoppingcart }) => {
               ))}
             </ul>
           </div>
-          <p>Total: {total} €</p>
+          <p>Total: {beersPrice + shippingPrice()} €</p>
           <p>VAT: {calc()} €</p>
           <p>Shipping: {shippingPrice()} €</p>
         </div>

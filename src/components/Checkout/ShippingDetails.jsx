@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import classes from "./Checkout.module.css";
 
-const ShippingDetails = ({ next, changer, countries, inputData }) => {
+const ShippingDetails = ({ next, changer, countries }) => {
   return (
     <form className={classes.infoForm} onChange={changer}>
       <div className={classes.titleDiv}>
@@ -18,14 +18,14 @@ const ShippingDetails = ({ next, changer, countries, inputData }) => {
           className={classes.doubleInput1}
           placeholder="First Name"
           required
-        ></input>
+        />
         <input
           type="text"
           name="lastname"
           className={classes.doubleInput2}
           placeholder="Last Name"
           required
-        ></input>
+        />
       </div>
       <input
         type="text"
@@ -33,20 +33,20 @@ const ShippingDetails = ({ next, changer, countries, inputData }) => {
         className={classes.singleInput}
         placeholder="Address"
         required
-      ></input>
+      />
       <input
         type="text"
         name="extraaddress"
         className={classes.singleInput}
         placeholder="Apartment, suite, etc."
-      ></input>
+      />
       <input
         type="text"
         name="city"
         className={classes.singleInput}
         placeholder="City"
         required
-      ></input>
+      />
       <div className={classes.countryZIPdiv}>
         <select
           type="text"
@@ -67,14 +67,14 @@ const ShippingDetails = ({ next, changer, countries, inputData }) => {
           className={classes.doubleInput2}
           placeholder="Postal Code"
           required
-        ></input>
+        />
       </div>
       <input
         type="tel"
         name="phone"
         className={classes.singleInput}
         placeholder="Phone"
-      ></input>
+      />
       <button className={classes.nextButton} onClick={next}>
         Continue to Billing <i className="fa-solid fa-angles-right"></i>
       </button>
