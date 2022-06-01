@@ -52,6 +52,7 @@ const Checkout = () => {
       ...inputData,
       [e.target.name]: e.target.value,
     });
+    console.log(inputData);
   };
 
   useEffect(() => {

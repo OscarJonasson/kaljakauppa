@@ -18,6 +18,7 @@
 
 .formArea {
   display: flex;
+  justify-content: center;
   margin-right: 1rem;
   background-color: aquamarine;
   padding: 1.5rem;
@@ -171,4 +172,17 @@
 .surpriseButton:hover {
   transform: scale(130%);
   transition: 0.5s;
+}
+
+.endImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theSquirrel {
+  width: auto;
+  height: 24rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgb(118, 118, 118, 0.3);
 }
