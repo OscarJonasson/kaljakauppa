@@ -1,11 +1,11 @@
 import React from "react";
 import classes from "./Checkout.module.css";
-import squirrel from "../../assets/images/logo-no-body.webp";
+import squirrel from "../../assets/images/end.webp";
 
 const TheEnd = () => {
   return (
-    <div>
-      <img src={squirrel} />
+    <div className={classes.endImage}>
+      <img className={classes.theSquirrel} src={squirrel} />
     </div>
   );
 };

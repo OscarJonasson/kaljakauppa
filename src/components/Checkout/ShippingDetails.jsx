@@ -17,12 +17,14 @@ const ShippingDetails = ({ next, changer, countries, inputData }) => {
           name="firstname"
           className={classes.doubleInput1}
           placeholder="First Name"
+          required
         ></input>
         <input
           type="text"
           name="lastname"
           className={classes.doubleInput2}
           placeholder="Last Name"
+          required
         ></input>
       </div>
       <input
@@ -30,6 +32,7 @@ const ShippingDetails = ({ next, changer, countries, inputData }) => {
         name="address"
         className={classes.singleInput}
         placeholder="Address"
+        required
       ></input>
       <input
         type="text"
@@ -42,9 +45,15 @@ const ShippingDetails = ({ next, changer, countries, inputData }) => {
         name="city"
         className={classes.singleInput}
         placeholder="City"
+        required
       ></input>
       <div className={classes.countryZIPdiv}>
-        <select type="text" name="country" className={classes.selectInput}>
+        <select
+          type="text"
+          name="country"
+          className={classes.selectInput}
+          required
+        >
           <option selected disabled hidden>
             Country
           </option>
@@ -57,6 +66,7 @@ const ShippingDetails = ({ next, changer, countries, inputData }) => {
           name="postcode"
           className={classes.doubleInput2}
           placeholder="Postal Code"
+          required
         ></input>
       </div>
       <input
