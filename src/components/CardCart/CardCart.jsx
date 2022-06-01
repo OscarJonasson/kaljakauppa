@@ -1,6 +1,6 @@
 import classes from "./CardCart.module.css";
 
-function CardCart({ beer }) {
+function CardCart({ beer, amount, changeHandler }) {
   return (
     <div className={classes.card}>
       <img
@@ -20,6 +20,8 @@ function CardCart({ beer }) {
             type="number"
             className={classes.quantity_input}
             name="quantity"
+            value={amount}
+            onChange={changeHandler}
           />
         </div>
         <div className={classes.total}>
