@@ -86,7 +86,8 @@
   color: black;
 }
 
-.addtoCart {
+.addtoCart,
+.addtoCartNoStock {
   background-color: #f9e5a2;
   border-radius: 5px;
   border-style: none;
@@ -94,9 +95,14 @@
   box-shadow: 1px 1px 5px rgb(118, 118, 118, 0.3);
   transition: 1s;
   cursor: pointer;
+  transition: 312ms;
 }
 
-.addtoCart:hover {
-  background-color: #fedd74;
-  transition: 500ms;
+.addtoCartNoStock {
+  background-color: #fa5c65;
+}
+
+.addtoCart:hover,
+.addtoCartNoStock:hover {
+  filter: brightness(0.8);
 }
