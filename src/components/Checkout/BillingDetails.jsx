@@ -11,7 +11,7 @@ const BillingDetails = ({ next, prev, changer, countries, inputData }) => {
   };
 
   return (
-    <form className={classes.infoForm} onChange={changer}>
+    <form className={classes.infoForm} onSubmit={next} onChange={changer}>
       <div className={classes.titleDiv}>
         <h3>Billing Address</h3>
         <p className={classes.alreadyAccount}>
@@ -99,7 +99,7 @@ const BillingDetails = ({ next, prev, changer, countries, inputData }) => {
         <button className={classes.prevButton} onClick={prev}>
           <i class="fa-solid fa-angles-left"></i> Go Back
         </button>
-        <button className={classes.nextButton} onClick={next}>
+        <button className={classes.nextButton} onSubmit={changer}>
           Continue to Payment <i className="fa-solid fa-angles-right"></i>
         </button>
       </p>
