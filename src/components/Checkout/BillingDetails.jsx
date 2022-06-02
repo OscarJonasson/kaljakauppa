@@ -31,7 +31,7 @@ const BillingDetails = ({ next, prev, changer, countries, inputData }) => {
           placeholder="First Name"
           required
           onChange={changer}
-          value={checked ? inputData.firstname : ""}
+          value={checked ? inputData.firstname : null}
         ></input>
         <input
           type="text"
@@ -40,7 +40,7 @@ const BillingDetails = ({ next, prev, changer, countries, inputData }) => {
           placeholder="Last Name"
           required
           onChange={changer}
-          value={checked ? inputData.lastname : ""}
+          value={checked ? inputData.lastname : null}
         ></input>
       </div>
       <input
@@ -50,7 +50,7 @@ const BillingDetails = ({ next, prev, changer, countries, inputData }) => {
         placeholder="Address"
         required
         onChange={changer}
-        value={checked ? inputData.address : ""}
+        value={checked ? inputData.address : null}
       ></input>
       <input
         type="text"
@@ -58,7 +58,7 @@ const BillingDetails = ({ next, prev, changer, countries, inputData }) => {
         className={classes.singleInput}
         placeholder="Apartment, suite, etc."
         onChange={changer}
-        value={checked ? inputData.extraaddress : ""}
+        value={checked ? inputData.extraaddress : null}
       ></input>
       <input
         type="text"
@@ -67,7 +67,7 @@ const BillingDetails = ({ next, prev, changer, countries, inputData }) => {
         placeholder="City"
         required
         onChange={changer}
-        value={checked ? inputData.city : ""}
+        value={checked ? inputData.city : null}
       ></input>
       <div className={classes.countryZIPdiv}>
         <select
@@ -76,7 +76,7 @@ const BillingDetails = ({ next, prev, changer, countries, inputData }) => {
           className={classes.selectInput}
           required
           onChange={changer}
-          value={checked ? inputData.country : ""}
+          value={checked ? inputData.country : null}
         >
           <option selected disabled hidden>
             Country
@@ -92,7 +92,7 @@ const BillingDetails = ({ next, prev, changer, countries, inputData }) => {
           placeholder="Postal Code"
           required
           onChange={changer}
-          value={checked ? inputData.postcode : ""}
+          value={checked ? inputData.postcode : null}
         ></input>
       </div>
       <input
@@ -101,7 +101,7 @@ const BillingDetails = ({ next, prev, changer, countries, inputData }) => {
         className={classes.singleInput}
         placeholder="Phone"
         onChange={changer}
-        value={checked ? inputData.phone : ""}
+        value={checked ? inputData.phone : null}
       ></input>
       <p className={classes.buttons}>
         <button className={classes.prevButton} onClick={prev}>
