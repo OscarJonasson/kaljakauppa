@@ -126,10 +126,7 @@ const Checkout = ({ shoppingcart, beersPrice }) => {
                   to={`/beers/${cart.id}`}
                 >
                   <li>
-                    {cart.beer_name}{" "}
-                    <i className="fa-solid fa-angles-right"></i> Amount:{" "}
-                    {cart.amount} <i className="fa-solid fa-angles-right"></i>{" "}
-                    {cart.price}
+                    {cart.beer_name} 🍺 Amount: {cart.amount} 🍺 {cart.price}
                   </li>
                 </Link>
               ))}
