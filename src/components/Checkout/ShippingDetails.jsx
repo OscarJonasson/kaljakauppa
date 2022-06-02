@@ -4,7 +4,7 @@ import classes from "./Checkout.module.css";
 
 const ShippingDetails = ({ next, changer, countries, inputData }) => {
   return (
-    <form className={classes.infoForm} onChange={changer} onSubmit={next}>
+    <form className={classes.infoForm} onSubmit={next}>
       <div className={classes.titleDiv}>
         <h3>Shipping Address</h3>
         <p className={classes.alreadyAccount}>
@@ -18,6 +18,7 @@ const ShippingDetails = ({ next, changer, countries, inputData }) => {
           className={classes.doubleInput1}
           placeholder="First Name"
           required
+          onChange={changer}
           value={inputData.firstname ? inputData.firstname : ""}
         />
         <input
@@ -26,6 +27,7 @@ const ShippingDetails = ({ next, changer, countries, inputData }) => {
           className={classes.doubleInput2}
           placeholder="Last Name"
           required
+          onChange={changer}
           value={inputData.lastname ? inputData.lastname : ""}
         />
       </div>
@@ -35,6 +37,7 @@ const ShippingDetails = ({ next, changer, countries, inputData }) => {
         className={classes.singleInput}
         placeholder="Address"
         required
+        onChange={changer}
         value={inputData.address ? inputData.address : ""}
       />
       <input
@@ -42,6 +45,7 @@ const ShippingDetails = ({ next, changer, countries, inputData }) => {
         name="extraaddress"
         className={classes.singleInput}
         placeholder="Apartment, suite, etc."
+        onChange={changer}
         value={inputData.extraaddress ? inputData.extraaddress : ""}
       />
       <input
@@ -50,6 +54,7 @@ const ShippingDetails = ({ next, changer, countries, inputData }) => {
         className={classes.singleInput}
         placeholder="City"
         required
+        onChange={changer}
         value={inputData.city ? inputData.city : ""}
       />
       <div className={classes.countryZIPdiv}>
@@ -58,6 +63,7 @@ const ShippingDetails = ({ next, changer, countries, inputData }) => {
           name="country"
           className={classes.selectInput}
           required
+          onChange={changer}
           value={inputData.country ? inputData.country : "Country"}
         >
           <option selected disabled hidden>
@@ -73,6 +79,7 @@ const ShippingDetails = ({ next, changer, countries, inputData }) => {
           className={classes.doubleInput2}
           placeholder="Postal Code"
           required
+          onChange={changer}
           value={inputData.postcode ? inputData.postcode : ""}
         />
       </div>
@@ -81,6 +88,7 @@ const ShippingDetails = ({ next, changer, countries, inputData }) => {
         name="phone"
         className={classes.singleInput}
         placeholder="Phone"
+        onChange={changer}
         value={inputData.phone ? inputData.phone : ""}
       />
       <button className={classes.nextButton} onSubmit={changer}>
