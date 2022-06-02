@@ -118,7 +118,11 @@ const Checkout = ({ shoppingcart, beersPrice }) => {
           <div className={classes.cartArea}>
             <ul>
               {shoppingcart.map((cart) => (
-                <Link className={classes.cartInfo} to={`/beers/${cart.id}`}>
+                <Link
+                  key={cart.id}
+                  className={classes.cartInfo}
+                  to={`/beers/${cart.id}`}
+                >
                   <li>
                     {cart.beer_name}{" "}
                     <i className="fa-solid fa-angles-right"></i> Amount:{" "}

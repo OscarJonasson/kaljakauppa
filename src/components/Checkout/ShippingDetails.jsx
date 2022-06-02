@@ -58,7 +58,7 @@ const ShippingDetails = ({ next, changer, countries, inputData }) => {
           name="country"
           className={classes.selectInput}
           required
-          value={inputData.country ? inputData.country : ""}
+          value={inputData.country ? inputData.country : "Country"}
         >
           <option selected disabled hidden>
             Country
