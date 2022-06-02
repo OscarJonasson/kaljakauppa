@@ -14,24 +14,28 @@ const Stock = () => {
   }, []);
   return (
     <section className={classes.container}>
-      <ul className={classes.linkStats}>
-        <li>
-          <Link to="">Stock</Link>
-        </li>
-        <li>
-          <Link to="stats">Stats</Link>
-        </li>
-        <li>
-          <Link to="orders">Orders</Link>
-        </li>
+      <ul className={classes.links}>
+        <Link to="">
+          <li>Stock</li>
+        </Link>
+        <Link to="stats">
+          <li>Stats</li>
+        </Link>
+        <Link to="orders">
+          <li>Orders</li>
+        </Link>
       </ul>
 
-      <div className={classes.stock}>
-        {stock.map((beer) => {
-          console.log(beer);
-          return <div>{beer.name}</div>;
-        })}
-      </div>
+      {stock.map((beer) => {
+        console.log(beer);
+        return (
+          <form className={classes.stock}>
+            <div>{beer.beer_name}</div>
+            <input type="text" value={beer.stock} />
+            <input type="number" value={beer.price} />
+          </form>
+        );
+      })}
     </section>
   );
 };
