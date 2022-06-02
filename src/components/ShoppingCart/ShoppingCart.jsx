@@ -2,7 +2,12 @@ import { Link } from "react-router-dom";
 import CardCart from "../CardCart/CardCart";
 import classes from "./ShoppingCart.module.css";
 
-const ShoppingCart = ({ cartChanges, changeHandler, setCartChanges }) => {
+const ShoppingCart = ({
+  cartChanges,
+  changeHandler,
+  setCartChanges,
+  beersPrice,
+}) => {
   console.log("this is from shopping cart", cartChanges);
 
   const removeHandler = (id) => {
@@ -26,9 +31,7 @@ const ShoppingCart = ({ cartChanges, changeHandler, setCartChanges }) => {
         />
       ))}
       <div className={classes.checkout}>
-        <p className={classes.subtotal}>
-          Subtotal: <span> €</span>
-        </p>
+        <p className={classes.subtotal}>Subtotal: {beersPrice} €</p>
         <p className={classes.tax_text}>
           Tax included and shipping calculated at checkout
         </p>
