@@ -16,7 +16,7 @@ textarea {
   padding: 0.5rem;
   border-radius: 5px;
   font-family: var(--main-font);
-  border: solid var(--blue) 2px;
+  border: solid var(--lightblue) 2px;
 }
 
 .form input {
@@ -35,7 +35,7 @@ label {
 .form_btn {
   width: 15rem;
   height: 2rem;
-  background-color: var(--yellow);
+  background-color: var(--lightorange);
   border-radius: 5px;
   border-style: none;
   cursor: pointer;
@@ -43,5 +43,5 @@ label {
 }
 
 .form_btn:hover {
-  filter: brightness(0.9);
+  background-color: var(--orange);
 }

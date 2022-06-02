@@ -5,7 +5,7 @@
   padding: 1.5rem 0 0.5rem 1rem;
 }
 .breadcrums a {
-  color: var(--blue);
+  color: var(--darkblue);
 }
 
 .breadcrums a:hover {
@@ -16,7 +16,7 @@
   justify-content: space-around;
   flex-flow: row wrap;
   margin: 1rem;
-  background-color: #439dfe53;
+  background-color: var(--lightblue);
   padding: 2rem;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .outOfStock {
-  color: #fa5c65;
+  color: var(--red);
   border: dotted 2px black;
   width: 8rem;
   border-radius: 5px;
@@ -79,22 +79,22 @@
   height: 2rem;
   border-radius: 5px;
   border-style: none;
-  background-color: #fedd74;
+  background-color: var(--lightorange);
   transition: 312ms;
 }
 
 .controls_btnOutOfStock {
-  background-color: #fa5c65;
+  background-color: var(--red);
 }
 
 .controls_btn:hover {
-  filter: brightness(0.8);
+  background-color: var(--orange);
 }
 .controls_math {
   height: 1.5rem;
   width: 1.5rem;
   border-style: none;
-  background-color: #fedd74;
+  background-color: var(--lightorange);
   border-radius: 5px;
   margin: 0 0.4rem;
   cursor: pointer;
@@ -102,7 +102,7 @@
 }
 
 .controls_math:hover {
-  filter: brightness(0.8);
+  background-color: var(--orange);
 }
 
 button {
