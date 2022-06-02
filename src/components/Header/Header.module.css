@@ -52,8 +52,10 @@ header {
 .headerRight {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   width: 40%;
 }
+
 .headerRight span {
   margin: 0 1rem;
 }
