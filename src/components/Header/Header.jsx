@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import classes from "./Header.module.css";
 import Nav from "../Nav/Nav";
 import { useState } from "react";
@@ -31,9 +31,16 @@ const Header = ({ cartChanges }) => {
   };
 
   const cartCountHandler = () => {
-    return cartChanges.length;
+    const totalCount = cartChanges.map((beer) => {
+      return beer.amount;
+    });
+    const initial = 0;
+    const sumOfAll = totalCount.reduce(
+      (prev, current) => prev + current,
+      initial
+    );
+    return sumOfAll > 99 ? 99 : sumOfAll;
   };
-
   return (
     <>
       <header>
@@ -65,7 +72,13 @@ const Header = ({ cartChanges }) => {
             <span className={`material-symbols-outlined ${classes.cartLogo}`}>
               shopping_cart
               {cartCountHandler() > 0 && (
-                <div className={classes.circle}>
+                <div
+                  className={
+                    cartCountHandler() > 10
+                      ? classes.circleOverTen
+                      : classes.circle
+                  }
+                >
                   <span className={classes.cartNumber}>
                     {cartCountHandler()}
                   </span>

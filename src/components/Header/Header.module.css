@@ -72,7 +72,8 @@ header nav ul li a {
   margin: 1rem;
 }
 
-.circle {
+.circle,
+.circleOverTen {
   position: relative;
   top: -13px;
   left: -6px;
@@ -80,6 +81,12 @@ header nav ul li a {
   height: 1.4rem;
   width: 1.4rem;
   border-radius: 50%;
+}
+
+.circleOverTen {
+  height: 2rem;
+  width: 2rem;
+  left: -12px;
 }
 
 /* .cart::before {
