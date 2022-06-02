@@ -1,9 +1,8 @@
 .card {
-  position: relative;
   display: flex;
-  flex-flow: row nowrap;
+  justify-content: space-evenly;
   align-items: center;
-  width: 45rem;
+  width: 60%;
   height: 14rem;
   margin: 1rem 3rem;
   border-radius: 5px;
@@ -11,13 +10,9 @@
 }
 
 .card_img {
-  border-radius: 5px 5px 0 0;
-  width: 13%;
-  height: 92%;
-  object-fit: cover;
+  width: auto;
+  height: 8rem;
   margin-left: 2rem;
-  display: flex;
-  align-items: center;
 }
 
 .card_desc {
@@ -33,17 +28,23 @@
   margin: 1rem;
 }
 
-.quantity_and_total {
+.quantityTotalButton {
   display: flex;
-  flex-flow: row nowrap;
-  position: absolute;
-  right: 10px;
+  flex-direction: column;
+  margin-right: 1rem;
 }
 
-.quantity p,
-.total p {
+.quantity_and_total {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 1rem;
-  margin-right: 2rem;
+}
+
+.quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
 .quantity_input {
@@ -53,13 +54,18 @@
 }
 
 .total {
-  margin-right: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quantity p,
+.total p {
+  margin-right: 1rem;
 }
 
 .delete_button {
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
+  width: 10rem;
   padding: 0.7rem;
   border-radius: 5px;
   border: none;
