@@ -26,6 +26,8 @@ const App = () => {
     if (duplicate) {
       setCartChanges(
         cartChanges.map((singleBeer) => {
+          // for subTotal in shoppingcart to change this needs to be changed
+          // setTotal(total + amount * beer.price);
           return singleBeer.id === beer.id
             ? { ...duplicate, amount: parseInt(amount, 10) }
             : singleBeer;
