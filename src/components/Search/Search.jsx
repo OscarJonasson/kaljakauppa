@@ -15,18 +15,18 @@ const Search = () => {
   useEffect(() => {
     axios
       .get("http://localhost:3011/beers/")
-      .then(res => setBeers(res.data))
-      .catch(error => console.log(error));
+      .then((res) => setBeers(res.data))
+      .catch((error) => console.log(error));
   }, []);
 
   const special = (beers, selection) => {
     return beers
-      .filter(beer => {
+      .filter((beer) => {
         return beer.beer_slug
           .toLowerCase()
           .split("-")
-          .some(beer => {
-            const searchTerms = selection.map(sele => {
+          .some((beer) => {
+            const searchTerms = selection.map((sele) => {
               return sele.substr(0, 3);
             });
             if (!goodSearch && beer.startsWith(searchTerms)) {
@@ -35,12 +35,8 @@ const Search = () => {
             return beer.startsWith(searchTerms);
           });
       })
-      .map(beer => {
-        return (
-          <Link key={beer.id} to={`/beers/${beer.id}`}>
-            <CardGallery key={beer.id} beer={beer} />
-          </Link>
-        );
+      .map((beer) => {
+        return <CardGallery key={beer.id} beer={beer} />;
       });
   };
 

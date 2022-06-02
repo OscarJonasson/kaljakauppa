@@ -21,7 +21,7 @@ const CardGallery = ({ beer, cartChanges, changeHandler }) => {
           {beer.stock > 0 ? "Add to cart" : "Out Of Stock"}
         </button>
       </div>
-      <Link className={classes.info} to={`${beer.id}`}>
+      <Link className={classes.info} to={`/beers/${beer.id}`}>
         <ul className={classes.info_list}>
           <li>Style: {beer.beer_style}</li>
           <li>{beer.brewery.brewery_name}</li>
