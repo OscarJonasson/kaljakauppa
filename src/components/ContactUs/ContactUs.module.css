@@ -40,6 +40,7 @@ label {
   border-style: none;
   cursor: pointer;
   transition: 300ms;
+  box-shadow: 1px 1px 5px rgb(118, 118, 118, 0.3);
 }
 
 .form_btn:hover {

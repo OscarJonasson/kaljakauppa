@@ -81,6 +81,7 @@
   border-style: none;
   background-color: var(--lightorange);
   transition: 312ms;
+  box-shadow: 1px 1px 5px rgb(118, 118, 118, 0.3);
 }
 
 .controls_btnOutOfStock {
