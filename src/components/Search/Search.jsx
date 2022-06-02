@@ -5,7 +5,7 @@ import CardGallery from "../CardGallery/CardGallery";
 import classes from "./Search.module.css";
 import squirrel from "../../assets/images/randomsquirrel1.webp";
 
-const Search = () => {
+const Search = ({ changeHandler }) => {
   const [beers, setBeers] = useState([]);
   const [goodSearch, setGoodSearch] = useState(false);
   let { search } = useParams();
@@ -36,7 +36,13 @@ const Search = () => {
           });
       })
       .map((beer) => {
-        return <CardGallery key={beer.id} beer={beer} />;
+        return (
+          <CardGallery
+            key={beer.id}
+            beer={beer}
+            changeHandler={changeHandler}
+          />
+        );
       });
   };
 

@@ -54,7 +54,10 @@ const App = () => {
               <Beer cartChanges={cartChanges} changeHandler={changeHandler} />
             }
           />
-          <Route path="search/:search" element={<Search />} />
+          <Route
+            path="search/:search"
+            element={<Search changeHandler={changeHandler} />}
+          />
           <Route
             path="shoppingCart"
             element={
