@@ -11,7 +11,7 @@ const BillingDetails = ({ next, prev, changer, countries, inputData }) => {
   };
 
   return (
-    <form className={classes.infoForm} onSubmit={next} onChange={changer}>
+    <form className={classes.infoForm} onSubmit={next}>
       <div className={classes.titleDiv}>
         <h3>Billing Address</h3>
         <p className={classes.alreadyAccount}>
@@ -30,7 +30,8 @@ const BillingDetails = ({ next, prev, changer, countries, inputData }) => {
           className={classes.doubleInput1}
           placeholder="First Name"
           required
-          value={checked ? inputData.firstname : ""}
+          onChange={changer}
+          value={checked ? inputData.firstname : null}
         ></input>
         <input
           type="text"
@@ -38,7 +39,8 @@ const BillingDetails = ({ next, prev, changer, countries, inputData }) => {
           className={classes.doubleInput2}
           placeholder="Last Name"
           required
-          value={checked ? inputData.lastname : ""}
+          onChange={changer}
+          value={checked ? inputData.lastname : null}
         ></input>
       </div>
       <input
@@ -47,14 +49,16 @@ const BillingDetails = ({ next, prev, changer, countries, inputData }) => {
         className={classes.singleInput}
         placeholder="Address"
         required
-        value={checked ? inputData.address : ""}
+        onChange={changer}
+        value={checked ? inputData.address : null}
       ></input>
       <input
         type="text"
         name="extraaddress"
         className={classes.singleInput}
         placeholder="Apartment, suite, etc."
-        value={checked ? inputData.extraaddress : ""}
+        onChange={changer}
+        value={checked ? inputData.extraaddress : null}
       ></input>
       <input
         type="text"
@@ -62,7 +66,8 @@ const BillingDetails = ({ next, prev, changer, countries, inputData }) => {
         className={classes.singleInput}
         placeholder="City"
         required
-        value={checked ? inputData.city : ""}
+        onChange={changer}
+        value={checked ? inputData.city : null}
       ></input>
       <div className={classes.countryZIPdiv}>
         <select
@@ -70,7 +75,8 @@ const BillingDetails = ({ next, prev, changer, countries, inputData }) => {
           name="country"
           className={classes.selectInput}
           required
-          value={checked ? inputData.country : ""}
+          onChange={changer}
+          value={checked ? inputData.country : null}
         >
           <option selected disabled hidden>
             Country
@@ -85,7 +91,8 @@ const BillingDetails = ({ next, prev, changer, countries, inputData }) => {
           className={classes.doubleInput2}
           placeholder="Postal Code"
           required
-          value={checked ? inputData.postcode : ""}
+          onChange={changer}
+          value={checked ? inputData.postcode : null}
         ></input>
       </div>
       <input
@@ -93,11 +100,12 @@ const BillingDetails = ({ next, prev, changer, countries, inputData }) => {
         name="phone"
         className={classes.singleInput}
         placeholder="Phone"
-        value={checked ? inputData.phone : ""}
+        onChange={changer}
+        value={checked ? inputData.phone : null}
       ></input>
       <p className={classes.buttons}>
         <button className={classes.prevButton} onClick={prev}>
-          <i class="fa-solid fa-angles-left"></i> Go Back
+          <i className="fa-solid fa-angles-left"></i> Go Back
         </button>
         <button className={classes.nextButton} onSubmit={changer}>
           Continue to Payment <i className="fa-solid fa-angles-right"></i>

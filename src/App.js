@@ -36,10 +36,6 @@ const App = () => {
     }
   };
 
-  const beersTotal = Number(total.toFixed(2));
-
-  // const beersTotal = Number(total.toFixed(2));
-
   return (
     <BrowserRouter>
       <Routes>
@@ -65,7 +61,7 @@ const App = () => {
                 cartChanges={cartChanges}
                 setCartChanges={setCartChanges}
                 changeHandler={changeHandler}
-                beersPrice={beersTotal}
+                beersPrice={total}
               />
             }
           />
@@ -76,9 +72,7 @@ const App = () => {
           <Route path="newsletter" element={<Newsletter />} />
           <Route
             path="checkout"
-            element={
-              <Checkout beersPrice={beersTotal} shoppingcart={cartChanges} />
-            }
+            element={<Checkout beersPrice={total} shoppingcart={cartChanges} />}
           />
           <Route path="stock" element={<Stock />}>
             <Route path="stats" />

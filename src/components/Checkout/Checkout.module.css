@@ -23,7 +23,6 @@
   background-color: #6fb2ff;
   padding: 1.5rem;
   width: 40vw;
-  /* overflow: scroll; */
 }
 
 .checkboxArea {
@@ -142,6 +141,7 @@
   border-radius: 2px;
   border-color: rgb(118, 118, 118, 0.8);
   box-shadow: 1px 1px 5px rgb(118, 118, 118, 0.5);
+  overflow: auto;
 }
 
 .cartArea ul li {
