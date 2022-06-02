@@ -18,6 +18,8 @@ const ShoppingCart = ({
     // console.log("this is delete", cartChanges);
   };
 
+  const beersTotal = Number(beersPrice).toFixed(2);
+
   return (
     <section className={classes.shopping_cart}>
       <h2>Your cart</h2>
@@ -31,7 +33,7 @@ const ShoppingCart = ({
         />
       ))}
       <div className={classes.checkout}>
-        <p className={classes.subtotal}>Subtotal: {beersPrice} €</p>
+        <p className={classes.subtotal}>Subtotal: {beersTotal} €</p>
         <p className={classes.tax_text}>
           Tax included and shipping calculated at checkout
         </p>

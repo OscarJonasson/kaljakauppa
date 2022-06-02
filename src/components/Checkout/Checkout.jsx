@@ -95,7 +95,7 @@ const Checkout = ({ shoppingcart, beersPrice }) => {
     if (inputData.country === "") {
       return " ";
     } else if (inputData.country === "Finland") {
-      return 6.99;
+      return Number(6.99);
     } else if (inputData.country === "Estonia") {
       return 9.99;
     } else if (
@@ -107,6 +107,8 @@ const Checkout = ({ shoppingcart, beersPrice }) => {
       return 19.99;
     }
   };
+
+  const beersTotal = beersPrice + shippingPrice();
 
   return (
     <section className={classes.checkoutSection}>
@@ -133,7 +135,8 @@ const Checkout = ({ shoppingcart, beersPrice }) => {
               ))}
             </ul>
           </div>
-          <p>Total: {beersPrice + shippingPrice()} €</p>
+          {console.log(beersPrice, shippingPrice())}
+          <p>Total: {Number(beersTotal).toFixed(2)} €</p>
           <p>VAT: {calc()} €</p>
           <p>Shipping: {shippingPrice()} €</p>
         </div>
