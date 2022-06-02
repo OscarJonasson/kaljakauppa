@@ -25,7 +25,7 @@
 .card::after {
   content: "";
   position: absolute;
-  background-color: #439dfe53;
+  background-color: var(--darkblue);
   height: 8rem;
   width: inherit;
   bottom: 0;
@@ -88,7 +88,7 @@
 
 .addtoCart,
 .addtoCartNoStock {
-  background-color: #f9e5a2;
+  background-color: var(--lightorange);
   border-radius: 5px;
   border-style: none;
   padding: 0.5rem;
@@ -99,9 +99,9 @@
 }
 
 .addtoCartNoStock {
-  background-color: #fa5c65;
+  background-color: var(--red);
 }
 
 .addtoCart:hover {
-  filter: brightness(0.8);
+  background-color: var(--orange);
 }

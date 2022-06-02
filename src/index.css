@@ -7,9 +7,10 @@
 :root {
   --main-font: "Comfortaa", cursive;
   --red: #f84931;
-  --blue: #439cfe;
-  --yellow: #fedd74;
-  --brown: #493314;
+  --lightblue: #6fb2ff;
+  --darkblue: #268aff;
+  --orange: #fd9a28;
+  --lightorange: #fcbf79;
 }
 
 body {
