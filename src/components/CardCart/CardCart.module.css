@@ -62,8 +62,10 @@
   right: 15px;
   padding: 0.7rem;
   border-radius: 5px;
-  border-style: solid;
-  border-color: #fd9a28;
-  background-color: transparent;
+  background-color: var(--lightorange);
   cursor: pointer;
+}
+
+.delete_button:hover {
+  background-color: var(--darkorange);
 }

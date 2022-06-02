@@ -23,6 +23,6 @@ a {
 }
 
 .badSearch a {
-  color: #268aff;
+  color: var(--darkblue);
   text-decoration: underline;
 }
