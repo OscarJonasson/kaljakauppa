@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const [beers, setBeers] = useState([]);
-  const [breweries, setBreweries] = useState([]);
 
   useEffect(() => {
     axios
