@@ -48,7 +48,8 @@ const App = () => {
       // console.log(cartChanges);
     }
 
-    setTotal(total + beer.price);
+    setTotal((total + beer.price).toFixed(2));
+    console.log(total, beer.price);
   };
 
   return (
@@ -76,6 +77,7 @@ const App = () => {
                 cartChanges={cartChanges}
                 setCartChanges={setCartChanges}
                 changeHandler={changeHandler}
+                beersPrice={total}
               />
             }
           />
