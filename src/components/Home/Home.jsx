@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import classes from "./Home.module.css";
 import axios from "axios";
 import CardHome from "../CardHome/CardHome";
-import image from "../../assets/images/missy-fant-OMIgwm1i_NY-unsplash.jpg";
+import image from "../../assets/images/alban-martel-nhX8QhXMBkM-unsplash.jpg";
 import VerifyAge from "../VerifyAge/VerifyAge";
 
 const Home = () => {
