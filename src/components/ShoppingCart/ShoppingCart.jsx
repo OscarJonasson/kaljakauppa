@@ -23,6 +23,7 @@ const ShoppingCart = ({
   return (
     <section className={classes.shopping_cart}>
       <h2>Your cart</h2>
+
       {cartChanges.map((beer) => (
         <CardCart
           key={beer.id}
@@ -32,6 +33,7 @@ const ShoppingCart = ({
           removeHandler={() => removeHandler(beer.id)}
         />
       ))}
+
       <div className={classes.checkout}>
         <p className={classes.subtotal}>Subtotal: {beersTotal} €</p>
         <p className={classes.tax_text}>

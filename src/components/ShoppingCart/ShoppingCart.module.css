@@ -1,5 +1,7 @@
 .shopping_cart {
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .shopping_cart h2 {
@@ -9,9 +11,8 @@
 
 .checkout {
   position: fixed;
-  top: 14rem;
+  top: 15rem;
   right: 5rem;
-  border: solid 1px rgb(118, 118, 118, 0.3);
   box-shadow: 1px 1px 5px rgb(118, 118, 118, 0.3);
   border-radius: 5px;
   padding: 2rem;
