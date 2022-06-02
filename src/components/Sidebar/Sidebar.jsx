@@ -16,28 +16,25 @@ const Sidebar = () => {
   }, []);
 
   const breweryHandler = () => {
-    const list = beers.map((beer) => {
-      const breweryName = beer.brewery.brewery_name;
-      // console.log(
-      //   breweries.includes(breweryName)
-      //     ? "df"
-      //     : setBreweries(...breweries, breweryName)
-      // );
-      // console.log([...list, breweryName]);
-      return breweries.includes(breweryName) ? null : breweryName.toLowerCase();
-    });
-    // console.log(list);
-    // setBreweries("1");
-    return list.map((brewery) => {
-      return (
-        <Link to={`/search/${brewery.substr(0, 4)}`}>
-          <li>{brewery}</li>
-        </Link>
-      );
-    });
+    return beers
+      .map((beers) => {
+        return beers.brewery.brewery_name;
+      })
+      .filter((breweryName, i, brewery) => {
+        // console.log("self", brewery, "index", i, "value", breweryName);
+        // console.log(brewery.indexOf(breweryName) === i);
+        return brewery.indexOf(breweryName) === i;
+      })
+      .map((brewery) => {
+        console.log(brewery);
+        return (
+          <Link to={`/search/${brewery.toLowerCase().substr(0, 4)}`}>
+            <li>{brewery}</li>
+          </Link>
+        );
+      });
   };
 
-  // console.log(beers);
   return (
     <section className={classes.sidebar}>
       <h3>Breweries</h3>
