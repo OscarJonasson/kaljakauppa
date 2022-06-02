@@ -1,9 +1,21 @@
+// import { useState } from "react";
 import classes from "./CardCart.module.css";
 
 function CardCart({ beer, amount, changeHandler, removeHandler }) {
   const total = () => {
     const multi = amount * beer.price;
     return multi.toFixed(2);
+  };
+
+  const stockLimiter = (amount, stock) => {
+    console.log("a", amount, "s", stock);
+    if (amount > stock) {
+      return stock;
+    } else if (amount < 0) {
+      return 0;
+    } else {
+      return amount;
+    }
   };
 
   return (
@@ -27,7 +39,12 @@ function CardCart({ beer, amount, changeHandler, removeHandler }) {
             className={classes.quantity_input}
             name="quantity"
             value={amount}
-            onChange={(e) => changeHandler(beer, e.target.value)}
+            onChange={
+              ((e) => {
+                changeHandler(beer, e.target.value);
+              },
+              () => stockLimiter(amount, beer.stock))
+            }
           />
         </div>
         <div className={classes.total}>
