@@ -60,6 +60,10 @@ header {
   margin: 0 1rem;
 }
 
+.headerRight a {
+  color: black;
+}
+
 .headerRight a:visited {
   color: black;
 }
