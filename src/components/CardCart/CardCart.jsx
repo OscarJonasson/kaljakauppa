@@ -7,16 +7,13 @@ function CardCart({ beer, amount, changeHandler, removeHandler }) {
     return multi.toFixed(2);
   };
 
-  const stockLimiter = (amount, stock) => {
-    console.log("a", amount, "s", stock);
-    if (amount > stock) {
-      return stock;
-    } else if (amount < 0) {
-      return 0;
-    } else {
-      return amount;
-    }
-  };
+  // const stockLimiter = (amount, stock) => {
+  //   if (amount > stock) {
+  //     return amount === beer.stock;
+  //   } else if (amount <= 0) {
+  //     return amount === 1;
+  //   }
+  // };
 
   return (
     <div className={classes.card}>
@@ -39,12 +36,14 @@ function CardCart({ beer, amount, changeHandler, removeHandler }) {
             className={classes.quantity_input}
             name="quantity"
             value={amount}
-            onChange={
-              ((e) => {
-                changeHandler(beer, e.target.value);
-              },
-              () => stockLimiter(amount, beer.stock))
-            }
+            onChange={(e) => {
+              if (e.target.value > beer.stock) {
+                return amount === beer.stock;
+              } else if (e.target.value <= 0) {
+                return amount === 1;
+              }
+              changeHandler(beer, e.target.value);
+            }}
           />
         </div>
         <div className={classes.total}>
