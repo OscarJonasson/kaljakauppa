@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Sidebar = () => {
+  const [menuOpen, setMenuOpen] = useState(true);
   const [beers, setBeers] = useState([]);
 
   useEffect(() => {
@@ -25,20 +26,47 @@ const Sidebar = () => {
         return brewery.indexOf(breweryName) === i;
       })
       .map((brewery) => {
-        console.log(brewery);
+        // console.log(brewery);
         return (
-          <Link to={`/search/${brewery.toLowerCase().substr(0, 4)}`}>
+          <Link
+            key={brewery}
+            to={`/search/${brewery.toLowerCase().substr(0, 4)}`}
+            onClick={hideMenu}
+          >
             <li>{brewery}</li>
           </Link>
         );
       });
   };
 
+  const hideMenu = () => {
+    const side = document.querySelector("sidebar");
+    if (menuOpen) {
+      side.style.visibility = "hidden";
+      setMenuOpen(!menuOpen);
+    } else {
+      side.style.visibility = "visible";
+      setMenuOpen(!menuOpen);
+    }
+    console.log(menuOpen);
+  };
+
   return (
-    <section className={classes.sidebar}>
-      <h3>Breweries</h3>
-      <ul className={classes.sidebar_breweries}>{breweryHandler()}</ul>
-    </section>
+    <>
+      <sidebar className={classes.sidebar}>
+        <div className={classes.callMeRelative}>
+          <Link to={`/search/nonalcoholic`} onClick={hideMenu}>
+            Non-alcoholic
+          </Link>
+          <h3>Breweries</h3>
+          <ul className={classes.sidebar_breweries}>{breweryHandler()}</ul>
+        </div>
+      </sidebar>
+      <button
+        className={menuOpen ? classes.sesame : classes.sesameClose}
+        onClick={hideMenu}
+      ></button>
+    </>
   );
 };
 

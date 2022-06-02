@@ -4,6 +4,7 @@ import axios from "axios";
 import CardGallery from "../CardGallery/CardGallery";
 import classes from "./Search.module.css";
 import squirrel from "../../assets/images/randomsquirrel1.webp";
+import Sidebar from "../Sidebar/Sidebar";
 
 const Search = ({ changeHandler }) => {
   const [beers, setBeers] = useState([]);
@@ -51,24 +52,27 @@ const Search = ({ changeHandler }) => {
   };
 
   return (
-    <section className={classes.beerGallery}>
-      {special(beers, search)}
-      {!goodSearch && (
-        <section className={classes.badSearch}>
-          <h4>
-            Unfortunately there were no matches for "{search.join(" ")}"... Feel
-            free to give us a <Link to={"/contact"}>suggestion!</Link>
-          </h4>
-          <Link to={`/beers/${getRandom()}`}>
-            <img
-              className={classes.luckySquirrel}
-              src={squirrel}
-              alt="squirrel with beer"
-            />
-          </Link>
-        </section>
-      )}
-    </section>
+    <>
+      <section className={classes.beerGallery}>
+        {special(beers, search)}
+        {!goodSearch && (
+          <section className={classes.badSearch}>
+            <h4>
+              Unfortunately there were no matches for "{search.join(" ")}"...
+              Feel free to give us a <Link to={"/contact"}>suggestion!</Link>
+            </h4>
+            <Link to={`/beers/${getRandom()}`}>
+              <img
+                className={classes.luckySquirrel}
+                src={squirrel}
+                alt="squirrel with beer"
+              />
+            </Link>
+          </section>
+        )}
+      </section>
+      <Sidebar />
+    </>
   );
 };
 

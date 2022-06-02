@@ -1,0 +1,41 @@
+.sidebar {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  position: sticky;
+  bottom: 400px;
+  left: 0;
+  width: 160px;
+  background-color: antiquewhite;
+  line-height: 1.5;
+}
+
+.callMeRelative {
+  position: relative;
+}
+
+.sidebar_breweries {
+  display: flex;
+  flex-flow: column nowrap;
+  overflow: scroll;
+  height: 200px;
+  width: 150px;
+}
+
+.sidebar_breweries li {
+  border-top: 1px solid;
+}
+
+.sesame,
+.sesameClose {
+  position: sticky;
+  height: 4rem;
+  width: 2rem;
+  bottom: 470px;
+  left: 140px;
+  background-color: aqua;
+}
+
+.sesameClose {
+  left: 0;
+}
