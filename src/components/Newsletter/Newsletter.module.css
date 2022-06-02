@@ -35,6 +35,10 @@
   border-radius: 5px;
   border-style: none;
   padding: 0.5rem;
-  background-color: #fedd74;
+  background-color: var(--lightorange);
   box-shadow: 1px 1px 5px rgb(118, 118, 118, 0.3);
+}
+
+.sendButton:hover {
+  background-color: var(--orange);
 }

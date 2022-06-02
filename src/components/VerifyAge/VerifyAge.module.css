@@ -19,7 +19,7 @@
   flex-flow: column nowrap;
   height: 76vh;
   width: 55vw;
-  background-color: aliceblue;
+  background-color: white;
   border-radius: 5px;
   border: 1px solid black;
   box-shadow: 0 0 12px 4px black;
@@ -51,13 +51,19 @@
 .verify_box a:visited {
   color: black;
 }
-.verify_btn:hover {
-  filter: brightness(0.8);
-}
 
 .green {
-  background-color: rgb(95, 205, 95);
+  background-color: #20f197;
 }
+
+.green:hover {
+  background-color: #37dc94;
+}
+
 .red {
-  background-color: rgb(205, 111, 95);
+  background-color: #fa624e;
+}
+
+.red:hover {
+  background-color: var(--red);
 }

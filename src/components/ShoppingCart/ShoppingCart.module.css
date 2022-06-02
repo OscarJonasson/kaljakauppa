@@ -38,9 +38,13 @@
   font-size: 1.3rem;
   border-radius: 5px;
   border-style: none;
-  background-color: #fd9a28;
+  background-color: var(--lightorange);
+}
+
+.checkout_button:hover {
+  background-color: var(--orange);
 }
 
 .checkout a {
-  color: white;
+  color: black;
 }
