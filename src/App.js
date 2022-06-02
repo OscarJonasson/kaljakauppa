@@ -20,37 +20,25 @@ const App = () => {
 
   const changeHandler = (beer, amount) => {
     const duplicate = cartChanges.find((cartId) => {
-      // console.log("cartId:", cartId.id, "beerId:", beer.id);
       return cartId.id === beer.id;
     });
-    // console.log(duplicate);
     if (duplicate) {
       setCartChanges(
         cartChanges.map((singleBeer) => {
-          // console.log(
-          //   "single:",
-          //   singleBeer,
-          //   "duplicate:",
-          //   duplicate,
-          //   "amount:",
-          //   amount
-          // );
           return singleBeer.id === beer.id
             ? { ...duplicate, amount: parseInt(amount, 10) }
             : singleBeer;
         })
       );
-
-      // console.log("newCart:", cartChanges);
     } else if (beer.stock > 0) {
       setCartChanges([...cartChanges, { ...beer, amount: amount }]);
-
-      // console.log(cartChanges);
+      setTotal(total + beer.price);
     }
-
-    setTotal((total + beer.price).toFixed(2));
-    console.log(total, beer.price);
   };
+
+  const beersTotal = Number(total.toFixed(2));
+
+  // const beersTotal = Number(total.toFixed(2));
 
   return (
     <BrowserRouter>
@@ -77,7 +65,7 @@ const App = () => {
                 cartChanges={cartChanges}
                 setCartChanges={setCartChanges}
                 changeHandler={changeHandler}
-                beersPrice={total}
+                beersPrice={beersTotal}
               />
             }
           />
@@ -88,7 +76,9 @@ const App = () => {
           <Route path="newsletter" element={<Newsletter />} />
           <Route
             path="checkout"
-            element={<Checkout beersPrice={total} shoppingcart={cartChanges} />}
+            element={
+              <Checkout beersPrice={beersTotal} shoppingcart={cartChanges} />
+            }
           />
           <Route path="stock" element={<Stock />}>
             <Route path="stats" />
