@@ -1,4 +1,4 @@
-// import { useState } from "react";
+import { Link } from "react-router-dom";
 import classes from "./CardCart.module.css";
 
 function CardCart({ beer, amount, changeHandler, removeHandler }) {
@@ -17,11 +17,13 @@ function CardCart({ beer, amount, changeHandler, removeHandler }) {
 
   return (
     <div className={classes.card}>
-      <img
-        className={classes.card_img}
-        src={beer.beer_label}
-        alt={`${beer.beer_name}`}
-      />
+      <Link to={`/beers/${beer.id}`}>
+        <img
+          className={classes.card_img}
+          src={beer.beer_label}
+          alt={`${beer.beer_name}`}
+        />
+      </Link>
       <div className={classes.card_desc}>
         <h3>{beer.beer_name}</h3>
         <p>{beer.price} €</p>
