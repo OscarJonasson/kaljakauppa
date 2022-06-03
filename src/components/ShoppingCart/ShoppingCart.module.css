@@ -32,7 +32,8 @@
   font-size: 0.8rem;
 }
 
-.checkout_button {
+.checkout_button,
+.emptyCart {
   padding: 1rem;
   width: 20rem;
   margin: 2rem;

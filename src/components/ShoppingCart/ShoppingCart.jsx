@@ -21,6 +21,11 @@ const ShoppingCart = ({
   const subTotal = () => {
     return Number(beersPrice).toFixed(2);
   };
+
+  const emptyCart = () => {
+    localStorage.clear();
+    window.location.reload();
+  };
   return (
     <section className={classes.shopping_cart}>
       <h2>Your cart</h2>
@@ -42,6 +47,9 @@ const ShoppingCart = ({
           Checkout
         </Link>
       </div>
+      <button className={classes.emptyCart} onClick={emptyCart}>
+        Empty Cart
+      </button>
     </section>
   );
 };

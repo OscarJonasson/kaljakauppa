@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "./pages/Layout";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
@@ -16,8 +16,22 @@ import Stock from "./components/Stock/Stock";
 import Sidebar from "./components/Sidebar/Sidebar";
 
 const App = () => {
-  const [cartChanges, setCartChanges] = useState([]);
+  // LOCAL STORAGE
+
+  const storageHandler = () => {
+    const storedCart = localStorage.getItem("cartData");
+    if (!storedCart) {
+      return [];
+    }
+    return JSON.parse(storedCart);
+  };
+  // LOCAL ENDS
+
+  const [cartChanges, setCartChanges] = useState(storageHandler);
   const [total, setTotal] = useState(0);
+  useEffect(() => {
+    localStorage.setItem("cartData", JSON.stringify([...cartChanges]));
+  }, [cartChanges]);
 
   const changeHandler = (beer, amount) => {
     const duplicate = cartChanges.find((cartId) => {
