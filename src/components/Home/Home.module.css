@@ -23,10 +23,22 @@
   margin: 2rem 7rem;
 }
 
-.specials {
+.logoSection {
   display: flex;
-  justify-content: space-evenly;
-  flex-flow: row wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
 }
 
+.logoDiv {
+  margin: 2rem;
+  width: 40rem;
+  display: flex;
+  overflow: auto;
+}
 
+.logoDiv::-webkit-scrollbar-thumb {
+  background-color: blue; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
