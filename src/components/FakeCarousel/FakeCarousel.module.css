@@ -1,0 +1,14 @@
+.breweryLogo {
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card_img {
+  height: 8rem;
+  width: auto;
+  object-fit: contain;
+}

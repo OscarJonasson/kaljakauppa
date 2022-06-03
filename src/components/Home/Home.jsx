@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import classes from "./Home.module.css";
 import axios from "axios";
-import CardHome from "../CardHome/CardHome";
 import image from "../../assets/images/alban-martel-nhX8QhXMBkM-unsplash.jpg";
 import VerifyAge from "../VerifyAge/VerifyAge";
+import FakeCarousel from "../FakeCarousel/FakeCarousel";
 
 const Home = ({ ageCheck, checkAge }) => {
   const [beers, setBeers] = useState([]);
@@ -17,7 +17,7 @@ const Home = ({ ageCheck, checkAge }) => {
       .catch((err) => console.log(err));
   }, []);
 
-  const selection = [6, 2, 8];
+  const selection = [6, 2, 8, 3, 1];
   const special = (beers, selection) => {
     return beers
       .filter((beer) => {
@@ -25,8 +25,8 @@ const Home = ({ ageCheck, checkAge }) => {
       })
       .map((beer) => {
         return (
-          <Link to={`beers/${beer.id}`}>
-            <CardHome key={beer.id} beer={beer} />
+          <Link to={`search/${beer.beer_slug}`}>
+            <FakeCarousel key={beer.id} beer={beer} />
           </Link>
         );
       });
@@ -47,8 +47,9 @@ const Home = ({ ageCheck, checkAge }) => {
           eveniet voluptatem voluptatum. Deleniti.
         </p>
       </div>
-      <section className={classes.specials}>
-        {special(beers, selection)}
+      <section className={classes.logoSection}>
+        <h3>Check out the beers from these breweries!</h3>
+        <div className={classes.logoDiv}>{special(beers, selection)}</div>
       </section>
     </div>
   );
