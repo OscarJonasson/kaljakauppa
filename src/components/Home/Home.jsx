@@ -5,6 +5,7 @@ import axios from "axios";
 import CardHome from "../CardHome/CardHome";
 import image from "../../assets/images/alban-martel-nhX8QhXMBkM-unsplash.jpg";
 import VerifyAge from "../VerifyAge/VerifyAge";
+import CoverflowEffect from "../Swiper/CoverflowEffect";
 
 const Home = () => {
   const [beers, setBeers] = useState([]);
@@ -55,6 +56,9 @@ const Home = () => {
       </div>
       <section className={classes.specials}>
         {special(beers, selection)}
+      </section>
+      <section>
+        <CoverflowEffect />
       </section>
     </div>
   );
