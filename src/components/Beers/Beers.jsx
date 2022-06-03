@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import CardGallery from "../CardGallery/CardGallery";
 import classes from "./Beers.module.css";
+import Sidebar from "../Sidebar/Sidebar";
 
 const Beers = ({ beer, cartChanges, changeHandler }) => {
   const [beers, setBeers] = useState([]);
@@ -15,16 +16,19 @@ const Beers = ({ beer, cartChanges, changeHandler }) => {
   }, []);
 
   return (
-    <section className={classes.beerGallery}>
-      {beers.map((beer) => (
-        <CardGallery
-          key={beer.id}
-          beer={beer}
-          cartChanges={cartChanges}
-          changeHandler={changeHandler}
-        />
-      ))}
-    </section>
+    <>
+      <section className={classes.beerGallery}>
+        {beers.map((beer) => (
+          <CardGallery
+            key={beer.id}
+            beer={beer}
+            cartChanges={cartChanges}
+            changeHandler={changeHandler}
+          />
+        ))}
+      </section>
+      <Sidebar />
+    </>
   );
 };
 
