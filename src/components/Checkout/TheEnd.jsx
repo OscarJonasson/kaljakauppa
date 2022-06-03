@@ -5,7 +5,7 @@ import squirrel from "../../assets/images/end.webp";
 const TheEnd = () => {
   return (
     <div className={classes.endImage}>
-      <img className={classes.theSquirrel} src={squirrel} />
+      <img className={classes.theSquirrel} src={squirrel} alt="the end" />
     </div>
   );
 };

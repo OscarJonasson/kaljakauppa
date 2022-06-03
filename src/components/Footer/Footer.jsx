@@ -42,16 +42,28 @@ const Footer = () => {
           <ul className={classes.followUs}>
             <li>Follow Us</li>
             <li>
-              <a href="https://www.facebook.com" target="_blank">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <i className="fa-brands fa-facebook fa-2x"></i>
               </a>{" "}
-              <a href="https://www.instagram.com" target="_blank">
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <i className="fa-brands fa-instagram fa-2x"></i>
               </a>{" "}
-              <a href="https://www.tiktok.com" target="_blank">
+              <a href="https://www.tiktok.com" target="_blank" rel="noreferrer">
                 <i className="fa-brands fa-tiktok fa-2x"></i>
               </a>{" "}
-              <a href="https://www.twitter.com" target="_blank">
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <i className="fa-brands fa-twitter fa-2x"></i>
               </a>
             </li>
