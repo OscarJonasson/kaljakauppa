@@ -91,12 +91,6 @@ header nav ul li a {
   border-radius: 50%;
 }
 
-.circleOverTen {
-  height: 2rem;
-  width: 2rem;
-  left: -12px;
-}
-
 /* .cart::before {
   content: "";
   position: absolute;
@@ -108,7 +102,8 @@ header nav ul li a {
   border-radius: 50%;
 } */
 
-.cartNumber {
+.cartNumber,
+.cartNumberSmall {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,10 +111,14 @@ header nav ul li a {
   top: 0;
   left: -16px;
   color: white;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: "Orbitron", sans-serif;
   height: inherit;
   width: inherit;
+}
+
+.cartNumberSmall {
+  font-size: 0.75rem;
 }
 
 .cartLogo:hover {
