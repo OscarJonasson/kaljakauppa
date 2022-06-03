@@ -13,7 +13,6 @@ import Newsletter from "./components/Newsletter/Newsletter";
 import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 import Checkout from "./components/Checkout/Checkout";
 import Stock from "./components/Stock/Stock";
-import Sidebar from "./components/Sidebar/Sidebar";
 
 const App = () => {
   // LOCAL STORAGE

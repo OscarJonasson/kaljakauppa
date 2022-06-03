@@ -55,11 +55,28 @@ const Sidebar = () => {
     <>
       <sidebar className={classes.sidebar}>
         <div className={classes.callMeRelative}>
+          <h3>Style</h3>
+          <ul className={classes.sidebar_style}>
+            <Link to={`/search/sipa`} onClick={hideMenu}>
+              <li>IPA</li>
+            </Link>
+            <Link to={`/search/sstout`} onClick={hideMenu}>
+              <li>Stout</li>
+            </Link>
+            <Link to={`/search/spale`} onClick={hideMenu}>
+              <li>Pale Ale</li>
+            </Link>
+            <Link to={`/search/ssour`} onClick={hideMenu}>
+              <li>Sour</li>
+            </Link>
+          </ul>
+          <h3>Breweries</h3>
+          <ul className={classes.sidebar_breweries}>{breweryHandler()}</ul>
+        </div>
+        <div className={classes.nonAlco}>
           <Link to={`/search/nonalcoholic`} onClick={hideMenu}>
             Non-alcoholic
           </Link>
-          <h3>Breweries</h3>
-          <ul className={classes.sidebar_breweries}>{breweryHandler()}</ul>
         </div>
       </sidebar>
       <button
