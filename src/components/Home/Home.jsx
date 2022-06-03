@@ -6,14 +6,8 @@ import CardHome from "../CardHome/CardHome";
 import image from "../../assets/images/alban-martel-nhX8QhXMBkM-unsplash.jpg";
 import VerifyAge from "../VerifyAge/VerifyAge";
 
-const Home = () => {
+const Home = ({ ageCheck, checkAge }) => {
   const [beers, setBeers] = useState([]);
-  // Set this to false if you want to test the modal window
-  const [ageCheck, setAgeCheck] = useState(true);
-
-  const checkAge = () => {
-    setAgeCheck(true);
-  };
 
   useEffect(() => {
     axios
