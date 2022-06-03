@@ -7,7 +7,7 @@
       "beer_abv": 6.8,
       "beer_description": "The long, cold nights of winter are a little brighter with Celebration Ale. Wonderfully robust and rich, Celebration Ale is dry-hopped for a lively, intense aroma. Brewed especially for the holidays, it is perfect for a festive gathering or for a quiet evening at home.",
       "beer_style": "American IPA",
-      "beer_slug": "sierra-nevada-brewing-co-celebration-ale",
+      "beer_slug": "sierra-nevada-brewing-co-celebration-ale-sipa",
       "rating_score": 3.78,
       "brewery": {
         "brewery_id": 1,
@@ -34,7 +34,7 @@
       "beer_abv": 12,
       "beer_description": "Iso, paksu ja makea Stout, jossa upeaa runkoa on koristeltu pekaanipähkinöillä, kanelilla, ugandalaisella vaniljalla sekä vaahterasiirapilla. Älä missaa tätä!",
       "beer_style": "Imperial Stout",
-      "beer_slug": "humble-forager-brewery-warming-hut-memoirs",
+      "beer_slug": "humble-forager-brewery-warming-hut-memoirs-sstout",
       "rating_score": 2.58,
       "brewery": {
         "brewery_id": 2,
@@ -63,7 +63,7 @@
       "beer_description": "Scotch barrel aged imperial oatmeal stout",
       "beer_style": "Imperial Oatmeal Stout",
       "is_in_production": 1,
-      "beer_slug": "utopia-serenity-1-scotch",
+      "beer_slug": "utopia-serenity-1-scotch-sstout",
       "rating_score": 4.22,
       "brewery": {
         "brewery_id": 3,
@@ -90,7 +90,7 @@
       "beer_abv": 13.5,
       "beer_description": "Russian Imperial Stout aged in Ardbeg's Kindalton single malt whisky barrels.",
       "beer_style": "Russian Imperial Stout",
-      "beer_slug": "laugar-brewery-aupa-tovarich",
+      "beer_slug": "laugar-brewery-aupa-tovarich-sstout",
       "rating_score": 4.22,
       "brewery": {
         "brewery_id": 4,
@@ -117,7 +117,7 @@
       "beer_abv": 0.3,
       "beer_description": "Alcohol free version of the iconic ZodiakIPA",
       "beer_style": "Non-alcoholic IPA",
-      "beer_slug": "omnipollo-zodiak-nonalcoholic",
+      "beer_slug": "omnipollo-zodiak-nonalcoholic-sipa",
       "rating_score": 3.31,
       "brewery": {
         "brewery_id": 5,
@@ -144,7 +144,7 @@
       "beer_abv": 0.3,
       "beer_description": "Amber-yellow, light-bodied, very strongly hopped, pine notes, citrus notes, orangey ",
       "beer_style": "IPA",
-      "beer_slug": "coolhead-heart-stone-ipa",
+      "beer_slug": "coolhead-heart-stone-ipa-sipa",
       "rating_score": 2.61,
       "brewery": {
         "brewery_id": 6,
@@ -171,7 +171,7 @@
       "beer_abv": 0.0,
       "beer_description": "Featuring four of our favourite new world hops. Medium-full bodied beer, perfectly balanced bitterness and generously double dry hopped to deliver a hazy beer with big waves of tropical and stone fruit aromas and flavours.",
       "beer_style": "DDH IPA Non-alcoholic",
-      "beer_slug": "brulo-tropic-of-now-nonalcoholic",
+      "beer_slug": "brulo-tropic-of-now-nonalcoholic-sipa",
       "rating_score": 3.83,
       "brewery": {
         "brewery_id": 7,
@@ -198,7 +198,7 @@
       "beer_abv": 0.5,
       "beer_description": "Alcohol-Free Hazy Pale Ale hopped with Citra, El Dorado, and Simcoe.",
       "beer_style": "IPA",
-      "beer_slug": "northern-monk-holy-faith-nonalcoholic",
+      "beer_slug": "northern-monk-holy-faith-nonalcoholic-sipa",
       "rating_score": 2.61,
       "brewery": {
         "brewery_id": 8,
@@ -225,7 +225,7 @@
       "beer_abv": 0.5,
       "beer_description": "Start well with a cup of Hard Pour non alcoholic coffee nitro stout! A stout brewed with real coffee and cocoa and then filled with nitrogen for a full mouthfeel and an extra creamy foam layer. Shake before use and pour it HARD for the real nitro experience",
       "beer_style": "Non Alcoholic Coffee Nitro Stout",
-      "beer_slug": "vandestreek-hard-pour-nonalcoholic",
+      "beer_slug": "vandestreek-hard-pour-nonalcoholic-sstout",
       "rating_score": 1.71,
       "brewery": {
         "brewery_id": 9,
@@ -251,8 +251,8 @@
       "beer_label": "https://cdn.webshopapp.com/shops/297538/files/398286223/funky-fluid-funky-fluid-coffee-free-gelato-passion.jpg",
       "beer_abv": 0.3,
       "beer_description": "Coffee Free Gelato: Passion Fruit & Mango",
-      "beer_style": "Non-alcoholic",
-      "beer_slug": "funky-fluid-free-gelato-nonalcoholic",
+      "beer_style": "Non-alcoholic Sour",
+      "beer_slug": "funky-fluid-free-gelato-nonalcoholic-ssour",
       "rating_score": 4.26,
       "brewery": {
         "brewery_id": 10,
@@ -278,8 +278,8 @@
       "beer_label": "https://cdn.webshopapp.com/shops/297538/files/398209783/brewdog-brewdog-hazy-af.jpg",
       "beer_abv": 0.5,
       "beer_description": "No alcohol just got juiced up. And Hazy AF lives up to the hype. All the attitude, all the flavour but none of the alcohol. Say hello to the juiciest alcohol-free beer in town. Tropical fruits and grassy notes mix it up. Oats and wheat unite for a smoother ride. Full flavour, no alcohol, all out New England.",
-      "beer_style": "Non-alcoholic",
-      "beer_slug": "brewdog-hazy-af-nonalcoholic",
+      "beer_style": "Non-alcoholic IPA",
+      "beer_slug": "brewdog-hazy-af-nonalcoholic-sipa",
       "rating_score": 4.26,
       "brewery": {
         "brewery_id": 11,
@@ -306,7 +306,7 @@
       "beer_abv": 0.5,
       "beer_description": "Overripe mango and melon mix with oat biscuits and fresh citrus. Hints of refreshing spruce resin and a pleasant tingle of carbonation join the aftertaste, with a final touch of freshly zested lemon.",
       "beer_style": "Non-alcoholic IPA",
-      "beer_slug": "pohjala-tundra-nonalcoholic",
+      "beer_slug": "põhjala-tundra-nonalcoholic-sipa",
       "rating_score": 4.95,
       "brewery": {
         "brewery_id": 12,
@@ -333,7 +333,7 @@
       "beer_abv": 5,
       "beer_description": "A long-awaited beer collab with Leeds skate legends Welcome, brewed in two versions to cater to the drinkers and the non-drinkers in their crew. This 5% Pale Ale starts with deep and sticky Munich malt plus Rye for a touch of spice; then El Dorado, Amarillo, and Zappa give bright, sweet, tangerine sherbet, and a burst of pithy, herbal citrus. ",
       "beer_style": "Pale Ale",
-      "beer_slug": "northern-monk-independent-north-skate-pale-ale",
+      "beer_slug": "northern-monk-independent-north-skate-pale-ale-spale",
       "rating_score": 3.45,
       "brewery": {
         "brewery_id": 8,
