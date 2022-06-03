@@ -18,6 +18,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 const App = () => {
   // LOCAL STORAGE
 
+  // Writes to localstorage, if its empty returns empty array for cartChanges
   const storageHandler = () => {
     const storedCart = localStorage.getItem("cartData");
     if (!storedCart) {
@@ -25,13 +26,16 @@ const App = () => {
     }
     return JSON.parse(storedCart);
   };
-  // LOCAL ENDS
 
+  // sets the default state for cartChanges using storageHandler function
   const [cartChanges, setCartChanges] = useState(storageHandler);
   const [total, setTotal] = useState(0);
+
+  // updates localS everytime when cartChanges state changes
   useEffect(() => {
     localStorage.setItem("cartData", JSON.stringify([...cartChanges]));
   }, [cartChanges]);
+  // LOCAL ENDS
 
   const changeHandler = (beer, amount) => {
     const duplicate = cartChanges.find((cartId) => {
