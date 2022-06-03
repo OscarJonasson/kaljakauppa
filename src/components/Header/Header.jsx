@@ -26,9 +26,6 @@ const Header = ({ cartChanges }) => {
     }
   };
 
-  // const preventDefault = (e) => {
-  //   e.preventDefault();
-  // };
   const searchHandler = (e) => {
     setSearch(e.target.value);
   };
@@ -52,10 +49,7 @@ const Header = ({ cartChanges }) => {
             Menu <i className="fa-solid fa-bars"></i>
           </p>
           <div className={classes.searchContainer}>
-            <form
-              action={`/search/${search}`}
-              //  onSubmit={preventDefault}
-            >
+            <form action={`/search/${search}`}>
               <input
                 onChange={searchHandler}
                 className={classes.searchBar}
