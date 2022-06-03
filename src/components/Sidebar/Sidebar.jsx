@@ -40,20 +40,24 @@ const Sidebar = () => {
   };
 
   const hideMenu = () => {
-    const side = document.querySelector("sidebar");
+    // const side = document.querySelector("sidebar");
+    const side = document.getElementById("sidebar");
     if (menuOpen) {
       side.style.visibility = "hidden";
+      side.style.left = "-16%";
+      side.style.transform = "scale(0.1)";
       setMenuOpen(!menuOpen);
     } else {
       side.style.visibility = "visible";
+      side.style.left = "0";
+      side.style.transform = "scale(1)";
       setMenuOpen(!menuOpen);
     }
-    console.log(menuOpen);
   };
 
   return (
     <>
-      <sidebar className={classes.sidebar}>
+      <div id="sidebar" className={classes.sidebar}>
         <div className={classes.callMeRelative}>
           <h3>Style</h3>
           <ul className={classes.sidebar_style}>
@@ -78,7 +82,7 @@ const Sidebar = () => {
             Non-alcoholic
           </Link>
         </div>
-      </sidebar>
+      </div>
       <button
         className={menuOpen ? classes.sesame : classes.sesameClose}
         onClick={hideMenu}

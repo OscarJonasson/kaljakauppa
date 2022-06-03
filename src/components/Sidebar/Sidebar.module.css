@@ -14,8 +14,8 @@
   border: 1px solid black;
   background-image: url("../../assets/images/circuit-board.svg");
   border-radius: 0 5px 5px 0;
-
   padding: 1rem 0;
+  transition: 535ms;
 }
 a {
   color: black;
@@ -66,10 +66,13 @@ a:visited {
   border-style: none;
   border: 1px solid black;
   border-radius: 5px;
+  transition: 650ms;
 }
 
 .sesameClose {
-  left: 0;
+  left: -10px;
+  transition: 350ms;
+  background-color: #37dc94;
 }
 
 .sesame:hover,
