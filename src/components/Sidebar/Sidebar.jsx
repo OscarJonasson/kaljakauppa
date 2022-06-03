@@ -31,7 +31,7 @@ const Sidebar = () => {
           <Link
             key={brewery}
             to={`/search/${brewery.toLowerCase().substr(0, 4)}`}
-            onClick={hideMenu}
+            // onClick={hideMenu}
           >
             <li>{brewery}</li>
           </Link>
