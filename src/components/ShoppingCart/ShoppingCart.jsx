@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import CardCart from "../CardCart/CardCart";
 import classes from "./ShoppingCart.module.css";
@@ -17,7 +17,7 @@ const ShoppingCart = ({
     // console.log("this is delete", cartChanges);
   };
 
-  const beersTotal = Number(beersPrice).toFixed(2);
+  // const beersTotal = Number(beersPrice).toFixed(2);
   const subTotal = () => {
     return Number(beersPrice).toFixed(2);
   };
