@@ -22,6 +22,17 @@ const Checkout = ({ shoppingcart, beersPrice }) => {
     phone: "",
   });
 
+  const [billingData, setBillingData] = useState({
+    firstname: "",
+    lastname: "",
+    address: "",
+    extraaddress: "",
+    city: "",
+    country: "",
+    postcode: "",
+    phone: "",
+  });
+
   const tax = 1.24;
 
   const calc = () => {
@@ -54,6 +65,13 @@ const Checkout = ({ shoppingcart, beersPrice }) => {
     });
   };
 
+  const billingChangeHandler = (e) => {
+    setBillingData({
+      ...billingData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
   useEffect(() => {
     axios.get("https://restcountries.com/v2/all").then((res) => {
       console.log(res);
@@ -78,8 +96,9 @@ const Checkout = ({ shoppingcart, beersPrice }) => {
             next={next}
             prev={back}
             countries={countries}
-            changer={changeHandler}
+            changer={billingChangeHandler}
             inputData={inputData}
+            billingData={billingData}
           />
         );
       case 3:
