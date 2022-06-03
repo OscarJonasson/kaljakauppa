@@ -42,10 +42,16 @@
   border-style: none;
   background-color: var(--lightorange);
   box-shadow: 1px 1px 5px rgb(118, 118, 118, 0.3);
+  cursor: pointer;
 }
 
+.emptyCart:hover,
 .checkout_button:hover {
   background-color: var(--orange);
+}
+
+.emptyCart {
+  align-self: center;
 }
 
 .checkout a {
