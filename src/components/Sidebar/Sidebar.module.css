@@ -3,8 +3,7 @@
   align-items: center;
   /* justify-content: center; */
   flex-flow: column nowrap;
-  position: fixed;
-  /* bottom: 400px; */
+  position: sticky;
   bottom: 100px;
   left: 0;
   width: 160px;
@@ -54,7 +53,7 @@ a:visited {
 
 .sesame,
 .sesameClose {
-  position: fixed;
+  position: sticky;
   height: 4rem;
   width: 2rem;
   bottom: 400px;
