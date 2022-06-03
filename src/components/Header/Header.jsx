@@ -73,19 +73,17 @@ const Header = ({ cartChanges }) => {
           <Link to="shoppingCart">
             <span className={`material-symbols-outlined ${classes.cartLogo}`}>
               shopping_cart
-              {cartCountHandler() > 0 && (
-                <div
+              <div className={classes.circle}>
+                <span
                   className={
-                    cartCountHandler() > 10
-                      ? classes.circleOverTen
-                      : classes.circle
+                    cartCountHandler() > 9
+                      ? classes.cartNumberSmall
+                      : classes.cartNumber
                   }
                 >
-                  <span className={classes.cartNumber}>
-                    {cartCountHandler()}
-                  </span>
-                </div>
-              )}
+                  {cartCountHandler()}
+                </span>
+              </div>
             </span>
           </Link>
         </div>
