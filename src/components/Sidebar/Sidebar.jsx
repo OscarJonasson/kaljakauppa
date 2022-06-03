@@ -43,9 +43,13 @@ const Sidebar = () => {
     const side = document.querySelector("sidebar");
     if (menuOpen) {
       side.style.visibility = "hidden";
+      side.style.left = "-16%";
+      side.style.transform = "scale(0.1)";
       setMenuOpen(!menuOpen);
     } else {
       side.style.visibility = "visible";
+      side.style.left = "0";
+      side.style.transform = "scale(1)";
       setMenuOpen(!menuOpen);
     }
     console.log(menuOpen);
