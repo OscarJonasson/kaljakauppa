@@ -103,7 +103,6 @@ const App = () => {
             <Route index path="stock" />
             <Route path="orders" />
           </Route>
-          <Route path="sidebar" element={<Sidebar />} />
         </Route>
       </Routes>
     </BrowserRouter>
