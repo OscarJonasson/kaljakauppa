@@ -54,9 +54,9 @@ a:visited {
 .sesame,
 .sesameClose {
   position: sticky;
-  height: 4rem;
+  height: 6rem;
   width: 2rem;
-  bottom: 400px;
+  bottom: 470px;
   left: 140px;
   background-color: var(--lightorange);
   background-image: url("../../assets/images/circuit-board\ BUTTON.svg");
