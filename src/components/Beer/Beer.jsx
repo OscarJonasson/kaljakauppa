@@ -11,7 +11,7 @@ const Beer = ({ cartChanges, changeHandler }) => {
   useEffect(() => {
     axios
       // .get(`http://localhost:3011/beers/${id}`)
-      .get(`https://kaljakauppa-json.herokuapp.com/beers/${id}`)
+      .get(`https://kaljakauppa.herokuapp.com/beers/${id}`)
       .then((res) => setB(res.data))
       .catch((err) => console.log(err));
   }, []);
