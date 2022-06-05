@@ -4,10 +4,10 @@
   /* justify-content: center; */
   flex-flow: column nowrap;
   position: sticky;
-  bottom: 100px;
+  bottom: 25%;
   left: 0;
   width: 160px;
-  height: 600px;
+  /* height: 600px; */
   background-color: #37dc94;
   line-height: 1.5;
   border: 1px solid black;
@@ -16,10 +16,6 @@
   padding: 1rem 0;
   transition: 535ms;
 }
-
-/* .sidebar_breweries::-webkit-scrollbar {
-  width: 2px;
-} */
 
 a {
   color: black;
@@ -59,10 +55,10 @@ a:visited {
 
 .sesame,
 .sesameClose {
-  position: sticky;
+  position: fixed;
   height: 6rem;
   width: 2rem;
-  bottom: 470px;
+  bottom: 50%;
   left: 140px;
   background-color: var(--lightorange);
   background-image: url("../../assets/images/circuit-board\ BUTTON.svg");

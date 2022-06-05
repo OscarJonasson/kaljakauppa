@@ -46,11 +46,15 @@ const Sidebar = () => {
       side.style.visibility = "hidden";
       side.style.left = "-16%";
       side.style.transform = "scale(0.1)";
+      side.style.position = "fixed";
       setMenuOpen(!menuOpen);
     } else {
       side.style.visibility = "visible";
       side.style.left = "0";
       side.style.transform = "scale(1)";
+      setTimeout(() => {
+        side.style.position = "sticky";
+      }, 500);
       setMenuOpen(!menuOpen);
     }
   };
