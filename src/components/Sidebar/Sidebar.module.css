@@ -16,6 +16,11 @@
   padding: 1rem 0;
   transition: 535ms;
 }
+
+/* .sidebar_breweries::-webkit-scrollbar {
+  width: 2px;
+} */
+
 a {
   color: black;
 }
@@ -29,15 +34,16 @@ a:visited {
 .sidebar_breweries {
   display: flex;
   flex-flow: column nowrap;
-  overflow: scroll;
+  overflow: auto;
   height: 200px;
   width: 150px;
   box-shadow: inset 0 0 6px black;
   padding: 0.4rem;
+  scroll-behavior: smooth;
 }
 
 .sidebar_breweries li {
-  border-top: 1px solid;
+  border-top: 1px solid var(--orange);
 }
 
 .sidebar_style {
