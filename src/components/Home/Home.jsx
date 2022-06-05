@@ -24,8 +24,9 @@ const Home = ({ ageCheck, checkAge }) => {
         return selection.includes(beer.id);
       })
       .map((beer) => {
+        console.log();
         return (
-          <Link to={`search/${beer.beer_slug}`}>
+          <Link to={`search/${beer.brewery.brewery_name.split(" ").join("-")}`}>
             <FakeCarousel key={beer.id} beer={beer} />
           </Link>
         );

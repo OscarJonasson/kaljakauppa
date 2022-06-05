@@ -20,4 +20,5 @@ body {
 
 main {
   min-height: 70vh;
+  scroll-behavior: smooth;
 }
