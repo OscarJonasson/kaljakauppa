@@ -23,6 +23,7 @@ a {
 a:visited {
   color: black;
 }
+
 .callMeRelative {
   position: relative;
 }
@@ -40,6 +41,11 @@ a:visited {
 
 .sidebar_breweries li {
   border-top: 1px solid var(--orange);
+}
+
+.sidebar a:hover {
+  color: var(--orange);
+  transition: 100ms;
 }
 
 .sidebar_style {
