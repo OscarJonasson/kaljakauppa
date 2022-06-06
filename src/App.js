@@ -10,6 +10,8 @@ import ContactUs from "./components/ContactUs/ContactUs";
 import Fourzerofour from "./components/404/Fourzerofour";
 import Join from "./components/Join/Join";
 import Newsletter from "./components/Newsletter/Newsletter";
+import Login from "./components/Login/Login";
+import Account from "./components/Account/Account";
 import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 import Checkout from "./components/Checkout/Checkout";
 import Stock from "./components/Stock/Stock";
@@ -87,6 +89,8 @@ const App = () => {
             path="search/:search"
             element={<Search changeHandler={changeHandler} />}
           />
+          <Route path="login" element={<Login />} />
+          <Route path="account" element={<Account />} />
           <Route
             path="shoppingCart"
             element={
