@@ -51,6 +51,15 @@ const BillingDetails = ({
         ></input>
       </div>
       <input
+        type="email"
+        name="email"
+        className={classes.singleInput}
+        placeholder="Email Address"
+        required
+        onChange={changer}
+        value={checked ? inputData.email : billingData.email}
+      ></input>
+      <input
         type="text"
         name="address"
         className={classes.singleInput}

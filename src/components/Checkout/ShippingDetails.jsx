@@ -32,6 +32,15 @@ const ShippingDetails = ({ next, changer, countries, inputData }) => {
         />
       </div>
       <input
+        type="email"
+        name="email"
+        className={classes.singleInput}
+        placeholder="Email Address"
+        required
+        onChange={changer}
+        value={inputData.email ? inputData.email : ""}
+      ></input>
+      <input
         type="text"
         name="address"
         className={classes.singleInput}

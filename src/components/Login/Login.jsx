@@ -20,13 +20,13 @@ const Login = () => {
             placeholder="Password"
             required
           />
-          <button className={classes.login_btn}>Login</button>
+          <button className={classes.loginBtn}>Login</button>
         </div>
       </form>
       <div className={classes.signUp}>
         <h3>Don't have an account yet?</h3>
         <Link to="/account">
-          <button className={classes.signUp_btn}>Sign Up Here</button>
+          <button className={classes.signupBtn}>Sign Up Here</button>
         </Link>
       </div>
     </div>

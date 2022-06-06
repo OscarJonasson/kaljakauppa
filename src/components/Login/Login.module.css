@@ -35,8 +35,8 @@
   font-size: 1.1rem;
 }
 
-.login_btn,
-.signUp_btn {
+.loginBtn,
+.signupBtn {
   margin-top: 0.5rem;
   height: 3rem;
   width: 15rem;
@@ -50,8 +50,8 @@
   cursor: pointer;
 }
 
-.login_btn:hover,
-.signUp_btn:hover {
+.loginBtn:hover,
+.signupBtn:hover {
   background-color: #fd9a28;
   transition: 0.5s;
 }
