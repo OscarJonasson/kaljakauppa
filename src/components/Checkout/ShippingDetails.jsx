@@ -8,7 +8,7 @@ const ShippingDetails = ({ next, changer, countries, inputData }) => {
       <div className={classes.titleDiv}>
         <h3>Shipping Address</h3>
         <p className={classes.alreadyAccount}>
-          Already have an account? <Link to="/">Sign in!</Link>
+          Already have an account? <Link to="/login">Sign in!</Link>
         </p>
       </div>
       <div className={classes.nameArea}>
