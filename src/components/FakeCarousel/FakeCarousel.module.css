@@ -12,3 +12,39 @@
   width: auto;
   object-fit: contain;
 }
+
+@media (max-width: 850px) {
+  .card_img {
+    height: 6rem;
+    width: auto;
+  }
+}
+
+@media (max-width: 680px) {
+  .card_img {
+    height: 5rem;
+    width: auto;
+  }
+
+  .breweryLogo p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .card_img {
+    height: 4rem;
+    width: auto;
+  }
+
+  .breweryLogo p {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .card_img {
+    height: 3.5rem;
+    width: auto;
+  }
+}
