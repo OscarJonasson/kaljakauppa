@@ -46,7 +46,8 @@ const Header = ({ cartChanges }) => {
       <header>
         <div className={classes.headerLeft}>
           <p className={classes.menu} onClick={hamburger}>
-            Menu <i className="fa-solid fa-bars"></i>
+            <span className={classes.menuWord}>Menu</span>{" "}
+            <i className="fa-solid fa-bars"></i>
           </p>
           <div className={classes.searchContainer}>
             <form action={`/search/${search}`}>
@@ -90,6 +91,18 @@ const Header = ({ cartChanges }) => {
           </Link>
         </div>
       </header>
+      <div className={classes.mobileSearch}>
+        <form action={`/search/${search}`}>
+          <input
+            onChange={searchHandler}
+            className={classes.mobileSearchBar}
+            placeholder="Search..."
+          ></input>
+          <i
+            className={`fa-solid fa-magnifying-glass ${classes.mobileMagGlass}`}
+          ></i>
+        </form>
+      </div>
       <div className={classes.nav}>
         <Nav hamburger={hamburger} />
       </div>

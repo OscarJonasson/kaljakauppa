@@ -2,13 +2,119 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 10rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 4rem;
+  margin-bottom: 2rem;
 }
 
 .ohno {
-  height: 40rem;
+  height: 50rem;
   width: auto;
+}
+
+@media (max-width: 1371px) {
+  .woops {
+    padding: 9rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 1165px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 988px) {
+  .woops {
+    padding: 7rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  .ohno {
+    height: 40rem;
+    width: auto;
+  }
+}
+
+@media (max-width: 819px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .ohno {
+    height: 30rem;
+    width: auto;
+  }
+}
+
+@media (max-width: 749px) {
+  .woops {
+    padding: 5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .ohno {
+    height: 25rem;
+    width: auto;
+  }
+}
+
+@media (max-width: 644px) {
+  .woops {
+    padding: 5rem 3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .ohno {
+    height: 22rem;
+    width: auto;
+  }
+}
+
+@media (max-width: 589px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 422px) {
+  .woops {
+    padding: 3rem 2rem;
+  }
+
+  .ohno {
+    height: 18rem;
+    width: auto;
+  }
+}
+
+@media (max-width: 315px) {
+  .woops {
+    padding: 3rem 2rem;
+  }
+
+  .ohno {
+    margin-top: 1rem;
+    height: 12rem;
+    width: auto;
+  }
 }

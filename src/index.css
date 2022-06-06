@@ -19,6 +19,6 @@ body {
 }
 
 main {
-  min-height: 70vh;
+  min-height: calc(100vh - 23rem);
   scroll-behavior: smooth;
 }
