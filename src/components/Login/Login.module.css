@@ -47,6 +47,13 @@
   font-size: 1.1rem;
   box-shadow: 1px 1px 5px rgb(118, 118, 118, 0.3);
   transition: 0.5s;
+  cursor: pointer;
+}
+
+.login_btn:hover,
+.signUp_btn:hover {
+  background-color: #fd9a28;
+  transition: 0.5s;
 }
 
 .signUp {
