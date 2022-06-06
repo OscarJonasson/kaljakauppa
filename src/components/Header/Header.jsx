@@ -6,28 +6,21 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/images/logostroke2.webp";
 
 const Header = ({ cartChanges }) => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(true);
   const [search, setSearch] = useState("");
-
-  const hamburger = () => {
-    const nav = document.querySelector("nav");
-    if (menuOpen) {
-      nav.style.opacity = 0;
-      nav.style.visibility = "hidden";
-      nav.style.top = "-12rem";
-      setTimeout(() => {
-        setMenuOpen(false);
-      }, 200);
-    } else {
-      setMenuOpen(true);
-      nav.style.visibility = "visible";
-      nav.style.opacity = 1;
-      nav.style.opacity = nav.style.top = "8rem";
-    }
-  };
 
   const searchHandler = (e) => {
     setSearch(e.target.value);
+  };
+
+  const toggleMenu = () => {
+    if (menuOpen) {
+      setTimeout(() => {
+        setMenuOpen(false);
+      }, 100);
+    } else {
+      setMenuOpen(true);
+    }
   };
 
   const cartCountHandler = () => {
@@ -45,7 +38,7 @@ const Header = ({ cartChanges }) => {
     <>
       <header>
         <div className={classes.headerLeft}>
-          <p className={classes.menu} onClick={hamburger}>
+          <p className={classes.menu} onClick={toggleMenu}>
             <span className={classes.menuWord}>Menu</span>{" "}
             <i className="fa-solid fa-bars"></i>
           </p>
@@ -106,7 +99,7 @@ const Header = ({ cartChanges }) => {
         </form>
       </div>
       <div className={classes.nav}>
-        <Nav hamburger={hamburger} />
+        <Nav menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       </div>
     </>
   );

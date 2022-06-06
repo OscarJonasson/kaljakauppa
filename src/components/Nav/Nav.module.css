@@ -76,3 +76,25 @@
   color: black;
   display: none;
 }
+
+.closestyle {
+  opacity: 0;
+  visibility: hidden;
+  top: -12rem;
+  transition: 1s;
+}
+
+.openstyle {
+  opacity: 1;
+  visibility: visible;
+  top: 6rem;
+  transition: 1s;
+}
+
+@media (min-width: 723px) {
+  .openstyle {
+    opacity: 1;
+    visibility: visible;
+    top: 8rem;
+  }
+}
