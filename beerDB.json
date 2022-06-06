@@ -54,12 +54,11 @@
       "stock": 2,
       "price": 4.9
     },
-
     {
       "id": 3,
       "beer_name": "Serenity 1: Scotch",
       "beer_label": "https://cdn.shopify.com/s/files/1/0368/1628/9924/products/seren_scotch_1024x1024.jpg?v=1652897901",
-      "beer_abv": 11.0,
+      "beer_abv": 11,
       "beer_description": "Scotch barrel aged imperial oatmeal stout",
       "beer_style": "Imperial Oatmeal Stout",
       "is_in_production": 1,
@@ -168,7 +167,7 @@
       "id": 7,
       "beer_name": "Tropic of Now",
       "beer_label": "https://cdn.webshopapp.com/shops/297538/files/401383582/brulo-brulo-tropic-of-now.jpg",
-      "beer_abv": 0.0,
+      "beer_abv": 0,
       "beer_description": "Featuring four of our favourite new world hops. Medium-full bodied beer, perfectly balanced bitterness and generously double dry hopped to deliver a hazy beer with big waves of tropical and stone fruit aromas and flavours.",
       "beer_style": "DDH IPA Non-alcoholic",
       "beer_slug": "brulo-tropic-of-now-nonalcoholic-sipa",
@@ -348,6 +347,231 @@
       },
       "stock": 8,
       "price": 5.81
+    },
+    {
+      "id": 14,
+      "beer_name": "Punk AF",
+      "beer_label": "https://cdn.webshopapp.com/shops/297538/files/392169220/brewdog-brewdog-punk-af.jpg",
+      "beer_abv": 0.5,
+      "beer_description": "No alcohol just got Punked up. And Punk AF lives up to its billing. All the attitude, all the flavour but none of the alcohol. Say hello to the Punkest non alcoholic beer in town. Juicy tropical fruit mixes it up with grassy and pine notes. All sitting on a solid malt bassline. Full flavour, no alcohol, all Punk.",
+      "beer_style": "Non-alcoholic IPA",
+      "beer_slug": "brewdog-punk-af-nonalcoholic-ipa-sipa",
+      "rating_score": 4.25,
+      "brewery": {
+        "brewery_id": 11,
+        "brewery_name": "BrewDog",
+        "brewery_label": "https://presshub.brewdog.com/files/1440777268BREWDOGLOGO.jpg",
+        "country_name": "Scotland",
+        "contact": {
+          "twitter": "BrewDog",
+          "facebook": "http://www.facebook.com/pages/BrewDog/21251598643",
+          "url": "http://www.brewdog.com/"
+        },
+        "location": {
+          "brewery_city": "Ellon",
+          "brewery_state": "Aberdeenshire"
+        }
+      },
+      "stock": 11,
+      "price": 2.22
+    },
+    {
+      "id": 15,
+      "beer_name": "Hazy Jane",
+      "beer_label": "https://cdn.webshopapp.com/shops/297538/files/392460214/brewdog-brewdog-hazy-jane.jpg",
+      "beer_abv": 5,
+      "beer_description": "New England detuned. This full-tilt fruit machine of an IPA packs all the flavour but less of the alcohol. Notes of pineapple,mango, stone-fruit, and a hint of tangerine to mix it up. Brewed with oats and wheat and left unfiltered for a smooth juicy hit.",
+      "beer_style": "IPA",
+      "beer_slug": "brewdog-hazy-jane-ipa-sipa",
+      "rating_score": 3.69,
+      "brewery": {
+        "brewery_id": 11,
+        "brewery_name": "BrewDog",
+        "brewery_label": "https://presshub.brewdog.com/files/1440777268BREWDOGLOGO.jpg",
+        "country_name": "Scotland",
+        "contact": {
+          "twitter": "BrewDog",
+          "facebook": "http://www.facebook.com/pages/BrewDog/21251598643",
+          "url": "http://www.brewdog.com/"
+        },
+        "location": {
+          "brewery_city": "Ellon",
+          "brewery_state": "Aberdeenshire"
+        }
+      },
+      "stock": 21,
+      "price": 3
+    },
+    {
+      "id": 16,
+      "beer_name": "Elvis Juice",
+      "beer_label": "https://cdn.webshopapp.com/shops/297538/files/392460200/brewdog-brewdog-elvis-juice.jpg",
+      "beer_abv": 6.5,
+      "beer_description": "An American IPA with a bitter edge that will push your citrus tolerance to the brink and back; Elvis Juice is loaded with tart pithy grapefruit. This IPA has a caramel malt base, supporting a full frontal citrus overload - grapefruit piled on top of intense aroma hops. Waves of crashing pine, orange and grapefruit round out this citrus infused IPA.",
+      "beer_style": "American IPA",
+      "beer_slug": "brewdog-elvis-juice-ipa-sipa",
+      "rating_score": 3.51,
+      "brewery": {
+        "brewery_id": 11,
+        "brewery_name": "BrewDog",
+        "brewery_label": "https://presshub.brewdog.com/files/1440777268BREWDOGLOGO.jpg",
+        "country_name": "Scotland",
+        "contact": {
+          "twitter": "BrewDog",
+          "facebook": "http://www.facebook.com/pages/BrewDog/21251598643",
+          "url": "http://www.brewdog.com/"
+        },
+        "location": {
+          "brewery_city": "Ellon",
+          "brewery_state": "Aberdeenshire"
+        }
+      },
+      "stock": 24,
+      "price": 2.45
+    },
+    {
+      "id": 17,
+      "beer_name": "Suvila",
+      "beer_label": "https://cdn.webshopapp.com/shops/297538/files/395094924/pohjala-pohjala-suvila.jpg",
+      "beer_abv": 3.8,
+      "beer_description": "Sweet biscuity malts mix with a pillowy soft oat malt body that gets layered with tropical fruits and tinned nectarines. A touch of fresh hoppy bitterness comes in at the end, balancing out the sweetness and making you crave another sip.",
+      "beer_style": "Session IPA",
+      "beer_slug": "põhjala-suvila-sipa",
+      "rating_score": 3.65,
+      "brewery": {
+        "brewery_id": 12,
+        "brewery_name": "Põhjala",
+        "brewery_label": "https://presshub.brewdog.com/files/1440777268BREWDOGLOGO.jpg",
+        "country_name": "Estonia",
+        "contact": {
+          "twitter": "pohjalabeer",
+          "facebook": "https://www.facebook.com/pohjalabeer",
+          "url": "https://pohjalabeer.com/"
+        },
+        "location": {
+          "brewery_city": "Tallinn",
+          "brewery_state": "Harjumaa"
+        }
+      },
+      "stock": 16,
+      "price": 2.95
+    },
+    {
+      "id": 18,
+      "beer_name": "Helge",
+      "beer_label": "https://cdn.webshopapp.com/shops/297538/files/395094832/pohjala-pohjala-helge.jpg",
+      "beer_abv": 5,
+      "beer_description": "Sweet citrus fruits and deliciously overripe pineapple rolls around the tongue before being joined by fresh coconut and a pleasantly sweet and creamy oat mouthfeel, matched with a delicate tingling carbonation. Peach and bright stone fruits join in and a juicy, refreshing, passionfruit-like hop character lingers on the tongue.",
+      "beer_style": "Gluten Free Pale Ale",
+      "beer_slug": "põhjala-helge-pale-ale-spale",
+      "rating_score": 3.63,
+      "brewery": {
+        "brewery_id": 12,
+        "brewery_name": "Põhjala",
+        "brewery_label": "https://presshub.brewdog.com/files/1440777268BREWDOGLOGO.jpg",
+        "country_name": "Estonia",
+        "contact": {
+          "twitter": "pohjalabeer",
+          "facebook": "https://www.facebook.com/pohjalabeer",
+          "url": "https://pohjalabeer.com/"
+        },
+        "location": {
+          "brewery_city": "Tallinn",
+          "brewery_state": "Harjumaa"
+        }
+      },
+      "stock": 46,
+      "price": 3.25
+    },
+    {
+      "id": 19,
+      "beer_name": "Coastal Sunrise",
+      "beer_label": "https://cdn.webshopapp.com/shops/297538/files/404199338/humble-forager-brewery-humble-forager-coastal-sunr.jpg",
+      "beer_abv": 6,
+      "beer_description": "Inspired by a Georgia breakfast pastry. Amish maple syrup glazed peach, pineapple, pecan turnover dusted with cinnamon.",
+      "beer_style": "Sour",
+      "beer_slug": "humble-forager-brewery-coastal-sunrise-ssour",
+      "rating_score": 4.1,
+      "brewery": {
+        "brewery_id": 2,
+        "brewery_name": "Humble forager brewery",
+        "brewery_label": "https://pbs.twimg.com/profile_images/1184262938217058311/sK6H3pyY_400x400.jpg",
+        "country_name": "United States",
+        "contact": {
+          "twitter": "humbleforager",
+          "facebook": "https://www.facebook.com/humbleforagerbrewery",
+          "url": "https://www.humbleforagerbrewery.com/"
+        },
+        "location": {
+          "brewery_city": "Madison",
+          "brewery_state": "WI"
+        }
+      },
+      "stock": 12,
+      "price": 7.75
+    },
+    {
+      "id": 20,
+      "beer_name": "Elevated Perspective",
+      "beer_label": "https://cdn.webshopapp.com/shops/297538/files/392370679/humble-forager-brewery-humble-forager-elevated-per.jpg",
+      "beer_abv": 8,
+      "beer_description": "This version of Elevated Perspective uses three types of oats (oat malt, flaked oats and golden naked oats) before being double dry hopped with Cashmere, Mosaic, Mosaic Cryo and loads of Strata. A soft textured, fluffy mouthfeel grooms your palate for tropical fruit flavors and blueberry kush aromatics. (Vegan)",
+      "beer_style": "Imperial Double IPA",
+      "beer_slug": "humble-forager-brewery-elevated-perspective-ipa-sipa",
+      "rating_score": 3.98,
+      "brewery": {
+        "brewery_id": 2,
+        "brewery_name": "Humble forager brewery",
+        "brewery_label": "https://pbs.twimg.com/profile_images/1184262938217058311/sK6H3pyY_400x400.jpg",
+        "country_name": "United States",
+        "contact": {
+          "twitter": "humbleforager",
+          "facebook": "https://www.facebook.com/humbleforagerbrewery",
+          "url": "https://www.humbleforagerbrewery.com/"
+        },
+        "location": {
+          "brewery_city": "Madison",
+          "brewery_state": "WI"
+        }
+      },
+      "stock": 6,
+      "price": 8.9
+    }
+  ],
+  "orders": [
+    {}
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstname": "Rick",
+      "lastname": "Richardson",
+      "address": "755 E. Golf Street",
+      "extraaddress": "apt.3",
+      "city": "Brooklyn, NY",
+      "country": "United States of America",
+      "postcode": "11203",
+      "phone": 1234567890
+    }
+  ],
+  "contactUs": [
+    {
+      "id": 1,
+      "name": "Rick Richardson",
+      "email": "rick@iwantbeer.com",
+      "message": "Indeed, a satellite brewery around a tornado brew avoids contact with a blood clot. Any jersey cow can completely play pinochle with an Octoberfest, but it takes a real hops to go deep sea fishing with a Long Trail Ale around an Ipswich Ale. The spudgun pees on a blue moon. Sometimes a gentle keg takes a coffee break, but the ice house always drunkenly finds much coolness with the Luna Sea ESB related to another Pilsner Urquell! The polka-dotted Hefeweizen dies, and the sake bomb of a Honey Brown lazily plans an escape from an annoying King Henry a monkey bite behind the bud light."
+    },
+    {
+      "name": "asdf",
+      "email": "asfd@sdf.com",
+      "message": "sdfäpkmasdpomfasd",
+      "id": 2
+    },
+    {
+      "name": "asf",
+      "email": "afs@sdf.co",
+      "message": "adfsöaflskm",
+      "id": 3
     }
   ]
 }

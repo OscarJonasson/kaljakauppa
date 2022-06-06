@@ -14,7 +14,7 @@ const Account = () => {
   }, []);
 
   return (
-    <div>
+    <div className={classes.accountContainer}>
       <form className={classes.accountForm}>
         <h3>Sign Up</h3>
         <div className={classes.nameArea}>
@@ -37,7 +37,7 @@ const Account = () => {
           type="email"
           name="email"
           className={classes.singleInput}
-          placeholder="Email address"
+          placeholder="Email Address"
           required
         />
         <input
@@ -61,7 +61,7 @@ const Account = () => {
           placeholder="City"
           required
         />
-        <div>
+        <div className={classes.country_postcode_div}>
           <select
             typeof="text"
             name="country"
@@ -89,7 +89,7 @@ const Account = () => {
           className={classes.singleInput}
           placeholder="Phone"
         />
-        <button className={classes.signup_btn}>Sign Up</button>
+        <button className={classes.signupBtn}>Sign Up</button>
       </form>
     </div>
   );

@@ -1,15 +1,54 @@
 import classes from "./ContactUs.module.css";
+import axios from "axios";
+import { useState } from "react";
 const ContactUs = () => {
+  const [contactData, setContactData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const inputHandler = (e) => {
+    setContactData({
+      ...contactData,
+      [e.target.name]: e.target.value,
+    });
+    console.log(contactData);
+  };
+
+  const submitHandler = () => {
+    axios
+      .post("http://kaljakauppa.herokuapp.com/contactUs", contactData)
+      // .post("http://localhost:3011/contactUs", contactData)
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
+  };
+
   return (
     <div className={classes.container}>
-      <form className={classes.form}>
+      <form className={classes.form} onSubmit={submitHandler}>
         <label htmlFor="name">Name</label>
-        <input type="text" id="name"></input>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          onChange={inputHandler}
+        ></input>
         <label htmlFor="email">Email</label>
-        <input type="email" id="email"></input>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          onChange={inputHandler}
+        ></input>
         <label htmlFor="message">Message</label>
-        <textarea id="message" cols={50}></textarea>
-        <button className={classes.form_btn} onSubmit={""}>
+        <textarea
+          id="message"
+          cols={50}
+          name="message"
+          onChange={inputHandler}
+        ></textarea>
+        <button className={classes.form_btn} type="submit">
           Send
         </button>
       </form>

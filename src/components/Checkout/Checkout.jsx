@@ -14,6 +14,7 @@ const Checkout = ({ shoppingcart, beersPrice }) => {
   const [inputData, setInputData] = useState({
     firstname: "",
     lastname: "",
+    email: "",
     address: "",
     extraaddress: "",
     city: "",
@@ -25,6 +26,7 @@ const Checkout = ({ shoppingcart, beersPrice }) => {
   const [billingData, setBillingData] = useState({
     firstname: "",
     lastname: "",
+    email: "",
     address: "",
     extraaddress: "",
     city: "",

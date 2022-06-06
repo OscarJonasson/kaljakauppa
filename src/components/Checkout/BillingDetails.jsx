@@ -22,7 +22,7 @@ const BillingDetails = ({
       <div className={classes.titleDiv}>
         <h3>Billing Address</h3>
         <p className={classes.alreadyAccount}>
-          Already have an account? <Link to="/">Sign in!</Link>
+          Already have an account? <Link to="/login">Sign in!</Link>
         </p>
       </div>
       <p className={classes.checkboxArea}>
@@ -50,6 +50,15 @@ const BillingDetails = ({
           value={checked ? inputData.lastname : billingData.lastname}
         ></input>
       </div>
+      <input
+        type="email"
+        name="email"
+        className={classes.singleInput}
+        placeholder="Email Address"
+        required
+        onChange={changer}
+        value={checked ? inputData.email : billingData.email}
+      ></input>
       <input
         type="text"
         name="address"
