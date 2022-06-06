@@ -57,7 +57,12 @@ const Header = ({ cartChanges }) => {
         </div>
         <div>
           <Link to="/">
-            <img className={classes.logo} src={logo} alt="logo" />
+            <img
+              className={classes.logo}
+              src={logo}
+              alt="logo"
+              onClick={toggleMenu}
+            />
           </Link>
         </div>
         <div className={classes.headerRight}>

@@ -9,7 +9,7 @@
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  background-color: antiquewhite;
+  background-color: var(--darkblue);
   width: 100vw;
   height: 2rem;
 }
