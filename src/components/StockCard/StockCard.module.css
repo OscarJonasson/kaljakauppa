@@ -1,0 +1,50 @@
+.stock,
+.stockLow,
+.stockOut {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1rem;
+  background-image: url("../../assets/images/circuit-board.svg");
+  height: 200px;
+  width: 200px;
+  border: solid black 1px;
+  background-color: #37dc94;
+  border-radius: 5px;
+}
+
+.stockLow {
+  background-color: var(--lightorange);
+}
+
+.stockOut {
+  background-color: var(--red);
+}
+
+.stockUFO {
+  background-color: var(--darkblue);
+}
+
+.stockInputs {
+  text-align: center;
+  background-color: transparent;
+  width: 4.4rem;
+  height: 2rem;
+  border-style: none;
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+.stock_btn {
+  height: 2.5rem;
+  width: 6rem;
+  border-style: none;
+  border-radius: 5px;
+  transition: 100ms;
+  filter: brightness(0.9);
+}
+
+.stock_btn:hover {
+  filter: brightness(0.8);
+}

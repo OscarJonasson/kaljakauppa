@@ -133,8 +133,8 @@
           "brewery_state": "Sundbybergs kommun"
         }
       },
-      "stock": 30,
-      "price": 5.42
+      "stock": 29,
+      "price": 23.3
     },
     {
       "id": 6,
@@ -160,7 +160,7 @@
           "brewery_state": "Uusimaa"
         }
       },
-      "stock": 0,
+      "stock": 8,
       "price": 6.66
     },
     {
@@ -215,7 +215,7 @@
         }
       },
       "stock": 0,
-      "price": 6.66
+      "price": 11
     },
     {
       "id": 9,
