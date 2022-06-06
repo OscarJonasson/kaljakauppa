@@ -29,6 +29,7 @@ const Sidebar = () => {
         // console.log(brewery);
         return (
           <Link
+            className={classes.sidebar_breweries_li}
             key={brewery}
             to={`/search/${brewery.toLowerCase()}`}
             onClick={hideMenu}

@@ -28,7 +28,6 @@ const Search = ({ changeHandler }) => {
           .split("-")
           .some((beer) => {
             const searchTerms = selection[0].substr(0, 5);
-            console.log(searchTerms);
             if (!goodSearch && beer.startsWith(searchTerms)) {
               setGoodSearch(true);
             }
