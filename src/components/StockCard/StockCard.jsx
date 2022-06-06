@@ -10,11 +10,19 @@ const StockCard = ({ beer }) => {
   });
 
   const changeHandler = (e) => {
-    setInventoryData({
-      ...inventoryData,
-      [e.target.name]: parseInt(e.target.value),
-    });
-    console.log(inventoryData);
+    if (e.target.name === "price") {
+      setInventoryData({
+        ...inventoryData,
+        [e.target.name]: parseFloat(e.target.value),
+      });
+      console.log(inventoryData);
+    } else {
+      setInventoryData({
+        ...inventoryData,
+        [e.target.name]: parseInt(e.target.value),
+      });
+      console.log(inventoryData);
+    }
   };
   const submitHandler = () => {
     // axios.patch(`http://localhost:3011/beers/${beer.id}`, inventoryData);
@@ -55,6 +63,7 @@ const StockCard = ({ beer }) => {
         name="price"
         id={`price${beer.id}`}
         onChange={changeHandler}
+        step=".01"
       />
       <input
         className={classes.stockInputs}
