@@ -15,49 +15,49 @@ const Nav = ({ menuOpen, setMenuOpen }) => {
         <Link
           to="/"
           className={classes.navLink}
-          onClick={() => setMenuOpen(false)}
+          onClick={() => setMenuOpen(true)}
         >
           <li className={classes.liLink}>Home</li>
         </Link>
         <Link
           to="/beers"
           className={classes.navLink}
-          onClick={() => setMenuOpen(false)}
+          onClick={() => setMenuOpen(true)}
         >
           <li className={classes.liLink}>Beers</li>
         </Link>
         <Link
           to="/account"
           className={classes.navLinkSpecial}
-          onClick={() => setMenuOpen(false)}
+          onClick={() => setMenuOpen(true)}
         >
           <li className={classes.liLink}>Account</li>
         </Link>
         <Link
           to="/aboutUs"
           className={classes.navLink}
-          onClick={() => setMenuOpen(false)}
+          onClick={() => setMenuOpen(true)}
         >
           <li className={classes.liLink}>About Us</li>
         </Link>
         <Link
           to="/contact"
           className={classes.navLink}
-          onClick={() => setMenuOpen(false)}
+          onClick={() => setMenuOpen(true)}
         >
           <li className={classes.liLink}>Contact Us</li>
         </Link>
         <Link
           to="/joinus"
           className={classes.navLink}
-          onClick={() => setMenuOpen(false)}
+          onClick={() => setMenuOpen(true)}
         >
           <li className={classes.liLink}>Join Us</li>
         </Link>
         <Link
           to="/newsletter"
           className={classes.navLink}
-          onClick={() => setMenuOpen(false)}
+          onClick={() => setMenuOpen(true)}
         >
           <li className={classes.liLink}>Newsletter</li>
         </Link>

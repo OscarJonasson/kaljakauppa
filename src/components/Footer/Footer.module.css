@@ -66,3 +66,6 @@ ul li a {
 ul li a:hover {
   text-shadow: 0 0 5px white;
 }
+
+@media (max-width: 768px) {
+}
