@@ -30,7 +30,7 @@ const Sidebar = () => {
         return (
           <Link
             key={brewery}
-            to={`/search/${brewery.toLowerCase().substr(0, 4)}`}
+            to={`/search/${brewery.toLowerCase()}`}
             onClick={hideMenu}
           >
             <li>{brewery}</li>

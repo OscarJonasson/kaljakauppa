@@ -61,7 +61,7 @@ const Header = ({ cartChanges }) => {
               className={classes.logo}
               src={logo}
               alt="logo"
-              onClick={toggleMenu}
+              onClick={() => setMenuOpen(true)}
             />
           </Link>
         </div>
