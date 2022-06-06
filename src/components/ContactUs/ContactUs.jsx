@@ -44,7 +44,6 @@ const ContactUs = () => {
         <label htmlFor="message">Message</label>
         <textarea
           id="message"
-          cols={50}
           name="message"
           onChange={inputHandler}
         ></textarea>

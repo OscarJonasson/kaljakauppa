@@ -42,3 +42,10 @@
 .sendButton:hover {
   background-color: var(--orange);
 }
+
+@media (max-width: 480px) {
+  .newsletterText {
+    font-size: 0.8rem;
+    width: 80%;
+  }
+}
