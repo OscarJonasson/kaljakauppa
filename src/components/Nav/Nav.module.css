@@ -71,3 +71,8 @@
 .navLink {
   color: black;
 }
+
+.navLinkSpecial {
+  color: black;
+  display: none;
+}

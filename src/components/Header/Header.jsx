@@ -68,7 +68,7 @@ const Header = ({ cartChanges }) => {
           </Link>
         </div>
         <div className={classes.headerRight}>
-          <Link to="login">
+          <Link to="login" className={classes.headLink}>
             <span className={`material-symbols-outlined ${classes.headLogo}`}>
               person
             </span>

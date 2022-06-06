@@ -12,6 +12,13 @@ const Nav = ({ hamburger }) => {
         <Link to="/beers" className={classes.navLink} onClick={hamburger}>
           <li className={classes.liLink}>Beers</li>
         </Link>
+        <Link
+          to="/account"
+          className={classes.navLinkSpecial}
+          onClick={hamburger}
+        >
+          <li className={classes.liLink}>Account</li>
+        </Link>
         <Link to="/aboutUs" className={classes.navLink} onClick={hamburger}>
           <li className={classes.liLink}>About Us</li>
         </Link>
