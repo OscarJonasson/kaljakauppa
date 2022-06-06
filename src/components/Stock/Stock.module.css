@@ -1,8 +1,7 @@
 .container {
   display: flex;
   justify-content: space-between;
-  flex-flow: column nowrap;
-  height: 100vh;
+  flex-flow: column wrap;
 }
 
 .links {
@@ -11,14 +10,22 @@
   justify-content: center;
   align-items: center;
   background-color: antiquewhite;
+  width: 100vw;
+  height: 2rem;
 }
 
 .links a {
+  text-align: center;
   width: 33%;
+  border-right: 1px black solid;
 }
-.stock {
+
+.links a:last-child {
+  border-right: none;
+}
+.stockCards {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
 }
