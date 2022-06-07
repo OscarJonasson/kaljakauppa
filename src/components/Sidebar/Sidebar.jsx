@@ -29,8 +29,9 @@ const Sidebar = () => {
         // console.log(brewery);
         return (
           <Link
+            className={classes.sidebar_breweries_li}
             key={brewery}
-            to={`/search/${brewery.toLowerCase().substr(0, 4)}`}
+            to={`/search/${brewery.toLowerCase()}`}
             onClick={hideMenu}
           >
             <li>{brewery}</li>

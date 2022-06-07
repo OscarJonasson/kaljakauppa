@@ -26,7 +26,10 @@ const Home = ({ ageCheck, checkAge }) => {
       .map((beer) => {
         console.log();
         return (
-          <Link to={`search/${beer.brewery.brewery_name.split(" ").join("-")}`}>
+          <Link
+            key={beer.id}
+            to={`search/${beer.brewery.brewery_name.split(" ").join("-")}`}
+          >
             <FakeCarousel key={beer.id} beer={beer} />
           </Link>
         );

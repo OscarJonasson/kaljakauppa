@@ -71,3 +71,78 @@
 .navLink {
   color: black;
 }
+
+.navLinkSpecial {
+  color: black;
+  display: none;
+}
+
+.closestyle {
+  opacity: 0;
+  visibility: hidden;
+  top: -12rem;
+  transition: 1s;
+}
+
+.openstyle {
+  opacity: 1;
+  visibility: visible;
+  top: 8rem;
+  transition: 1s;
+}
+
+@media (max-width: 723px) {
+  .openstyle {
+    opacity: 1;
+    visibility: visible;
+    top: 6rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .openstyle {
+    opacity: 1;
+    visibility: visible;
+    top: 5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .navNav {
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    position: absolute;
+    top: -12rem;
+    left: 0;
+    z-index: 2;
+    height: 18.5rem;
+    width: 15rem;
+  }
+
+  .openstyle {
+    opacity: 1;
+    visibility: visible;
+    top: 5rem;
+  }
+}
+
+@media (max-width: 287px) {
+  .navNav {
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    position: absolute;
+    top: -12rem;
+    left: 0;
+    z-index: 2;
+    height: 18.5rem;
+    width: 11rem;
+  }
+
+  .openstyle {
+    opacity: 1;
+    visibility: visible;
+    top: 5rem;
+  }
+}

@@ -34,7 +34,7 @@
       "beer_abv": 12,
       "beer_description": "Iso, paksu ja makea Stout, jossa upeaa runkoa on koristeltu pekaanipähkinöillä, kanelilla, ugandalaisella vaniljalla sekä vaahterasiirapilla. Älä missaa tätä!",
       "beer_style": "Imperial Stout",
-      "beer_slug": "humble-forager-brewery-warming-hut-memoirs-sstout",
+      "beer_slug": "humble-forager-brewery-warming-hut-memoirs-stout-sstout",
       "rating_score": 2.58,
       "brewery": {
         "brewery_id": 2,
@@ -58,11 +58,11 @@
       "id": 3,
       "beer_name": "Serenity 1: Scotch",
       "beer_label": "https://cdn.shopify.com/s/files/1/0368/1628/9924/products/seren_scotch_1024x1024.jpg?v=1652897901",
-      "beer_abv": 11,
+      "beer_abv": 11.0,
       "beer_description": "Scotch barrel aged imperial oatmeal stout",
       "beer_style": "Imperial Oatmeal Stout",
       "is_in_production": 1,
-      "beer_slug": "utopia-serenity-1-scotch-sstout",
+      "beer_slug": "utopia-serenity-1-scotch-stout-sstout",
       "rating_score": 4.22,
       "brewery": {
         "brewery_id": 3,
@@ -89,7 +89,7 @@
       "beer_abv": 13.5,
       "beer_description": "Russian Imperial Stout aged in Ardbeg's Kindalton single malt whisky barrels.",
       "beer_style": "Russian Imperial Stout",
-      "beer_slug": "laugar-brewery-aupa-tovarich-sstout",
+      "beer_slug": "laugar-brewery-aupa-tovarich-stout-sstout",
       "rating_score": 4.22,
       "brewery": {
         "brewery_id": 4,
@@ -167,7 +167,7 @@
       "id": 7,
       "beer_name": "Tropic of Now",
       "beer_label": "https://cdn.webshopapp.com/shops/297538/files/401383582/brulo-brulo-tropic-of-now.jpg",
-      "beer_abv": 0,
+      "beer_abv": 0.0,
       "beer_description": "Featuring four of our favourite new world hops. Medium-full bodied beer, perfectly balanced bitterness and generously double dry hopped to deliver a hazy beer with big waves of tropical and stone fruit aromas and flavours.",
       "beer_style": "DDH IPA Non-alcoholic",
       "beer_slug": "brulo-tropic-of-now-nonalcoholic-sipa",
@@ -196,8 +196,8 @@
       "beer_label": "https://cdn.webshopapp.com/shops/297538/files/398974914/northern-monk-northern-monk-holy-faith.jpg",
       "beer_abv": 0.5,
       "beer_description": "Alcohol-Free Hazy Pale Ale hopped with Citra, El Dorado, and Simcoe.",
-      "beer_style": "IPA",
-      "beer_slug": "northern-monk-holy-faith-nonalcoholic-sipa",
+      "beer_style": "Pale Ale",
+      "beer_slug": "northern-monk-holy-faith-nonalcoholic-pale-ale-spale",
       "rating_score": 2.61,
       "brewery": {
         "brewery_id": 8,
@@ -224,7 +224,7 @@
       "beer_abv": 0.5,
       "beer_description": "Start well with a cup of Hard Pour non alcoholic coffee nitro stout! A stout brewed with real coffee and cocoa and then filled with nitrogen for a full mouthfeel and an extra creamy foam layer. Shake before use and pour it HARD for the real nitro experience",
       "beer_style": "Non Alcoholic Coffee Nitro Stout",
-      "beer_slug": "vandestreek-hard-pour-nonalcoholic-sstout",
+      "beer_slug": "vandestreek-hard-pour-nonalcoholic-stout-sstout",
       "rating_score": 1.71,
       "brewery": {
         "brewery_id": 9,
@@ -251,7 +251,7 @@
       "beer_abv": 0.3,
       "beer_description": "Coffee Free Gelato: Passion Fruit & Mango",
       "beer_style": "Non-alcoholic Sour",
-      "beer_slug": "funky-fluid-free-gelato-nonalcoholic-ssour",
+      "beer_slug": "funky-fluid-free-gelato-nonalcoholic-sour-ssour",
       "rating_score": 4.26,
       "brewery": {
         "brewery_id": 10,
@@ -379,7 +379,7 @@
       "id": 15,
       "beer_name": "Hazy Jane",
       "beer_label": "https://cdn.webshopapp.com/shops/297538/files/392460214/brewdog-brewdog-hazy-jane.jpg",
-      "beer_abv": 5,
+      "beer_abv": 5.0,
       "beer_description": "New England detuned. This full-tilt fruit machine of an IPA packs all the flavour but less of the alcohol. Notes of pineapple,mango, stone-fruit, and a hint of tangerine to mix it up. Brewed with oats and wheat and left unfiltered for a smooth juicy hit.",
       "beer_style": "IPA",
       "beer_slug": "brewdog-hazy-jane-ipa-sipa",
@@ -400,7 +400,7 @@
         }
       },
       "stock": 21,
-      "price": 3
+      "price": 3.0
     },
     {
       "id": 16,
@@ -460,7 +460,7 @@
       "id": 18,
       "beer_name": "Helge",
       "beer_label": "https://cdn.webshopapp.com/shops/297538/files/395094832/pohjala-pohjala-helge.jpg",
-      "beer_abv": 5,
+      "beer_abv": 5.0,
       "beer_description": "Sweet citrus fruits and deliciously overripe pineapple rolls around the tongue before being joined by fresh coconut and a pleasantly sweet and creamy oat mouthfeel, matched with a delicate tingling carbonation. Peach and bright stone fruits join in and a juicy, refreshing, passionfruit-like hop character lingers on the tongue.",
       "beer_style": "Gluten Free Pale Ale",
       "beer_slug": "põhjala-helge-pale-ale-spale",
@@ -487,10 +487,10 @@
       "id": 19,
       "beer_name": "Coastal Sunrise",
       "beer_label": "https://cdn.webshopapp.com/shops/297538/files/404199338/humble-forager-brewery-humble-forager-coastal-sunr.jpg",
-      "beer_abv": 6,
+      "beer_abv": 6.0,
       "beer_description": "Inspired by a Georgia breakfast pastry. Amish maple syrup glazed peach, pineapple, pecan turnover dusted with cinnamon.",
       "beer_style": "Sour",
-      "beer_slug": "humble-forager-brewery-coastal-sunrise-ssour",
+      "beer_slug": "humble-forager-brewery-coastal-sunrise-sour-ssour",
       "rating_score": 4.1,
       "brewery": {
         "brewery_id": 2,
@@ -514,7 +514,7 @@
       "id": 20,
       "beer_name": "Elevated Perspective",
       "beer_label": "https://cdn.webshopapp.com/shops/297538/files/392370679/humble-forager-brewery-humble-forager-elevated-per.jpg",
-      "beer_abv": 8,
+      "beer_abv": 8.0,
       "beer_description": "This version of Elevated Perspective uses three types of oats (oat malt, flaked oats and golden naked oats) before being double dry hopped with Cashmere, Mosaic, Mosaic Cryo and loads of Strata. A soft textured, fluffy mouthfeel grooms your palate for tropical fruit flavors and blueberry kush aromatics. (Vegan)",
       "beer_style": "Imperial Double IPA",
       "beer_slug": "humble-forager-brewery-elevated-perspective-ipa-sipa",
@@ -538,9 +538,7 @@
       "price": 8.9
     }
   ],
-  "orders": [
-    {}
-  ],
+  "orders": [{}],
   "users": [
     {
       "id": 1,
@@ -560,18 +558,6 @@
       "name": "Rick Richardson",
       "email": "rick@iwantbeer.com",
       "message": "Indeed, a satellite brewery around a tornado brew avoids contact with a blood clot. Any jersey cow can completely play pinochle with an Octoberfest, but it takes a real hops to go deep sea fishing with a Long Trail Ale around an Ipswich Ale. The spudgun pees on a blue moon. Sometimes a gentle keg takes a coffee break, but the ice house always drunkenly finds much coolness with the Luna Sea ESB related to another Pilsner Urquell! The polka-dotted Hefeweizen dies, and the sake bomb of a Honey Brown lazily plans an escape from an annoying King Henry a monkey bite behind the bud light."
-    },
-    {
-      "name": "asdf",
-      "email": "asfd@sdf.com",
-      "message": "sdfäpkmasdpomfasd",
-      "id": 2
-    },
-    {
-      "name": "asf",
-      "email": "afs@sdf.co",
-      "message": "adfsöaflskm",
-      "id": 3
     }
   ]
 }

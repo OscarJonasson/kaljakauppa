@@ -1,13 +1,13 @@
 .container {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
 }
 
 .form {
   margin: 2rem;
   display: flex;
   align-items: center;
-  flex-flow: column nowrap;
+  flex-direction: column;
 }
 
 .form input,
@@ -26,6 +26,7 @@ textarea {
 
 textarea {
   height: 10rem;
+  width: 24rem;
 }
 
 label {
@@ -45,4 +46,18 @@ label {
 
 .form_btn:hover {
   background-color: var(--orange);
+}
+
+@media (max-width: 450px) {
+  textarea {
+    height: 8rem;
+    width: 20rem;
+  }
+}
+
+@media (max-width: 350px) {
+  textarea {
+    height: 8rem;
+    width: 15rem;
+  }
 }

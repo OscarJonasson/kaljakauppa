@@ -37,3 +37,80 @@
   display: flex;
   overflow: auto;
 }
+
+@media (max-width: 850px) {
+  .hero_img {
+    object-fit: cover;
+    width: 100%;
+    height: 50vh;
+    filter: brightness(1.5) contrast(0.8) saturate(130%);
+  }
+
+  .logoDiv {
+    margin: 2rem;
+    width: 30rem;
+    display: flex;
+    overflow: auto;
+  }
+}
+
+@media (max-width: 680px) {
+  .hero_img {
+    object-fit: cover;
+    width: 100%;
+    height: 40vh;
+    filter: brightness(1.5) contrast(0.8) saturate(130%);
+  }
+
+  .hero_container h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero_container p {
+    font-size: 0.8rem;
+    margin: 0 3rem;
+  }
+
+  .logoSection h3 {
+    font-size: 1rem;
+  }
+
+  .logoDiv {
+    margin: 2rem;
+    width: 25rem;
+    display: flex;
+    overflow: auto;
+  }
+}
+
+@media (max-width: 450px) {
+  .hero_container h1 {
+    font-size: 1.2rem;
+  }
+
+  .hero_container p {
+    font-size: 0.6rem;
+    margin: 0 3rem;
+  }
+
+  .logoSection h3 {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  .logoDiv {
+    margin: 2rem;
+    width: 19rem;
+    display: flex;
+    overflow: auto;
+  }
+}
+
+@media (max-width: 350px) {
+  .logoDiv {
+    margin: 2rem;
+    width: 15rem;
+    display: flex;
+    overflow: auto;
+  }
+}

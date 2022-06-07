@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import StockCard from "../StockCard/StockCard";
 import classes from "./Stock.module.css";
 
 const Stock = () => {
@@ -15,27 +16,22 @@ const Stock = () => {
   return (
     <section className={classes.container}>
       <ul className={classes.links}>
-        <Link to="">
+        <Link to="/stock">
           <li>Stock</li>
         </Link>
-        <Link to="stats">
+        <Link to="/stats">
           <li>Stats</li>
         </Link>
-        <Link to="orders">
+        <Link to="/orders">
           <li>Orders</li>
         </Link>
       </ul>
-
-      {stock.map((beer) => {
-        console.log(beer);
-        return (
-          <form className={classes.stock}>
-            <div>{beer.beer_name}</div>
-            <input type="text" value={beer.stock} />
-            <input type="number" value={beer.price} />
-          </form>
-        );
-      })}
+      <div className={classes.stockCards}>
+        {stock.map((beer) => {
+          // console.log(beer);
+          return <StockCard key={beer.id} beer={beer} />;
+        })}
+      </div>
     </section>
   );
 };

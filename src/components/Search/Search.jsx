@@ -27,9 +27,7 @@ const Search = ({ changeHandler }) => {
           .toLowerCase()
           .split("-")
           .some((beer) => {
-            const searchTerms = selection.map((sele) => {
-              return sele.substr(0, 3);
-            });
+            const searchTerms = selection[0].substr(0, 5);
             if (!goodSearch && beer.startsWith(searchTerms)) {
               setGoodSearch(true);
             }

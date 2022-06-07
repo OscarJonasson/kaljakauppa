@@ -13,6 +13,7 @@ import Newsletter from "./components/Newsletter/Newsletter";
 import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 import Checkout from "./components/Checkout/Checkout";
 import Stock from "./components/Stock/Stock";
+import Orders from "./components/Orders/Orders";
 
 const App = () => {
   // LOCAL STORAGE
@@ -107,11 +108,9 @@ const App = () => {
             path="checkout"
             element={<Checkout beersPrice={total} shoppingcart={cartChanges} />}
           />
-          <Route path="stock" element={<Stock />}>
-            <Route path="stats" />
-            <Route index path="stock" />
-            <Route path="orders" />
-          </Route>
+          <Route path="stock" element={<Stock />} />
+          <Route path="stats" />
+          <Route path="orders" element={<Orders />} />
         </Route>
       </Routes>
     </BrowserRouter>

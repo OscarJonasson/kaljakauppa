@@ -66,3 +66,67 @@ ul li a {
 ul li a:hover {
   text-shadow: 0 0 5px white;
 }
+
+@media (max-width: 768px) {
+  .aboutUs {
+    font-size: 0.7rem;
+  }
+
+  .cookiePolicy {
+    font-size: 0.7rem;
+  }
+
+  .followUs {
+    font-size: 0.7rem;
+    padding-bottom: 1rem;
+  }
+
+  .weAccept {
+    font-size: 0.7rem;
+  }
+
+  footer p {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .aboutUs {
+    font-size: 0.5rem;
+  }
+
+  .cookiePolicy {
+    font-size: 0.5rem;
+  }
+
+  .followUs {
+    font-size: 0.5rem;
+  }
+
+  .weAccept {
+    font-size: 0.5rem;
+  }
+
+  footer p {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 290px) {
+  .aboutUs {
+    font-size: 0.4rem;
+  }
+
+  .cookiePolicy {
+    font-size: 0.4rem;
+  }
+
+  .followUs {
+    font-size: 0.4rem;
+    padding-bottom: 1rem;
+  }
+
+  .weAccept {
+    font-size: 0.4rem;
+  }
+}
