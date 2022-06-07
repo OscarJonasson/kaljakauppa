@@ -7,11 +7,12 @@ function Orders() {
   const [orders, setOrders] = useState([]);
   useEffect(() => {
     axios
-      // .get("http://localhost:3011/beers/")
-      .get("https://kaljakauppa.herokuapp.com/orders")
+      .get("http://localhost:3011/orders/")
+      //   .get("https://kaljakauppa.herokuapp.com/orders")
       .then((res) => setOrders(res.data))
       .catch((error) => console.log(error));
   }, []);
+  console.log(orders);
   return (
     <>
       <ul className={classes.links}>
@@ -25,7 +26,11 @@ function Orders() {
           <li>Orders</li>
         </Link>
       </ul>
-      <OrderCard />
+      <div className={classes.incomingOrders}>
+        {orders.map((order) => {
+          return <OrderCard key={order} orders={order} />;
+        })}
+      </div>
     </>
   );
 }

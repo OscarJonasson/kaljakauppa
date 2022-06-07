@@ -538,7 +538,15 @@
       "price": 8.9
     }
   ],
-  "orders": [{}],
+  "orders": [
+    {
+      "id": 1,
+      "products": [
+        { "id": 13, "beer_name": "Independent North", "amount": 3 },
+        { "id": 11, "beer_name": "Hazy AF", "amount": 2 }
+      ]
+    }
+  ],
   "users": [
     {
       "id": 1,
