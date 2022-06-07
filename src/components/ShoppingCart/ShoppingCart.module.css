@@ -1,5 +1,4 @@
 .shopping_cart {
-  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -11,6 +10,10 @@
 
 .checkout {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   top: 15rem;
   right: 3rem;
   box-shadow: 1px 1px 5px rgb(118, 118, 118, 0.3);
@@ -63,6 +66,7 @@
 
 .emptyCart {
   align-self: center;
+  width: 15rem;
 }
 
 .checkout a {
@@ -100,5 +104,138 @@
 
   .checkout a {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 738px) {
+  .checkout {
+    padding: 1rem;
+    right: 2rem;
+    height: 10rem;
+  }
+
+  .checkout_button {
+    width: 6rem;
+    margin: 0.5rem;
+    padding: 0.7rem;
+  }
+
+  .tax_text {
+    font-size: 0.5rem;
+  }
+
+  .subtotal {
+    font-size: 0.8rem;
+  }
+
+  .checkout p {
+    margin: 0.5rem 0;
+  }
+
+  .checkout a {
+    font-size: 0.7rem;
+  }
+
+  .emptyCart {
+    width: 12rem;
+  }
+}
+
+@media (max-width: 586px) {
+  .checkout {
+    padding: 1rem;
+    right: 2rem;
+    height: 15rem;
+    width: 13rem;
+  }
+
+  .checkout_button {
+    width: 6rem;
+    margin: 1rem;
+    padding: 0.7rem;
+  }
+
+  .tax_text {
+    font-size: 0.8rem;
+  }
+
+  .subtotal {
+    font-size: 1rem;
+  }
+
+  .checkout p {
+    margin: 0.5rem 0;
+  }
+
+  .checkout a {
+    font-size: 0.7rem;
+  }
+
+  .emptyCart {
+    width: 10rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 455px) {
+  .checkout {
+    padding: 1rem;
+    right: 2rem;
+    height: 11rem;
+    width: 10rem;
+  }
+
+  .tax_text {
+    font-size: 0.6rem;
+  }
+
+  .subtotal {
+    font-size: 0.8rem;
+  }
+
+  .checkout p {
+    margin: 0.5rem 0;
+  }
+
+  .checkout a {
+    font-size: 0.7rem;
+  }
+
+  .quantity_input {
+    width: 2.5rem;
+  }
+}
+
+@media (max-width: 389px) {
+  .checkout {
+    height: 11rem;
+    width: 20rem;
+    position: static;
+  }
+
+  .shopping_cart {
+    align-items: center;
+  }
+
+  .emptyCart {
+    width: 7rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .checkout {
+    height: 11rem;
+    width: 16rem;
+    position: static;
+  }
+
+  .shopping_cart {
+    align-items: center;
+  }
+
+  .emptyCart {
+    width: 7rem;
+    font-size: 0.8rem;
   }
 }

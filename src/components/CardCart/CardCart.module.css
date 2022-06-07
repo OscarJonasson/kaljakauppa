@@ -108,3 +108,45 @@
     width: 8rem;
   }
 }
+
+@media (max-width: 631px) {
+  .card {
+    margin: 1rem 1rem 0 1.5rem;
+  }
+  .card_img {
+    margin-left: 0;
+  }
+
+  .quantityTotalButton {
+    align-items: center;
+    font-size: 0.7rem;
+  }
+
+  .delete_button {
+    width: 6rem;
+  }
+}
+
+@media (max-width: 586px) {
+  .card {
+    flex-direction: column;
+    height: 27rem;
+    width: 40%;
+  }
+}
+
+@media (max-width: 389px) {
+  .card {
+    height: 27rem;
+    width: 20rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .card {
+    height: 27rem;
+    width: 16rem;
+    margin-bottom: 2rem;
+  }
+}
