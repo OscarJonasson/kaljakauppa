@@ -4,9 +4,6 @@ import classes from "./Checkout.module.css";
 import axios from "axios";
 
 const Payment = ({ prev, next, changer }) => {
-  // const [order, setOrder] = useState({
-  //   products: [],
-  // });
   const storedCart = JSON.parse(localStorage.getItem("cartData"));
 
   const sendOrderHandler = (e) => {
