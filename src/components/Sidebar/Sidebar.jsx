@@ -21,12 +21,9 @@ const Sidebar = () => {
         return beers.brewery.brewery_name;
       })
       .filter((breweryName, i, brewery) => {
-        // console.log("self", brewery, "index", i, "value", breweryName);
-        // console.log(brewery.indexOf(breweryName) === i);
         return brewery.indexOf(breweryName) === i;
       })
       .map((brewery) => {
-        // console.log(brewery);
         return (
           <Link
             className={classes.sidebar_breweries_li}
@@ -41,18 +38,15 @@ const Sidebar = () => {
   };
 
   const hideMenu = () => {
-    // const side = document.querySelector("sidebar");
     const side = document.getElementById("sidebar");
     if (menuOpen) {
       side.style.visibility = "hidden";
-      side.style.left = "-16%";
-      side.style.transform = "scale(0.1)";
+      side.style.left = "-20%";
       side.style.position = "fixed";
       setMenuOpen(!menuOpen);
     } else {
       side.style.visibility = "visible";
       side.style.left = "0";
-      side.style.transform = "scale(1)";
       setTimeout(() => {
         side.style.position = "sticky";
       }, 500);
@@ -87,11 +81,11 @@ const Sidebar = () => {
             Non-alcoholic
           </Link>
         </div>
+        <button className={classes.sesame} onClick={hideMenu}></button>
       </div>
-      <button
-        className={menuOpen ? classes.sesame : classes.sesameClose}
-        onClick={hideMenu}
-      ></button>
+      {!menuOpen && (
+        <button className={classes.sesameClose} onClick={hideMenu}></button>
+      )}
     </>
   );
 };
