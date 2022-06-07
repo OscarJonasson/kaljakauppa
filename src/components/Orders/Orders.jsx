@@ -12,7 +12,6 @@ function Orders() {
       .then((res) => setOrders(res.data))
       .catch((error) => console.log(error));
   }, []);
-  console.log(orders);
   return (
     <>
       <ul className={classes.links}>

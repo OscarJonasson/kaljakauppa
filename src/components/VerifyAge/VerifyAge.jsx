@@ -1,6 +1,6 @@
 import classes from "./VerifyAge.module.css";
 import { Link } from "react-router-dom";
-const VerifyAge = props => {
+const VerifyAge = (props) => {
   return (
     <div className={classes.container}>
       <div className={classes.verify_box}>
@@ -22,6 +22,10 @@ const VerifyAge = props => {
             Nope, not yet!
           </Link>
         </div>
+        <p>
+          *Site is for training purposes only. All inputted data is saved on a
+          public server.
+        </p>
       </div>
     </div>
   );
