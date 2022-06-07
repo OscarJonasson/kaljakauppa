@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import classes from "./Checkout.module.css";
 import axios from "axios";
@@ -22,6 +21,7 @@ const Payment = ({ prev, next, changer }) => {
 
     // axios.post("http://localhost:3011/orders", ready);
     axios.post("https://kaljakauppa.herokuapp.com/orders", ready);
+    localStorage.clear();
     next(e);
   };
 
@@ -43,7 +43,6 @@ const Payment = ({ prev, next, changer }) => {
 
             <button
               className={classes.surpriseButton}
-              // this needs to be fixed so next works
               onClick={sendOrderHandler}
             >
               <i class="fa-brands fa-cc-amex fa-5x"></i>
