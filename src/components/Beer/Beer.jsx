@@ -63,18 +63,20 @@ const Beer = ({ cartChanges, changeHandler }) => {
             <li>Price: {b.price} €</li>
           </ul>
           <div className={classes.controls}>
-            <button className={classes.controls_math} onClick={subOne}>
-              ➖
-            </button>
-            <input
-              className={classes.controls_amount}
-              type="number"
-              name="amount"
-              value={b.stock === 0 ? 0 : amount}
-            />
-            <button className={classes.controls_math} onClick={addOne}>
-              ➕
-            </button>
+            <div>
+              <button className={classes.controls_math} onClick={subOne}>
+                ➖
+              </button>
+              <input
+                className={classes.controls_amount}
+                type="number"
+                name="amount"
+                value={b.stock === 0 ? 0 : amount}
+              />
+              <button className={classes.controls_math} onClick={addOne}>
+                ➕
+              </button>
+            </div>
             <button
               onClick={() => changeHandler(b, amount)}
               className={
