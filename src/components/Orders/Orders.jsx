@@ -27,7 +27,7 @@ function Orders() {
       </ul>
       <div className={classes.incomingOrders}>
         {orders.map((order) => {
-          return <OrderCard key={order} orders={order} />;
+          return <OrderCard key={order.id} orders={order} />;
         })}
       </div>
     </>

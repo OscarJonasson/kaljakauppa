@@ -1,4 +1,5 @@
 import React from "react";
+
 import classes from "./Checkout.module.css";
 import squirrel from "../../assets/images/end.webp";
 

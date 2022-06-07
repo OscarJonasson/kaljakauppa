@@ -573,6 +573,56 @@
         }
       ],
       "id": 2
+    },
+    {
+      "products": [
+        {
+          "id": 2,
+          "beer_name": "Warming Hut Memoirs",
+          "amount": 2
+        },
+        {
+          "id": 3,
+          "beer_name": "Serenity 2: Scotch",
+          "amount": 1
+        },
+        {
+          "id": 7,
+          "beer_name": "Tropic of Now",
+          "amount": 11
+        },
+        {
+          "id": 5,
+          "beer_name": "Zodiak",
+          "amount": 1
+        }
+      ],
+      "id": 3
+    },
+    {
+      "products": [
+        {
+          "id": 1,
+          "beer_name": "Celebration Ale",
+          "amount": 3
+        },
+        {
+          "id": 2,
+          "beer_name": "Warming Hut Memoirs",
+          "amount": 1
+        },
+        {
+          "id": 5,
+          "beer_name": "Zodiak",
+          "amount": 1
+        },
+        {
+          "id": 7,
+          "beer_name": "Tropic of Now",
+          "amount": 13
+        }
+      ],
+      "id": 4
     }
   ],
   "users": [
