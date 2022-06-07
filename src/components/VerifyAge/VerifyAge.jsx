@@ -1,6 +1,8 @@
 import classes from "./VerifyAge.module.css";
 import { Link } from "react-router-dom";
-const VerifyAge = (props) => {
+import classNames from "classnames";
+
+const VerifyAge = ({ check }) => {
   return (
     <div className={classes.container}>
       <div className={classes.verify_box}>
@@ -10,21 +12,18 @@ const VerifyAge = (props) => {
         </p>
         <div className={classes.verify_buttons}>
           <button
-            className={`${classes.verify_btn} ${classes.green}`}
-            onClick={props.check}
+            className={classNames([classes.verify_btn, classes.green])}
+            onClick={check}
           >
             Yes, let's boogie!
           </button>
-          <Link
-            to="/search/nonalcoholic"
-            className={`${classes.verify_btn} ${classes.red}`}
-          >
-            Nope, not yet!
-          </Link>
+          <button className={classNames([classes.verify_btn, classes.red])}>
+            <Link to="/search/nonalcoholic">Nope, not yet!</Link>
+          </button>
         </div>
-        <p>
-          *Site is for training purposes only. All inputted data is saved on a
-          public server.
+        <p className={classes.warning}>
+          *This site is for training purposes only. All inputted data is saved
+          on a public server.
         </p>
       </div>
     </div>

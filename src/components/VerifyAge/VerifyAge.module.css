@@ -34,9 +34,7 @@
 }
 
 .verify_btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   height: 3.5rem;
   width: 12rem;
   margin: 0 1rem;
@@ -66,4 +64,47 @@
 
 .red:hover {
   background-color: var(--red);
+}
+
+.warning {
+  font-size: 0.6rem;
+}
+
+@media (max-width: 709px) {
+  .verify_box {
+    height: 60vh;
+    width: 70vw;
+  }
+
+  .verify_btn {
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 457px) {
+  .verify_box {
+    height: 60vh;
+    width: 70vw;
+  }
+
+  .verify_buttons {
+    flex-direction: column;
+  }
+
+  .verify_btn {
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 402px) {
+  .container {
+    text-align: center;
+  }
+}
+
+@media (max-width: 302px) {
+  .verify_btn {
+    width: 10rem;
+  }
 }
