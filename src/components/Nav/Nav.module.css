@@ -79,6 +79,16 @@
   }
 }
 
+@media (max-width: 600px) {
+  .navLinkSpecial {
+    display: inline;
+  }
+
+  .navNav {
+    height: 21.6rem;
+  }
+}
+
 @media (max-width: 540px) {
   .openstyle {
     opacity: 1;

@@ -82,3 +82,31 @@
   background-color: #fd9a28;
   transition: 0.5s;
 }
+
+@media (max-width: 736px) {
+  .accountForm h3 {
+    text-align: center;
+  }
+
+  .accountForm {
+    width: 80vw;
+  }
+
+  .nameArea {
+    width: 75vw;
+  }
+
+  .singleInput {
+    width: 75vw;
+  }
+
+  .country_postcode_div {
+    width: 75vw;
+  }
+}
+
+@media (max-width: 332px) {
+  .accountBtn {
+    width: 13rem;
+  }
+}
