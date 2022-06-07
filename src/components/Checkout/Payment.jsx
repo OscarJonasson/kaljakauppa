@@ -20,8 +20,8 @@ const Payment = ({ prev, next, changer }) => {
     console.log("items", items);
     const ready = { products: items };
 
-    axios.post("http://localhost:3011/orders", ready);
-    console.log("ready", ready);
+    // axios.post("http://localhost:3011/orders", ready);
+    axios.post("https://kaljakauppa.herokuapp.com/orders", ready);
     next(e);
   };
 

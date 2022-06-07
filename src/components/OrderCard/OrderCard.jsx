@@ -19,18 +19,18 @@ function OrderCard({ orders }) {
         return beer.id === product.id;
       });
       let newStockAmount = { stock: stock.stock - product.amount };
-      axios.patch(`http://localhost:3011/beers/${product.id}`, newStockAmount);
-      //   axios.patch(
-      //     `https://kaljakauppa.herokuapp.com/beers/${product.id}`,
-      //     newStockAmount
-      //   );
+      //   axios.patch(`http://localhost:3011/beers/${product.id}`, newStockAmount);
+      axios.patch(
+        `https://kaljakauppa.herokuapp.com/beers/${product.id}`,
+        newStockAmount
+      );
     });
     deleteHandler();
   };
 
   const deleteHandler = () => {
-    // axios.delete(`https://kaljakauppa.herokuapp.com/orders/${orders.id}`);
-    axios.delete(`http://localhost:3011/orders/${orders.id}`);
+    // axios.delete(`http://localhost:3011/orders/${orders.id}`);
+    axios.delete(`https://kaljakauppa.herokuapp.com/orders/${orders.id}`);
     window.location.reload();
   };
 
