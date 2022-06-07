@@ -206,12 +206,12 @@ header nav ul li a {
     width: 30%;
   }
 
-  .headerRight span {
-    margin: 0 0.8rem;
-  }
-
   header {
     height: 6rem;
+  }
+
+  .cartNumber {
+    left: -13px;
   }
 }
 
@@ -225,9 +225,13 @@ header nav ul li a {
   .menu i {
     font-size: 2rem;
   }
-  .headerRight span {
+
+  .cartNumber {
+    font-size: 0.8rem;
+  }
+
+  .headerRight i {
     font-size: 1.5rem;
-    margin: 0 0.5rem;
   }
 
   header {
@@ -250,11 +254,6 @@ header nav ul li a {
     margin-right: 0.5rem;
   }
 
-  .headerRight span {
-    font-size: 1.5rem;
-    margin: 0 0.5rem;
-  }
-
   header {
     height: 5rem;
   }
@@ -272,11 +271,6 @@ header nav ul li a {
 
   .headerLeft {
     margin-right: 0.5rem;
-  }
-
-  .headerRight span {
-    font-size: 1.5rem;
-    margin: 0;
   }
 
   .logo {

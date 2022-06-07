@@ -19,10 +19,25 @@ a {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 
 .badSearch a {
   color: var(--darkblue);
   text-decoration: underline;
+}
+
+@media (max-width: 417px) {
+  .badSearch h4 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 370px) {
+  .badSearch h4 {
+    text-align: center;
+  }
+
+  .luckySquirrel {
+    height: 15rem;
+  }
 }
