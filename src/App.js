@@ -41,7 +41,7 @@ const App = () => {
   // LOCAL ENDS
 
   // Set this to false if you want to test the modal window
-  const [ageCheck, setAgeCheck] = useState(true);
+  const [ageCheck, setAgeCheck] = useState(false);
 
   const checkAge = () => {
     setAgeCheck(true);
