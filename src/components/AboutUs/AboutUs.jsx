@@ -21,11 +21,11 @@ const AboutUs = () => {
         big fan of a Honey Brown living with a pin ball machine.{" "}
       </p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quia
-        voluptatibus vitae voluptatum blanditiis omnis consequatur, ullam
-        voluptatem magnam maxime consequuntur perspiciatis mollitia consectetur
-        odit, itaque illo eligendi necessitatibus officia asperiores ad. Tempora
-        veniam maiores voluptatibus esse sapiente vitae animi obcaecati.{" "}
+        When an air hocky table around a Miller panics, a mysterious micro brew
+        rejoices. A dumbly tattered hops borrows money from the Mango Beer.
+        Furthermore, a mysterious keg reads a magazine, and a dude toward the
+        dude can be kind to a Harpoon around another Citra Ninja. A satellite
+        brewery hardly buries some Imperial Stout.{" "}
       </p>
     </section>
   );

@@ -28,7 +28,6 @@ const Stock = () => {
       </ul>
       <div className={classes.stockCards}>
         {stock.map((beer) => {
-          // console.log(beer);
           return <StockCard key={beer.id} beer={beer} />;
         })}
       </div>

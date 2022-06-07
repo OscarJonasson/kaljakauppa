@@ -95,17 +95,6 @@ header nav ul li a {
   border-radius: 50%;
 }
 
-/* .cart::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  background-color: #fa5c65;
-  height: 1.4rem;
-  width: 1.4rem;
-  border-radius: 50%;
-} */
-
 .cartNumber,
 .cartNumberSmall {
   display: flex;
@@ -267,12 +256,6 @@ header nav ul li a {
   header {
     height: 5rem;
   }
-
-  /* .mobileLogo {
-    display: inline;
-    width: 12rem;
-    height: auto;
-  } */
 
   .logo {
     width: 12rem;

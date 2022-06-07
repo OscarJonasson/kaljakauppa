@@ -45,10 +45,12 @@ const Home = ({ ageCheck, checkAge }) => {
           Welcome to Error Squirrel Beer Shop!
         </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero
-          ducimus rerum dolore officiis voluptatum perspiciatis enim animi
-          facere, ipsa distinctio expedita. Quae sint ratione cumque corporis
-          eveniet voluptatem voluptatum. Deleniti.
+          A high Avery IPA shares a shower with the frozen booze. When the rude
+          power drill drink is overpriced, the self-actualized lager can be kind
+          to a fried tornado brew. A paternal Hazed and Infused greedily knows
+          the frightened rattlesnake, and some loyal Imperial Stout befriends an
+          Octoberfest near a polar bear beer. The Honey Brown living with the
+          pool table is loose.
         </p>
       </div>
       <section className={classes.logoSection}>
