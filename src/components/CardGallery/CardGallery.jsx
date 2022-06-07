@@ -2,6 +2,10 @@ import classes from "./CardGallery.module.css";
 import { Link } from "react-router-dom";
 
 const CardGallery = ({ beer, cartChanges, changeHandler }) => {
+  const beerPrice = () => {
+    return Number(beer.price).toFixed(2);
+  };
+
   return (
     <div className={classes.card}>
       <img
@@ -11,7 +15,7 @@ const CardGallery = ({ beer, cartChanges, changeHandler }) => {
       />
       <div className={classes.card_desc}>
         <p>{beer.beer_name}</p>
-        <p>{beer.price} €</p>
+        <p>{beerPrice()} €</p>
         <button
           className={
             beer.stock > 0 ? classes.addtoCart : classes.addtoCartNoStock

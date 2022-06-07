@@ -27,6 +27,11 @@ const Beer = ({ cartChanges, changeHandler }) => {
       setAmount(amount + 1);
     }
   };
+
+  const beerPrice = () => {
+    return Number(b.price).toFixed(2);
+  };
+
   return (
     <>
       <ul className={classes.breadcrums}>
@@ -60,7 +65,7 @@ const Beer = ({ cartChanges, changeHandler }) => {
             ) : (
               <li>Stock: {b.stock}</li>
             )}
-            <li>Price: {b.price} €</li>
+            <li>Price: {beerPrice()} €</li>
           </ul>
           <div className={classes.controls}>
             <div>

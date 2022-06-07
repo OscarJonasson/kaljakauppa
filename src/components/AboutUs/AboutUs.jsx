@@ -6,17 +6,19 @@ const AboutUs = () => {
       <h2>About Us</h2>
       <p>
         Welcome to Error Squirrel Beer Shop! This is a school project brought to
-        you by Michael, Oscar and Jenna. Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Voluptas, quae odit culpa aliquid fuga perferendis
-        temporibus sapiente doloribus sequi nisi placeat voluptates sed earum
-        nam at ab ad iusto. Voluptatem.
+        you by Michael, Oscar and Jenna. A Hops Alligator Ale dances with a
+        gentle Luna Sea ESB, but the Sierra Nevada behind the broken bottle
+        lazily sells the satellite brewery near a spudgun to the burglar ale.
       </p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quia
-        voluptatibus vitae voluptatum blanditiis omnis consequatur, ullam
-        voluptatem magnam maxime consequuntur perspiciatis mollitia consectetur
-        odit, itaque illo eligendi necessitatibus officia asperiores ad. Tempora
-        veniam maiores voluptatibus esse sapiente vitae animi obcaecati.{" "}
+        When you see an Ipswich Ale living with the Coors, it means that a burly
+        bull ice wakes up. Most people believe that a razor blade beer around
+        the steam engine somewhat competes with a high customer, but they need
+        to remember how secretly a scooby snack procrastinates. Most people
+        believe that another rude colt 45 underhandedly ignores a bombed
+        satellite brewery, but they need to remember how stumbly a hops feels
+        nagging remorse. Indeed, some black velvet behind a bill completely is a
+        big fan of a Honey Brown living with a pin ball machine.{" "}
       </p>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quia
