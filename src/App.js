@@ -14,6 +14,9 @@ import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 import Checkout from "./components/Checkout/Checkout";
 import Stock from "./components/Stock/Stock";
 import Orders from "./components/Orders/Orders";
+import Login from "./components/Login/Login";
+import Signup from "./components/Signup/Signup";
+import Account from "./components/Account/Account";
 
 const App = () => {
   // LOCAL STORAGE
@@ -111,6 +114,9 @@ const App = () => {
           <Route path="stock" element={<Stock />} />
           <Route path="stats" />
           <Route path="orders" element={<Orders />} />
+          <Route path="login" element={<Login />} />
+          <Route path="signup" element={<Signup />} />
+          <Route path="signup/:account" element={<Account />} />
         </Route>
       </Routes>
     </BrowserRouter>
