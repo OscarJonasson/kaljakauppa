@@ -12,7 +12,7 @@
 .checkout {
   position: fixed;
   top: 15rem;
-  right: 5rem;
+  right: 3rem;
   box-shadow: 1px 1px 5px rgb(118, 118, 118, 0.3);
   border-radius: 5px;
   padding: 2rem;
@@ -21,7 +21,7 @@
 }
 
 .checkout p {
-  margin: 2rem;
+  margin: 2rem 1rem;
 }
 
 .subtotal {
@@ -32,11 +32,22 @@
   font-size: 0.8rem;
 }
 
-.checkout_button,
 .emptyCart {
   padding: 1rem;
   width: 20rem;
   margin: 2rem;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  border-style: none;
+  background-color: var(--lightorange);
+  box-shadow: 1px 1px 5px rgb(118, 118, 118, 0.3);
+  cursor: pointer;
+}
+
+.checkout_button {
+  padding: 1rem;
+  width: 11rem;
+  margin: 1rem;
   font-size: 1.3rem;
   border-radius: 5px;
   border-style: none;
@@ -56,4 +67,38 @@
 
 .checkout a {
   color: black;
+}
+
+@media (max-width: 887px) {
+  .checkout p {
+    margin: 2rem 0;
+  }
+
+  .checkout_button {
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 864px) {
+  .checkout {
+    padding: 1rem;
+    right: 2rem;
+    height: 15rem;
+    width: 25%;
+  }
+
+  .checkout p {
+    margin: 1.5rem 0;
+  }
+}
+
+@media (max-width: 832px) {
+  .checkout_button {
+    width: 8rem;
+    margin: 1rem;
+  }
+
+  .checkout a {
+    font-size: 1rem;
+  }
 }

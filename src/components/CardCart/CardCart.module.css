@@ -16,12 +16,10 @@
 }
 
 .card_desc {
-  align-self: center;
   text-align: center;
   font-size: 0.9rem;
   padding: 1rem;
   margin-left: 2rem;
-  color: black;
 }
 
 .card_desc p {
@@ -76,4 +74,37 @@
 
 .delete_button:hover {
   background-color: var(--orange);
+}
+
+@media (max-width: 1200px) {
+  .card {
+    width: 60%;
+    margin: 1rem 1rem 0 3rem;
+  }
+}
+
+@media (max-width: 840px) {
+  .card_desc {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 1rem;
+    margin: 0;
+  }
+}
+
+@media (max-width: 771px) {
+  .card_img {
+    margin-left: 1rem;
+  }
+  .card_desc {
+    font-size: 0.7rem;
+  }
+
+  .quantityTotalButton {
+    font-size: 0.8rem;
+  }
+
+  .delete_button {
+    width: 8rem;
+  }
 }
