@@ -64,7 +64,7 @@
   color: gray;
 }
 
-.signupBtn {
+.accountBtn {
   margin-top: 0.5rem;
   height: 3rem;
   width: 15rem;
@@ -78,7 +78,7 @@
   cursor: pointer;
 }
 
-.signupBtn:hover {
+.accountBtn:hover {
   background-color: #fd9a28;
   transition: 0.5s;
 }

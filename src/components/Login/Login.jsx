@@ -11,7 +11,7 @@ const Login = () => {
           <input
             type="email"
             className={classes.inputs}
-            placeholder="Email address"
+            placeholder="Email Address"
             required
           />
           <input
@@ -25,7 +25,7 @@ const Login = () => {
       </form>
       <div className={classes.signUp}>
         <h3>Don't have an account yet?</h3>
-        <Link to="/account">
+        <Link to="/signup">
           <button className={classes.signupBtn}>Sign Up Here</button>
         </Link>
       </div>
