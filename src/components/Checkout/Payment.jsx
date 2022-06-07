@@ -1,8 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import classes from "./Checkout.module.css";
+import axios from "axios";
 
 const Payment = ({ prev, next, changer }) => {
+  const [order, setOrder] = useState({
+    products: [],
+  });
+  const storedCart = JSON.parse(localStorage.getItem("cartData"));
+
+  const sendOrderHandler = (e) => {
+    e.preventDefault();
+    let items = [];
+    setOrder({
+      ...order,
+      products: storedCart.map((item) => {
+        let oneItem = {
+          id: item.id,
+          beer_name: item.beer_name,
+          amount: item.amount,
+        };
+        return (items = [...items, oneItem]);
+      }),
+    });
+    // setOrder({ ...order, products: items });
+    axios.post("http://localhost:3011/orders", order);
+    console.log(order);
+  };
   return (
     <form className={classes.infoForm} onChange={changer}>
       <div className={classes.titleDiv}>
@@ -19,7 +43,11 @@ const Payment = ({ prev, next, changer }) => {
               <i class="fa-brands fa-cc-paypal fa-5x"></i>
             </button>
 
-            <button className={classes.surpriseButton} onClick={next}>
+            <button
+              className={classes.surpriseButton}
+              // this needs to be fixed so next works
+              onClick={(sendOrderHandler, next)}
+            >
               <i class="fa-brands fa-cc-amex fa-5x"></i>
             </button>
           </p>
