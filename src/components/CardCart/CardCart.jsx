@@ -7,13 +7,9 @@ function CardCart({ beer, amount, changeHandler, removeHandler }) {
     return multi.toFixed(2);
   };
 
-  // const stockLimiter = (amount, stock) => {
-  //   if (amount > stock) {
-  //     return amount === beer.stock;
-  //   } else if (amount <= 0) {
-  //     return amount === 1;
-  //   }
-  // };
+  const beerPrice = () => {
+    return Number(beer.price).toFixed(2);
+  };
 
   return (
     <div className={classes.card}>
@@ -28,7 +24,7 @@ function CardCart({ beer, amount, changeHandler, removeHandler }) {
       </div>
       <div className={classes.card_desc}>
         <h3>{beer.beer_name}</h3>
-        <p>{beer.price} €</p>
+        <p>{beerPrice()} €</p>
         <p>{beer.beer_style}</p>
         <p>Stock: {beer.stock}</p>
       </div>
