@@ -4,7 +4,6 @@ import { useState } from "react";
 
 const StockCard = ({ beer }) => {
   const [inventoryData, setInventoryData] = useState({
-    // id: beer.id,
     stock: beer.stock,
     price: beer.price,
   });

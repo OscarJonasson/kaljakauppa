@@ -19,9 +19,6 @@ import Signup from "./components/Signup/Signup";
 import Account from "./components/Account/Account";
 
 const App = () => {
-  // LOCAL STORAGE
-
-  // Writes to localstorage, if its empty returns empty array for cartChanges
   const storageHandler = () => {
     const storedCart = localStorage.getItem("cartData");
     if (!storedCart) {
@@ -30,17 +27,13 @@ const App = () => {
     return JSON.parse(storedCart);
   };
 
-  // sets the default state for cartChanges using storageHandler function
   const [cartChanges, setCartChanges] = useState(storageHandler);
   const [total, setTotal] = useState(0);
 
-  // updates localS everytime when cartChanges state changes
   useEffect(() => {
     localStorage.setItem("cartData", JSON.stringify([...cartChanges]));
   }, [cartChanges]);
-  // LOCAL ENDS
 
-  // Set this to false if you want to test the modal window
   const [ageCheck, setAgeCheck] = useState(false);
 
   const checkAge = () => {
@@ -54,8 +47,6 @@ const App = () => {
     if (duplicate) {
       setCartChanges(
         cartChanges.map((singleBeer) => {
-          // for subTotal in shoppingcart to change this needs to be changed
-          // setTotal(total + amount * beer.price);
           return singleBeer.id === beer.id
             ? { ...duplicate, amount: parseInt(amount, 10) }
             : singleBeer;
