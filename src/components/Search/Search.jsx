@@ -10,7 +10,6 @@ const Search = ({ changeHandler }) => {
   const [beers, setBeers] = useState([]);
   const [goodSearch, setGoodSearch] = useState(false);
   let { search } = useParams();
-  // use this with v5
   search = search.toLowerCase().split(" ");
 
   useEffect(() => {
