@@ -40,9 +40,9 @@ const ShoppingCart = ({
         <p className={classes.tax_text}>
           Tax included and shipping calculated at checkout
         </p>
-        <button className={classes.checkout_button}>
-          <Link to="/checkout">Checkout</Link>
-        </button>
+        <Link to="/checkout">
+          <button className={classes.checkout_button}>Checkout</button>
+        </Link>
       </div>
       <button className={classes.emptyCart} onClick={emptyCart}>
         Empty Cart

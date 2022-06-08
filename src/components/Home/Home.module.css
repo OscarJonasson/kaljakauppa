@@ -1,5 +1,6 @@
 .hero_container {
   position: relative;
+  padding-top: 7rem;
 }
 
 .hero_img {
@@ -38,7 +39,17 @@
   overflow: auto;
 }
 
+@media (max-width: 1001px) {
+  .hero_container {
+    padding-top: 6rem;
+  }
+}
+
 @media (max-width: 850px) {
+  .hero_container {
+    padding-top: 5.5rem;
+  }
+
   .hero_img {
     object-fit: cover;
     width: 100%;
@@ -49,8 +60,6 @@
   .logoDiv {
     margin: 2rem;
     width: 30rem;
-    display: flex;
-    overflow: auto;
   }
 }
 
@@ -78,8 +87,6 @@
   .logoDiv {
     margin: 2rem;
     width: 25rem;
-    display: flex;
-    overflow: auto;
   }
 }
 
@@ -89,20 +96,18 @@
   }
 
   .hero_container p {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     margin: 0 3rem;
   }
 
   .logoSection h3 {
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .logoDiv {
     margin: 2rem;
     width: 19rem;
-    display: flex;
-    overflow: auto;
   }
 }
 
@@ -110,7 +115,5 @@
   .logoDiv {
     margin: 2rem;
     width: 15rem;
-    display: flex;
-    overflow: auto;
   }
 }
