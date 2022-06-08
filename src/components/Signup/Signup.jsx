@@ -5,8 +5,8 @@ import classes from "./Signup.module.css";
 const Signup = () => {
   const [signupData, setSignupData] = useState({
     email: "",
-    // password: "",
-    // password2: "",
+    password: "",
+    password2: "",
   });
 
   const changeHandler = (e) => {
@@ -16,9 +16,15 @@ const Signup = () => {
     });
   };
 
-  console.log(signupData);
+  // const passwordHandler = () => {
+  //   const passclear = document.querySelector("#pass2");
+  //   if (signupData.password !== signupData.password2) {
+  //     passclear.reset();
+  //   }
+  // };
 
   const usernameHandler = () => {
+    // passwordHandler();
     const username = signupData.email.toLowerCase().split("@");
     return username[0];
   };
@@ -41,19 +47,20 @@ const Signup = () => {
           />
           <input
             type="password"
-            // name="password"
+            name="password"
             className={classes.inputs}
             placeholder="Create Password"
             required
-            // onChange={changeHandler}
+            onChange={changeHandler}
           />
           <input
             type="password"
-            // name="password2"
+            name="password2"
+            id="pass2"
             className={classes.inputs}
             placeholder="Confirm Password"
             required
-            // onChange={changeHandler}
+            onChange={changeHandler}
           />
           <button className={classes.signupBtn}>Sign Up</button>
         </div>
