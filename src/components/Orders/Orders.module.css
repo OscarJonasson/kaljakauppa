@@ -26,3 +26,39 @@
   justify-content: space-evenly;
   margin: 1rem;
 }
+
+@media (max-width: 1100px) {
+  .links {
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 927px) {
+  .links {
+    margin-top: 0.1rem;
+  }
+}
+
+@media (max-width: 723px) {
+  .links {
+    margin-top: 1.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .links {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .links {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .links {
+    margin-top: 1rem;
+  }
+}

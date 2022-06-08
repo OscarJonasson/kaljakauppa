@@ -14,7 +14,7 @@ const Stock = () => {
       .catch((error) => console.log(error));
   }, []);
   return (
-    <section className={classes.container}>
+    <section className={classes.containerStock}>
       <ul className={classes.links}>
         <Link to="/stock">
           <li>Stock</li>
