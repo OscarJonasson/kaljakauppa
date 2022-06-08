@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Sidebar = () => {
-  const [menuOpen, setMenuOpen] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
   const [beers, setBeers] = useState([]);
 
   useEffect(() => {
@@ -47,6 +47,7 @@ const Sidebar = () => {
     } else {
       side.style.visibility = "visible";
       side.style.left = "0";
+      side.style.bottom = "25%";
       setTimeout(() => {
         side.style.position = "sticky";
       }, 500);
