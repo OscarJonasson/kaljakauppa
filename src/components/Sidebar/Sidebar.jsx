@@ -9,8 +9,8 @@ const Sidebar = () => {
 
   useEffect(() => {
     axios
-      // .get("http://localhost:3011/beers/")
-      .get("https://kaljakauppa.herokuapp.com/beers")
+      .get("http://localhost:3011/beers/")
+      // .get("https://kaljakauppa.herokuapp.com/beers")
       .then((res) => setBeers(res.data))
       .catch((error) => console.log(error));
   }, []);
@@ -61,6 +61,9 @@ const Sidebar = () => {
         <div className={classes.callMeRelative}>
           <h3>Style</h3>
           <ul className={classes.sidebar_style}>
+            <Link to={`/beers`} onClick={hideMenu}>
+              <li>All Beers</li>
+            </Link>
             <Link to={`/search/sipa`} onClick={hideMenu}>
               <li>IPA</li>
             </Link>
@@ -77,11 +80,11 @@ const Sidebar = () => {
           <h3>Breweries</h3>
           <ul className={classes.sidebar_breweries}>{breweryHandler()}</ul>
         </div>
-        <div className={classes.nonAlco}>
-          <Link to={`/search/nonalcoholic`} onClick={hideMenu}>
-            Non-alcoholic
-          </Link>
-        </div>
+
+        <Link to={`/search/nonalcoholic`} onClick={hideMenu}>
+          <button className={classes.nonAlco}> Non-alcoholic</button>
+        </Link>
+
         <button className={classes.sesame} onClick={hideMenu}></button>
       </div>
       {!menuOpen && (
