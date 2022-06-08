@@ -48,6 +48,7 @@
 }
 
 .checkout_button {
+  text-align: center;
   padding: 1rem;
   width: 11rem;
   margin: 1rem;
@@ -98,7 +99,7 @@
 
 @media (max-width: 832px) {
   .checkout_button {
-    width: 8rem;
+    width: 9rem;
     margin: 1rem;
   }
 
@@ -115,7 +116,7 @@
   }
 
   .checkout_button {
-    width: 6rem;
+    width: 8rem;
     margin: 0.5rem;
     padding: 0.7rem;
   }
@@ -150,7 +151,7 @@
   }
 
   .checkout_button {
-    width: 6rem;
+    width: 8rem;
     margin: 1rem;
     padding: 0.7rem;
   }
