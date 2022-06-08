@@ -43,14 +43,14 @@
   opacity: 0;
   visibility: hidden;
   top: -12rem;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .openstyle {
   opacity: 1;
   visibility: visible;
   top: 7.5rem;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 @media (max-width: 1000px) {

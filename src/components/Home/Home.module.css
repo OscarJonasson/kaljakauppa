@@ -1,6 +1,5 @@
 .hero_container {
   position: relative;
-  padding-top: 7rem;
 }
 
 .hero_img {
@@ -39,17 +38,7 @@
   overflow: auto;
 }
 
-@media (max-width: 1001px) {
-  .hero_container {
-    padding-top: 6rem;
-  }
-}
-
 @media (max-width: 850px) {
-  .hero_container {
-    padding-top: 5.5rem;
-  }
-
   .hero_img {
     object-fit: cover;
     width: 100%;

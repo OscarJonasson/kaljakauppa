@@ -22,7 +22,7 @@ const Footer = () => {
             </li>
           </ul>
         </section>
-        <section>
+        <section className={classes.cookieSection}>
           <ul className={classes.cookiePolicy}>
             <li>
               <Link to="/404">Cookie Policy</Link>
@@ -38,7 +38,7 @@ const Footer = () => {
             </li>
           </ul>
         </section>
-        <section>
+        <section className={classes.logosSection}>
           <ul className={classes.followUs}>
             <li>Follow Us</li>
             <li>
