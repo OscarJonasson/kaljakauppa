@@ -16,15 +16,17 @@ const Signup = () => {
     });
   };
 
-  // const passwordHandler = () => {
-  //   const passclear = document.querySelector("#pass2");
-  //   if (signupData.password !== signupData.password2) {
-  //     passclear.reset();
-  //   }
-  // };
+  const passwordHandler = () => {
+    const pass = document.querySelector("#pass");
+    const pass2 = document.querySelector("#pass2");
+    if (pass2.value !== pass.value) {
+      pass2.setCustomValidity("Passwords do not match");
+    } else {
+      pass2.setCustomValidity("");
+    }
+  };
 
   const usernameHandler = () => {
-    // passwordHandler();
     const username = signupData.email.toLowerCase().split("@");
     return username[0];
   };
@@ -48,6 +50,7 @@ const Signup = () => {
           <input
             type="password"
             name="password"
+            id="pass"
             className={classes.inputs}
             placeholder="Create Password"
             required
@@ -62,7 +65,9 @@ const Signup = () => {
             required
             onChange={changeHandler}
           />
-          <button className={classes.signupBtn}>Sign Up</button>
+          <button onClick={passwordHandler} className={classes.signupBtn}>
+            Sign Up
+          </button>
         </div>
       </form>
     </div>

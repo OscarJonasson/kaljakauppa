@@ -23,6 +23,7 @@ const ShoppingCart = ({
     localStorage.clear();
     window.location.reload();
   };
+
   return (
     <section className={classes.shopping_cart}>
       <h2>Your cart</h2>
