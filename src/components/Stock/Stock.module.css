@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   flex-flow: column wrap;
+  padding-top: 0.5rem;
 }
 
 .links {

@@ -95,6 +95,7 @@ a:visited {
   left: -10px;
   transition: 350ms;
   background-color: #37dc94;
+  z-index: auto;
 }
 
 .sesame:hover,
