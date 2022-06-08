@@ -13,7 +13,6 @@ const ContactUs = () => {
       ...contactData,
       [e.target.name]: e.target.value,
     });
-    console.log(contactData);
   };
 
   const submitHandler = () => {
