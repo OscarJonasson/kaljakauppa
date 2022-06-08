@@ -28,10 +28,17 @@ const App = () => {
   };
 
   const [cartChanges, setCartChanges] = useState(storageHandler);
-  const [total, setTotal] = useState(0);
+  const [total, setTotal] = useState([]);
 
   useEffect(() => {
     localStorage.setItem("cartData", JSON.stringify([...cartChanges]));
+    setTotal(
+      cartChanges
+        .map((beer) => {
+          return beer.amount * beer.price;
+        })
+        .reduce((a, b) => a + b, 0)
+    );
   }, [cartChanges]);
 
   const [ageCheck, setAgeCheck] = useState(false);
@@ -54,7 +61,6 @@ const App = () => {
       );
     } else if (beer.stock > 0) {
       setCartChanges([...cartChanges, { ...beer, amount: amount }]);
-      setTotal(total + beer.price);
     }
   };
 
