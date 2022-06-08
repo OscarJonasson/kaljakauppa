@@ -148,7 +148,7 @@ const Checkout = ({ shoppingcart, beersPrice }) => {
                 >
                   <li>
                     {cart.beer_name} 🍺 Amount: {cart.amount} 🍺{" "}
-                    {Number(cart.price).toFixed(2)} €
+                    {Number(cart.price * cart.amount).toFixed(2)} €
                   </li>
                 </Link>
               ))}
