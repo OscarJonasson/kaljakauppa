@@ -19,24 +19,6 @@
   animation-timing-function: ease;
 }
 
-@keyframes menuDown {
-  from {
-    top: -12rem;
-  }
-  to {
-    top: 8rem;
-  }
-}
-
-@keyframes menuUp {
-  from {
-    top: 8rem;
-  }
-  to {
-    top: -12rem;
-  }
-}
-
 .liLink {
   display: flex;
   flex-direction: column;
@@ -67,15 +49,31 @@
 .openstyle {
   opacity: 1;
   visibility: visible;
-  top: 8rem;
+  top: 7.5rem;
   transition: 1s;
+}
+
+@media (max-width: 1000px) {
+  .openstyle {
+    top: 6.5rem;
+  }
+}
+
+@media (max-width: 927px) {
+  .openstyle {
+    top: 6rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .openstyle {
+    top: 5.5rem;
+  }
 }
 
 @media (max-width: 723px) {
   .openstyle {
-    opacity: 1;
-    visibility: visible;
-    top: 6rem;
+    top: 7rem;
   }
 }
 
@@ -91,46 +89,32 @@
 
 @media (max-width: 540px) {
   .openstyle {
-    opacity: 1;
-    visibility: visible;
-    top: 5rem;
+    top: 6.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .openstyle {
+    top: 6rem;
   }
 }
 
 @media (max-width: 400px) {
   .navNav {
-    display: flex;
-    visibility: hidden;
-    flex-direction: column;
-    position: absolute;
-    top: -12rem;
-    left: 0;
-    z-index: 2;
     width: 15rem;
   }
 
   .openstyle {
-    opacity: 1;
-    visibility: visible;
-    top: 5rem;
+    top: 6rem;
   }
 }
 
 @media (max-width: 287px) {
   .navNav {
-    display: flex;
-    visibility: hidden;
-    flex-direction: column;
-    position: absolute;
-    top: -12rem;
-    left: 0;
-    z-index: 2;
     width: 11rem;
   }
 
   .openstyle {
-    opacity: 1;
-    visibility: visible;
-    top: 5rem;
+    top: 6rem;
   }
 }
