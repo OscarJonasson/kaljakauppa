@@ -34,6 +34,7 @@ const Header = ({ cartChanges }) => {
     );
     return sumOfAll > 99 ? 99 : sumOfAll;
   };
+
   return (
     <>
       <header>
