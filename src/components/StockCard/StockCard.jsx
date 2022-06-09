@@ -26,7 +26,7 @@ const StockCard = ({ beer }) => {
   const submitHandler = () => {
     // axios.patch(`http://localhost:3011/beers/${beer.id}`, inventoryData);
     axios.patch(
-      `https://kaljakauppa.herokuapp.com/beers/${beer.id}`,
+      `https://kaljakauppa.herokuapp.com/beers/${beer.id}/`,
       inventoryData
     );
   };
