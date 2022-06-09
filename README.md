@@ -10,7 +10,7 @@ An eCommerce website made for a school group project using React.
 
 ## How To
 
-- Clone the repository, for local variant use localversion branch.
+- Clone the repository, for local variant use local branch.
 
 ```txt
 git clone
