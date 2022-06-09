@@ -153,7 +153,6 @@ const Checkout = ({ shoppingcart, beersPrice }) => {
               ))}
             </ul>
           </div>
-          {console.log(beersPrice, shippingPrice())}
           <p>Total: {Number(beersTotal).toFixed(2)} €</p>
           <p>VAT: {calc()} €</p>
           <p>Shipping: {shippingPrice()} €</p>
