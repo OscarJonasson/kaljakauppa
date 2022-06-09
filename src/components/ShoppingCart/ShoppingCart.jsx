@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import CardCart from "../CardCart/CardCart";
+import { useState } from "react";
 import classes from "./ShoppingCart.module.css";
 
 const ShoppingCart = ({
@@ -42,7 +43,12 @@ const ShoppingCart = ({
           Tax included and shipping calculated at checkout
         </p>
         <Link to="/checkout">
-          <button className={classes.checkout_button}>Checkout</button>
+          <button
+            disabled={subTotal() < 0.01}
+            className={classes.checkout_button}
+          >
+            Checkout
+          </button>
         </Link>
       </div>
       <button className={classes.emptyCart} onClick={emptyCart}>
