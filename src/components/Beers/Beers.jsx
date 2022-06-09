@@ -4,7 +4,7 @@ import CardGallery from "../CardGallery/CardGallery";
 import classes from "./Beers.module.css";
 import Sidebar from "../Sidebar/Sidebar";
 
-const Beers = ({ beer, cartChanges, changeHandler }) => {
+const Beers = ({ cartChanges, changeHandler }) => {
   const [beers, setBeers] = useState([]);
 
   useEffect(() => {

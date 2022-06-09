@@ -76,7 +76,6 @@ const Checkout = ({ shoppingcart, beersPrice }) => {
 
   useEffect(() => {
     axios.get("https://restcountries.com/v2/all").then((res) => {
-      console.log(res);
       setCountry(res.data);
     });
   }, []);

@@ -1,7 +1,7 @@
 import classes from "./CardGallery.module.css";
 import { Link } from "react-router-dom";
 
-const CardGallery = ({ beer, cartChanges, changeHandler }) => {
+const CardGallery = ({ beer, changeHandler }) => {
   const beerPrice = () => {
     return Number(beer.price).toFixed(2);
   };
