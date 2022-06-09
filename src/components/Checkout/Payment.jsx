@@ -16,7 +16,6 @@ const Payment = ({ prev, next, changer }) => {
       };
       return (items = [...items, oneItem]);
     });
-    console.log("items", items);
     const ready = { products: items };
 
     // axios.post("http://localhost:3011/orders", ready);
@@ -41,14 +40,14 @@ const Payment = ({ prev, next, changer }) => {
               className={classes.surpriseButton}
               onClick={sendOrderHandler}
             >
-              <i class="fa-brands fa-cc-paypal fa-5x"></i>
+              <i className="fa-brands fa-cc-paypal fa-5x"></i>
             </button>
 
             <button
               className={classes.surpriseButton}
               onClick={sendOrderHandler}
             >
-              <i class="fa-brands fa-cc-amex fa-5x"></i>
+              <i className="fa-brands fa-cc-amex fa-5x"></i>
             </button>
           </p>
           <p className={classes.surprises}>
@@ -56,21 +55,21 @@ const Payment = ({ prev, next, changer }) => {
               className={classes.surpriseButton}
               onClick={sendOrderHandler}
             >
-              <i class="fa-brands fa-cc-visa fa-5x"></i>
+              <i className="fa-brands fa-cc-visa fa-5x"></i>
             </button>
 
             <button
               className={classes.surpriseButton}
               onClick={sendOrderHandler}
             >
-              <i class="fa-brands fa-cc-mastercard fa-5x"></i>
+              <i className="fa-brands fa-cc-mastercard fa-5x"></i>
             </button>
           </p>
         </div>
       </div>
 
       <button className={classes.prevButton} onClick={prev}>
-        <i class="fa-solid fa-angles-left"></i> Go Back
+        <i className="fa-solid fa-angles-left"></i> Go Back
       </button>
     </form>
   );
