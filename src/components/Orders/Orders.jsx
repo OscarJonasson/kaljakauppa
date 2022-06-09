@@ -7,8 +7,7 @@ function Orders() {
   const [orders, setOrders] = useState([]);
   useEffect(() => {
     axios
-      // .get("http://localhost:3011/orders/")
-      .get("https://kaljakauppa.herokuapp.com/orders/")
+      .get("http://localhost:3011/orders/")
       .then((res) => setOrders(res.data))
       .catch((error) => console.log(error));
   }, []);

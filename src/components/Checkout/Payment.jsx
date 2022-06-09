@@ -18,8 +18,7 @@ const Payment = ({ prev, next, changer }) => {
     });
     const ready = { products: items };
 
-    // axios.post("http://localhost:3011/orders", ready);
-    axios.post("https://kaljakauppa.herokuapp.com/orders", ready);
+    axios.post("http://localhost:3011/orders", ready);
     localStorage.clear();
     next(e);
   };

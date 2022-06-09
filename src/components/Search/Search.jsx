@@ -14,8 +14,7 @@ const Search = ({ changeHandler }) => {
 
   useEffect(() => {
     axios
-      // .get("http://localhost:3011/beers/")
-      .get("https://kaljakauppa.herokuapp.com/beers/")
+      .get("http://localhost:3011/beers/")
       .then((res) => setBeers(res.data))
       .catch((error) => console.log(error));
   }, []);

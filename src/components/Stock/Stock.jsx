@@ -8,8 +8,7 @@ const Stock = () => {
   const [stock, setStock] = useState([]);
   useEffect(() => {
     axios
-      // .get("http://localhost:3011/beers/")
-      .get("https://kaljakauppa.herokuapp.com/beers/")
+      .get("http://localhost:3011/beers/")
       .then((res) => setStock(res.data))
       .catch((error) => console.log(error));
   }, []);

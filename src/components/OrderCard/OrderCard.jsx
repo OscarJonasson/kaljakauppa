@@ -7,8 +7,7 @@ function OrderCard({ orders }) {
 
   useEffect(() => {
     axios
-      // .get("http://localhost:3011/beers/")
-      .get("https://kaljakauppa.herokuapp.com/beers/")
+      .get("http://localhost:3011/beers/")
       .then((res) => setBeers(res.data))
       .catch((error) => console.log(error));
   }, []);
@@ -19,18 +18,13 @@ function OrderCard({ orders }) {
         return beer.id === product.id;
       });
       let newStockAmount = { stock: stock.stock - product.amount };
-      //   axios.patch(`http://localhost:3011/beers/${product.id}/`, newStockAmount);
-      axios.patch(
-        `https://kaljakauppa.herokuapp.com/beers/${product.id}/`,
-        newStockAmount
-      );
+      axios.patch(`http://localhost:3011/beers/${product.id}/`, newStockAmount);
     });
     deleteHandler();
   };
 
   const deleteHandler = () => {
-    // axios.delete(`http://localhost:3011/orders/${orders.id}/`);
-    axios.delete(`https://kaljakauppa.herokuapp.com/orders/${orders.id}/`);
+    axios.delete(`http://localhost:3011/orders/${orders.id}/`);
     window.location.reload();
   };
 
