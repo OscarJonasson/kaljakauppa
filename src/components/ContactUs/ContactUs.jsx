@@ -18,7 +18,7 @@ const ContactUs = () => {
   const submitHandler = () => {
     axios
       // .post("http://localhost:3011/contactUs", contactData)
-      .post("http://kaljakauppa.herokuapp.com/contactUs", contactData)
+      .post("http://kaljakauppa.herokuapp.com/contactUs/", contactData)
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
   };
