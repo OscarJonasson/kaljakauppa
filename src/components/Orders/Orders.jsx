@@ -8,7 +8,7 @@ function Orders() {
   useEffect(() => {
     axios
       // .get("http://localhost:3011/orders/")
-      .get("https://kaljakauppa.herokuapp.com/orders")
+      .get("https://kaljakauppa.herokuapp.com/orders/")
       .then((res) => setOrders(res.data))
       .catch((error) => console.log(error));
   }, []);
