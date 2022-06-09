@@ -19,7 +19,7 @@ const Stock = () => {
         <Link to="/stock">
           <li>Stock</li>
         </Link>
-        <Link to="/stats">
+        <Link to="/404">
           <li>Stats</li>
         </Link>
         <Link to="/orders">
