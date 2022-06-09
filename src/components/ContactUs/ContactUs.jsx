@@ -1,6 +1,6 @@
 import classes from "./ContactUs.module.css";
 import axios from "axios";
-import { useState } from "react";
+import { useLayoutEffect, useState } from "react";
 const ContactUs = () => {
   const [contactData, setContactData] = useState({
     name: "",
@@ -8,6 +8,9 @@ const ContactUs = () => {
     message: "",
   });
 
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   const inputHandler = (e) => {
     setContactData({
       ...contactData,

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import classes from "./Home.module.css";
 import axios from "axios";
@@ -8,6 +8,10 @@ import FakeCarousel from "../FakeCarousel/FakeCarousel";
 
 const Home = ({ ageCheck, checkAge }) => {
   const [beers, setBeers] = useState([]);
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   useEffect(() => {
     axios

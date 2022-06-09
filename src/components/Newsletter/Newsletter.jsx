@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import classes from "./Newsletter.module.css";
 
 const Newsletter = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <section className={classes.newsletterSection}>
       <h2 className={classes.newsletterHeader}>Join our newsletter!</h2>
