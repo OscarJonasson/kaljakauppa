@@ -18,9 +18,7 @@ const Newsletter = () => {
           <input className={classes.emailInput} type="email" id="email"></input>
         </div>
         <div>
-          <button className={classes.sendButton} onSubmit={""}>
-            Sign me up!
-          </button>
+          <button className={classes.sendButton}>Sign me up!</button>
         </div>
       </form>
     </section>
