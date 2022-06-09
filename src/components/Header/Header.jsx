@@ -68,12 +68,18 @@ const Header = ({ cartChanges }) => {
           </div>
           <div className={classes.headerRight}>
             <Link to="login" className={classes.headLink}>
-              <span className={`material-symbols-outlined ${classes.headLogo}`}>
+              <span
+                onClick={() => setMenuOpen(true)}
+                className={`material-symbols-outlined ${classes.headLogo}`}
+              >
                 person
               </span>
             </Link>
             <Link to="shoppingCart">
-              <i className="fa-solid fa-cart-shopping fa-1x"></i>
+              <i
+                onClick={() => setMenuOpen(true)}
+                className="fa-solid fa-cart-shopping fa-1x"
+              ></i>
               {cartCountHandler() > 0 && (
                 <div className={classes.circle}>
                   <span
