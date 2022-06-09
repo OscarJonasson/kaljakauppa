@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import CardCart from "../CardCart/CardCart";
-import { useState } from "react";
 import classes from "./ShoppingCart.module.css";
 
 const ShoppingCart = ({
