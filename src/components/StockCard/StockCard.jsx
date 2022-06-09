@@ -14,13 +14,11 @@ const StockCard = ({ beer }) => {
         ...inventoryData,
         [e.target.name]: parseFloat(e.target.value),
       });
-      console.log(inventoryData);
     } else {
       setInventoryData({
         ...inventoryData,
         [e.target.name]: parseInt(e.target.value),
       });
-      console.log(inventoryData);
     }
   };
   const submitHandler = () => {
