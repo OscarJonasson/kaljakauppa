@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import classes from "./Beer.module.css";
 import axios from "axios";
 
-const Beer = ({ cartChanges, changeHandler }) => {
+const Beer = ({ changeHandler }) => {
   const [b, setB] = useState([]);
   const [amount, setAmount] = useState(1);
   const { id } = useParams();
